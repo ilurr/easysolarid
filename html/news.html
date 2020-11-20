@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<!-- icon -->
+
+    <title>News Easysolar</title>
+    
+	<!-- font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+	<style>
+	@font-face {
+	  font-family: 'Lato';
+	  font-display: swap;
+	  font-style: normal;
+	  font-weight: 500;
+	  src: local('Lato'), local('Lato-Semibold'), url('./asset/fonts/Lato-Semibold.woff2') format('woff2');
+	}
+	</style>
+	
+
+    <link href="./asset/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="./asset/css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="-easysolar">
+	<!-- main -->
+	<main class="main">
+
+		<!-- header -->
+		<header class="header -fixed">
+			<div class="header-wrap container-xl">
+				<div class="header-col -left">
+					<button type="button" class="nav-button nav-button-burger" role="button" id="menu-burger">
+						<span class="icon-bar">
+							<i></i>
+						</span>
+					</button>
+					<div class="logo">
+						<a href="index.html">
+							<div class="logo-box">
+								<div class="logo-icon">
+									<img src="./asset/images/logo-easysolar.png" alt="Easysolar">
+								</div>
+								<div class="logo-title">
+									Easy<span>Solar</span>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="header-col -right">
+					
+					<!-- nav easysolar -->
+					<nav class="nav -header" aria-label="Main Navigation">
+						<ol class="nav-wrap">
+							<li class="nav-item">
+								<a href="solario.html" class="nav-link" role="link" aria-label="Solario">Solario</a>
+							</li>
+							<li class="nav-item">
+								<a href="solarpedia.html" class="nav-link" role="link" aria-label="Solarpedia">Solarpedia</a>
+							</li>
+							<li class="nav-item">
+								<a href="news.html" class="nav-link -active" role="link" aria-label="News">News</a>
+							</li>
+						</ol>
+					</nav>
+		
+					<!-- search button (easysolar) -->
+					<div id="form-search-easysolar" class="search-block">
+						<div class="search-bar">
+							<div class="search-header -easysolar">
+								<form action="search-easysolar.html">
+									<input type="text" class="input" name="search-easysolar" placeholder="Search">
+									<input type="submit" class="button" name="search-easysolar-btn" value="Search">
+									<i class="fa fa-search" aria-hidden="true"></i>
+								</form>
+							</div>
+							<button type="button" class="button -transparent nav-button nav-button-search -easysolar" role="button" id="menu-search-easysolar">
+								<i class="fa fa-search" aria-hidden="true"></i>
+							</button>
+						</div>
+					</div>
+		
+		
+					<!-- user button (before login) -->
+					<button type="button" class="button -transparent nav-button nav-button-user" role="button" id="menu-user" data-toggle="modal" data-target="#modal-welcome">
+						<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+					</button>
+		
+				</div>
+			</div>
+		</header>
+
+		<!-- sidebar menu -->
+		<div class="sidebar -fixed">
+			<div id="sidebar" class="sidebar-block">
+				<!-- user -->
+				<a href="profile.html" class="menu-link">
+					<div class="menu-sidebar">
+						<div class="menu-avatar">
+							<img src="./asset/images/dummy/avatar.jpg" alt="Chelsea Olivia">
+						</div>
+						<div class="menu-info">
+							<div class="menu-username">Chelsea Olivia</div>
+							<div class="menu-text">View Profile</div>
+						</div>
+					</div>
+				</a>
+		
+				<!-- nav sidebar -->
+				<nav class="nav -sidebar" aria-label="Sidebar Navigation">
+					<ol class="nav-wrap">
+						<li class="nav-item">
+							<a href="index.html" class="nav-link" role="link" aria-label="Easysolar">Easysolar</a>
+						</li>
+						<li class="nav-item">
+							<a href="solario.html" class="nav-link" role="link" aria-label="Solario">Solario</a>
+						</li>
+						<li class="nav-item">
+							<a href="solarpedia.html" class="nav-link" role="link" aria-label="Solarpedia">Solarpedia</a>
+						</li>
+						<li class="nav-item">
+							<a href="news.html" class="nav-link" role="link" aria-label="News">News</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link" role="link" aria-label="About">About</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link" role="link" aria-label="FAQ">FAQ</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link" role="link" aria-label="Terms &amp; Conditions">Terms &amp; Conditions</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link" role="link" aria-label="Privacy Policy">Privacy Policy</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link" role="link" aria-label="Contact">Contact</a>
+						</li>
+					</ol>
+				</nav>
+			</div>
+		</div>
+
+		<!-- news big -->
+		<section class="showcase -news">
+			<div class="showcase-slider">
+				<div class="showcase-item">
+					<!-- news -->
+					<div class="showcase-block">
+						<div class="showcase-img" style="background-image: url('./asset/images/dummy/photo-1463173904305-ba479d2123b7.jpeg');"></div>
+						<div class="showcase-content container-xl">
+							<h2 class="showcase-news-title"><a href="news-detail.html">Pasar Energi Terbarukan di Indonesia</a></h2>
+							<div class="showcase-news-teaser">Pasar teknologi sistem sel surya sebagai one stop service dengan mitra-mitra terpercaya yang dapat diandalkan. Pelajari dan ambil buat anda yang terbaik, klik Solario. Pasar teknologi sistem sel surya sebagai one stop service dengan mitra-mitra terpercaya yang dapat diandalkan.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- news list -->
+		<section class="news-list">
+			<div class="news-wrap container-xl">
+				<div class="news-block row">
+					<div class="news-item">
+						<div class="news-thumb">
+							<div class="news-img">
+								<a href="news-detail.html">
+									<img src="./asset/images/dummy/photo-1558449028-b53a39d100fc.jpeg" alt="">
+								</a>
+							</div>
+							<div class="news-box">
+								<h4 class="news-title"><a href="news-detail.html">Pasar Energi Terbarukan di Indonesia</a></h4>
+								<div class="news-teaser">Pasar teknologi sistem sel surya sebagai one stop service dengan mitra-mitra terpercaya yang dapat diandalkan. Pelajari dan ambil buat anda yang terbaik, klik Solario. Pasar teknologi sistem sel surya sebagai one stop service dengan mitra-mitra terpercaya yang dapat diandalkan.</div>
+								<div class="news-info">
+									<div class="news-date">25 Jun 2020, 5:35 PM</div>
+									<div class="news-stat">
+										<div class="news-stat-item"><i class="fa fa-eye" aria-hidden="true"></i> 235</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="news-item">
+						<div class="news-thumb">
+							<div class="news-img">
+								<a href="news-detail.html">
+									<img src="./asset/images/dummy/photo-1474398777522-cabeb42e8132.jpeg" alt="">
+								</a>
+							</div>
+							<div class="news-box">
+								<h4 class="news-title"><a href="news-detail.html">Pasang Panel Surya, Tagihan Listrik Bisa Hemat Rp 1 Juta/Bulan</a></h4>
+								<div class="news-teaser">Pasar teknologi sistem sel surya sebagai one stop service dengan mitra-mitra terpercaya yang dapat diandalkan. Pelajari dan ambil buat anda yang terbaik, klik Solario. Pasar teknologi sistem sel surya sebagai one stop service dengan mitra-mitra terpercaya yang dapat diandalkan.</div>
+								<div class="news-info">
+									<div class="news-date">25 Jun 2020, 5:35 PM</div>
+									<div class="news-stat">
+										<div class="news-stat-item"><i class="fa fa-eye" aria-hidden="true"></i> 235</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="news-item">
+						<div class="news-thumb">
+							<div class="news-img">
+								<a href="news-detail.html">
+									<img src="./asset/images/dummy/photo-1497440001374-f26997328c1b.jpeg" alt="">
+								</a>
+							</div>
+							<div class="news-box">
+								<h4 class="news-title"><a href="news-detail.html">Pasang Panel Surya di Atap Rp 15 Juta, 7 Tahun Bisa Balik Modal</a></h4>
+								<div class="news-teaser">Pasar teknologi sistem sel surya sebagai one stop service dengan mitra-mitra terpercaya yang dapat diandalkan. Pelajari dan ambil buat anda yang terbaik, klik Solario. Pasar teknologi sistem sel surya sebagai one stop service dengan mitra-mitra terpercaya yang dapat diandalkan.</div>
+								<div class="news-info">
+									<div class="news-date">25 Jun 2020, 5:35 PM</div>
+									<div class="news-stat">
+										<div class="news-stat-item"><i class="fa fa-eye" aria-hidden="true"></i> 235</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>			</div>
+
+			<!-- paging -->
+			<div class="paging">
+				<div class="paging-wrap">
+					<div class="paging-item"><a href="#" class="button paging-link -disabled">Prev</a></div>
+					<div class="paging-item"><a href="#" class="button paging-link -active">1</a></div>
+					<div class="paging-item"><a href="#" class="button paging-link">2</a></div>
+					<div class="paging-item"><a href="#" class="button paging-link">3</a></div>
+					<div class="paging-item"><a href="#" class="button paging-link">4</a></div>
+					<div class="paging-item"><a href="#" class="button paging-link">Next</a></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- modal welcome back -->
+		<div class="modal fade" id="modal-welcome" tabindex="-1" aria-labelledby="WelcomeBack" aria-hidden="true">
+			<div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="panel">
+							<div class="panel-welcome">Hello Again<br> Welcome Back</div>
+							<div class="panel-body">
+								<div class="form-row">
+									<button name="" id="menu-register" class="button">Sign up with Email</button>
+								</div>
+						
+								<div class="panel-line"><span>Already a Member?</span></div>
+						
+								<div class="form-row">
+									<button name="" id="menu-login" class="button -primary">Login</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- modal login -->
+		<div class="modal fade" id="modal-login" tabindex="-1" aria-labelledby="Login" aria-hidden="true">
+			<div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="panel">
+							<h2 class="title-modal">Login</h2>
+							<div class="panel-body">
+								<form action="solario.html">
+									<div class="form-row">
+										<label for="log-email">Email Address</label>
+										<div class="form-input">
+											<input type="text" id="log-email" name="log-email" class="input" placeholder="">
+										</div>
+										<div class="form-hint"></div>
+									</div>
+									<div class="form-row form-error">
+										<label for="log-password">Password</label>
+										<div class="form-input">
+											<input type="password" id="log-password" name="log-password" class="input -error" placeholder="">
+										</div>
+										<div class="form-hint">Password salah</div>
+									</div>
+									<div class="form-row">
+										<div class="form-checkbox">
+											<input type="checkbox" name="remember" id="remember" value="">
+											<label for="remember">Remember Me</label>
+										</div>
+									</div>
+									<div class="form-row">
+										<input type="submit" name="log-btn" id="log-btn" value="Login" class="button -primary">
+									</div>
+									<div class="form-row">
+										<a href="forgot.html" class="button -transparent" role="link">Forgot your password?</a>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- modal register -->
+		<div class="modal fade" id="modal-register" tabindex="-1" aria-labelledby="Register" aria-hidden="true">
+			<div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="panel">
+							<h2 class="title-modal">Sign up</h2>
+							<div class="panel-body">
+								<form action="register-result.html">
+									<div class="form-row">
+										<label for="reg-name">Email Address</label>
+										<div class="form-input">
+											<input type="text" id="reg-name" name="reg-name" class="input" placeholder="">
+										</div>
+										<div class="form-hint"></div>
+									</div>
+									<div class="form-row">
+										<label for="reg-password">Password</label>
+										<div class="form-input">
+											<input type="password" id="reg-password" name="reg-password" class="input" placeholder="">
+										</div>
+										<div class="form-hint">Password must content at least 8 characters.</div>
+									</div>
+									<div class="form-row">
+										<div class="panel-text text-center">
+											<p>By signing up you are agreeing to our <a href="static-page.html">Terms of Services</a>.</p>
+											<p>View our <a href="static-page.html">Privacy Policy</a>.</p>
+										</div>
+									</div>
+									<div class="form-row">
+										<input type="submit" name="signup" id="signup" value="Agree and Sign up" class="button -primary">
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="footer-wrap container-xl">
+				<div class="footer-top row">
+					<div class="col-lg-3 col-md-12">
+						<div class="logo -footer">
+							<a href="index.html">
+								<div class="logo-box">
+									<div class="logo-icon">
+										<img src="./asset/images/logo-easysolar.png" alt="Easysolar">
+									</div>
+									<div class="logo-title">
+										Easy<span>Solar</span>
+									</div>
+								</div>
+							</a>
+							<div class="logo-footer">
+								<div class="logo-footer-img">
+									<img class="logo-footer-pp" src="./asset/images/logo-pp-energi.png" alt="PP Energi">
+								</div>
+								<div class="logo-footer-img">
+									<img class="logo-footer-bumn" src="./asset/images/logo-bumn.png" alt="BUMN">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-5 col-md-7">
+						<div class="footer-nav-wrap">
+							<nav class="footer-nav" aria-label="Footer Navigation">
+								<div class="footer-title">Help</div>
+								<ul>
+									<li><a href="#">Payments</a></li>
+									<li><a href="#">Shipping</a></li>
+									<li><a href="#">Cancellation & Returns</a></li>
+									<li><a href="#">FAQ</a></li>
+									<li><a href="#">Measurement Process</a></li>
+								</ul>
+							</nav>
+							<nav class="footer-nav" aria-label="Footer Navigation">
+								<div class="footer-title">Contact Us</div>
+								<ul>
+									<li><a href="#">About Us</a></li>
+									<li><a href="#">Contact</a></li>
+									<li><a href="#">Work with Us</a></li>
+									<li><a href="#">Privacy Policy</a></li>
+									<li><a href="#">Terms & Conditions</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-5">
+						<div class="footer-subscribe">
+							<div class="footer-title">Newsletter</div>
+							<div class="footer-subscribe-text">Our email subscribers get the inside scoop on new products, Promotions, Contests and more. Sign up, it's right thing to do.</div>
+							<div class="footer-subscribe-form">
+								<form action="#">
+									<input type="text" class="input" name="subscribe" placeholder="Enter your email">
+									<button class="button -transparent" name="subscribe-btn"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-middle row">
+					<div class="col-lg-9">
+						<div class="footer-pay">
+							<ul>
+								<li><img src="./asset/images/payment/visa.png" alt="Visa"></li>
+								<li><img src="./asset/images/payment/mastercard.png" alt="Master Card"></li>
+								<li><img src="./asset/images/payment/visa.png" alt="Visa"></li>
+								<li><img src="./asset/images/payment/mastercard.png" alt="Master Card"></li>
+								<li><img src="./asset/images/payment/visa.png" alt="Visa"></li>
+								<li><img src="./asset/images/payment/mastercard.png" alt="Master Card"></li>
+								<li><img src="./asset/images/payment/visa.png" alt="Visa"></li>
+								<li><img src="./asset/images/payment/mastercard.png" alt="Master Card"></li>
+								<li><div class="footer-pay-text">Cash on Delivery</div></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="footer-social">
+							<div class="footer-social-icon social-footer">
+								<div class="social-item">
+									<a href="#" class="social-link">
+										<i class="fa fa-facebook" aria-hidden="true"></i>
+									</a>
+								</div>
+								<div class="social-item">
+									<a href="#" class="social-link">
+										<i class="fa fa-twitter" aria-hidden="true"></i>
+									</a>
+								</div>
+								<div class="social-item">
+									<a href="#" class="social-link">
+										<i class="fa fa-linkedin" aria-hidden="true"></i>
+									</a>
+								</div>
+								<div class="social-item">
+									<a href="#" class="social-link">
+										<i class="fa fa-instagram" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom row row-cols-1">
+					<div class="footer-copy">Copyright © 2020 <strong>Easysolar.id</strong> All Rights Reserved.</div>
+				</div>
+			</div>
+		</footer>
+
+	</main>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="./asset/js/slick.min.js"></script>
+<script type="text/javascript" src="./asset/js/main.js"></script>
+</body>
+</html>
