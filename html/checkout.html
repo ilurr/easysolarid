@@ -9,6 +9,23 @@
 	<meta name="keywords" content="">
 
 	<!-- icon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./asset/images/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./asset/images/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./asset/images/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./asset/images/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./asset/images/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./asset/images/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./asset/images/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./asset/images/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./asset/images/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./asset/images/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./asset/images/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./asset/images/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./asset/images/icon/favicon-16x16.png">
+    <link rel="manifest" href="./asset/images/icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     <title>Solario</title>
     
@@ -18,10 +35,11 @@
 	<style>
 	@font-face {
 	  font-family: 'Lato';
-	  font-display: swap;
+	  src: url('./asset/fonts/Lato-Semibold.woff2') format('woff2'),
+	      url('./asset/fonts/Lato-Semibold.woff') format('woff');
+	  font-weight: 600;
 	  font-style: normal;
-	  font-weight: 500;
-	  src: local('Lato'), local('Lato-Semibold'), url('./asset/fonts/Lato-Semibold.woff2') format('woff2');
+	  font-display: swap;
 	}
 	</style>
 	
@@ -55,85 +73,87 @@
 					</div>
 				</div>
 				<div class="header-col -middle">
+					<!-- category button -->
 					<button type="button" class="button -transparent nav-button nav-button-cat" role="button" id="menu-cat">
 						<span>Category</span>
+						<!-- category list -->
 						<div class="cat-header">
 							<div class="cat-block">
 								<div class="cat-col">
-									<div class="cat-heading"><a href="#">Complete-System</a></div>
+									<div class="cat-heading"><a href="solario-category.html">Complete-System</a></div>
 									<div class="cat-list">
 										<ol>
-											<li><a href="#">Solar 3KWP</a></li>
-											<li><a href="#">Solar 4.4KWP</a></li>
-											<li><a href="#">Solar 6KWP</a></li>
+											<li><a href="solario-category.html">Solar 3KWP</a></li>
+											<li><a href="solario-category.html">Solar 4.4KWP</a></li>
+											<li><a href="solario-category.html">Solar 6KWP</a></li>
 										</ol>
 									</div>
-									<div class="cat-heading"><a href="#">Solar-Panel</a></div>
+									<div class="cat-heading"><a href="solario-category.html">Solar-Panel</a></div>
 									<div class="cat-list">
 										<ol>
-											<li><a href="#">Mono-crytaline</a></li>
-											<li><a href="#">Poly-crystaline</a></li>
+											<li><a href="solario-category.html">Mono-crytaline</a></li>
+											<li><a href="solario-category.html">Poly-crystaline</a></li>
 										</ol>
 									</div>
-									<div class="cat-heading"><a href="#">Grid-Tie</a></div>
+									<div class="cat-heading"><a href="solario-category.html">Grid-Tie</a></div>
 									<div class="cat-list">
 										<ol>
-											<li><a href="#">Grid-Tie 10KWP</a></li>
-											<li><a href="#">Grid-Tie 1KWP</a></li>
-											<li><a href="#">Grid-Tie 2KWP</a></li>
-											<li><a href="#">Grid-Tie 3KWP</a></li>
-											<li><a href="#">Grid-Tie 4KWP</a></li>
-											<li><a href="#">Grid-Tie 5KWP</a></li>
-											<li><a href="#">Grid-Tie 6KWP</a></li>
-											<li><a href="#">Grid-Tie 7KWP</a></li>
-										</ol>
-									</div>
-								</div>
-								<div class="cat-col">
-									<div class="cat-heading"><a href="#">Battery-Electrical</a></div>
-									<div class="cat-list">
-										<ol>
-											<li><a href="#">Accessories</a></li>
-											<li><a href="#">Battery</a></li>
-											<li><a href="#">Inverter</a></li>
-											<li><a href="#">Mounting</a></li>
-											<li><a href="#">Power-Cable</a></li>
-										</ol>
-									</div>
-									<div class="cat-heading"><a href="#">Hybrid-System</a></div>
-									<div class="cat-list">
-										<ol>
-											<li><a href="#">Hybrid 10 KWP</a></li>
-											<li><a href="#">Hybrid 1 KWP</a></li>
-											<li><a href="#">Hybrid 2 KWP</a></li>
-											<li><a href="#">Hybrid 3 KWP</a></li>
-											<li><a href="#">Hybrid 4 KWP</a></li>
-											<li><a href="#">Hybrid 5 KWP</a></li>
-											<li><a href="#">Hybrid 6 KWP</a></li>
-											<li><a href="#">Hybrid 7 KWP</a></li>
+											<li><a href="solario-category.html">Grid-Tie 10KWP</a></li>
+											<li><a href="solario-category.html">Grid-Tie 1KWP</a></li>
+											<li><a href="solario-category.html">Grid-Tie 2KWP</a></li>
+											<li><a href="solario-category.html">Grid-Tie 3KWP</a></li>
+											<li><a href="solario-category.html">Grid-Tie 4KWP</a></li>
+											<li><a href="solario-category.html">Grid-Tie 5KWP</a></li>
+											<li><a href="solario-category.html">Grid-Tie 6KWP</a></li>
+											<li><a href="solario-category.html">Grid-Tie 7KWP</a></li>
 										</ol>
 									</div>
 								</div>
 								<div class="cat-col">
-									<div class="cat-heading"><a href="#">Hardware-Racking</a></div>
+									<div class="cat-heading"><a href="solario-category.html">Battery-Electrical</a></div>
 									<div class="cat-list">
 										<ol>
-											<li><a href="#">Clamp</a></li>
-											<li><a href="#">Post</a></li>
-											<li><a href="#">Rack</a></li>
+											<li><a href="solario-category.html">Accessories</a></li>
+											<li><a href="solario-category.html">Battery</a></li>
+											<li><a href="solario-category.html">Inverter</a></li>
+											<li><a href="solario-category.html">Mounting</a></li>
+											<li><a href="solario-category.html">Power-Cable</a></li>
 										</ol>
 									</div>
-									<div class="cat-heading"><a href="#">Off-Grid-Solar</a></div>
+									<div class="cat-heading"><a href="solario-category.html">Hybrid-System</a></div>
 									<div class="cat-list">
 										<ol>
-											<li><a href="#">Off-Grid 10 KWP</a></li>
-											<li><a href="#">Off-Grid 1 KWP</a></li>
-											<li><a href="#">Off-Grid 2 KWP</a></li>
-											<li><a href="#">Off-Grid 3 KWP</a></li>
-											<li><a href="#">Off-Grid 4 KWP</a></li>
-											<li><a href="#">Off-Grid 5 KWP</a></li>
-											<li><a href="#">Off-Grid 6 KWP</a></li>
-											<li><a href="#">Off-Grid 7 KWP</a></li>
+											<li><a href="solario-category.html">Hybrid 10 KWP</a></li>
+											<li><a href="solario-category.html">Hybrid 1 KWP</a></li>
+											<li><a href="solario-category.html">Hybrid 2 KWP</a></li>
+											<li><a href="solario-category.html">Hybrid 3 KWP</a></li>
+											<li><a href="solario-category.html">Hybrid 4 KWP</a></li>
+											<li><a href="solario-category.html">Hybrid 5 KWP</a></li>
+											<li><a href="solario-category.html">Hybrid 6 KWP</a></li>
+											<li><a href="solario-category.html">Hybrid 7 KWP</a></li>
+										</ol>
+									</div>
+								</div>
+								<div class="cat-col">
+									<div class="cat-heading"><a href="solario-category.html">Hardware-Racking</a></div>
+									<div class="cat-list">
+										<ol>
+											<li><a href="solario-category.html">Clamp</a></li>
+											<li><a href="solario-category.html">Post</a></li>
+											<li><a href="solario-category.html">Rack</a></li>
+										</ol>
+									</div>
+									<div class="cat-heading"><a href="solario-category.html">Off-Grid-Solar</a></div>
+									<div class="cat-list">
+										<ol>
+											<li><a href="solario-category.html">Off-Grid 10 KWP</a></li>
+											<li><a href="solario-category.html">Off-Grid 1 KWP</a></li>
+											<li><a href="solario-category.html">Off-Grid 2 KWP</a></li>
+											<li><a href="solario-category.html">Off-Grid 3 KWP</a></li>
+											<li><a href="solario-category.html">Off-Grid 4 KWP</a></li>
+											<li><a href="solario-category.html">Off-Grid 5 KWP</a></li>
+											<li><a href="solario-category.html">Off-Grid 6 KWP</a></li>
+											<li><a href="solario-category.html">Off-Grid 7 KWP</a></li>
 										</ol>
 									</div>
 								</div>
@@ -170,7 +190,7 @@
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="menu-notify">
 							<div class="notify-bar">
 								<div class="notify-item unread">
-									<a href="#">
+									<a href="notification.html">
 										<div class="notify-row">
 											<div class="notify-col">
 												<div class="notify-content">
@@ -182,7 +202,7 @@
 									</a>
 								</div>
 								<div class="notify-item">
-									<a href="#">
+									<a href="notification.html">
 										<div class="notify-row">
 											<div class="notify-col">
 												<div class="notify-content">
@@ -229,8 +249,12 @@
 							</div>
 						</button>
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="menu-profile">
-							<a class="dropdown-item" href="profile.html">My Profile</a>
-							<a class="dropdown-item" href="order-list.html">Orders</a>
+							<a class="dropdown-item" href="profile.html">Edit Profile</a>
+							<a class="dropdown-item" href="order-list.html">List Order</a>
+							<a class="dropdown-item" href="wishlist.html">Wishlist</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="setting-notification.html">Setting</a>
+							<a class="dropdown-item" href="setting-activity.html">Activity</a>
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="index.html">Logout</a>
 						</div>
@@ -265,12 +289,69 @@
 						<li class="nav-item">
 							<a href="solario.html" class="nav-link" role="link" aria-label="Solario">Solario</a>
 						</li>
+						<li class="nav-item accordion" id="accordion-category">
+							<button type="button" class="nav-link collapsed" data-toggle="collapse" data-target="#collapseNavOne" aria-expanded="false" aria-controls="collapseNavOne">Category <i class="fa fa-caret-up" aria-hidden="true"></i></button>
+							<ol class="nav-wrap collapse" id="collapseNavOne" aria-labelledby="Category" data-parent="#accordion-category">
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Complete-System"><strong>Complete-System</strong></a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Solar 3KWP">Solar 3KWP</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Solar 4.4KWP">Solar 4.4KWP</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Solar 6KWP">Solar 6KWP</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Solar-Panel"><strong>Solar-Panel</strong></a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Mono-crytaline">Mono-crytaline</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Poly-crystaline">Poly-crystaline</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie"><strong>Grid-Tie</strong></a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 10KWP">Grid-Tie 10KWP</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 1KWP">Grid-Tie 1KWP</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 2KWP">Grid-Tie 2KWP</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 3KWP">Grid-Tie 3KWP</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 4KWP">Grid-Tie 4KWP</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 5KWP">Grid-Tie 5KWP</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 6KWP">Grid-Tie 6KWP</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 7KWP">Grid-Tie 7KWP</a>
+								</li>
+							</ol>
+						</li>
 						<li class="nav-item">
 							<a href="solarpedia.html" class="nav-link" role="link" aria-label="Solarpedia">Solarpedia</a>
 						</li>
 						<li class="nav-item">
+							<a href="calculator.html" class="nav-link" role="link" aria-label="Calculator">Calculator</a>
+						</li>
+						<li class="nav-item">
 							<a href="news.html" class="nav-link" role="link" aria-label="News">News</a>
 						</li>
+						<li class="dropdown-divider"></li>
 						<li class="nav-item">
 							<a href="#" class="nav-link" role="link" aria-label="About">About</a>
 						</li>
@@ -324,25 +405,25 @@
 										<!-- item -->
 										<div class="cart-item row">
 											<div class="col cart-item-info">
-												<div class="cart-product-img">
+												<div class="unit-img">
 													<img src="./asset/images/dummy/MAINPRODIMG_sankelux_ONG5KWEXIM-SMA3P_1597594189662.png" alt="">
 												</div>
-												<div class="cart-product-name"><a href="solario-detail-single.html">Sankelux On Grid SMA 3Phase</a></div>
+												<div class="unit-name"><a href="solario-detail-single.html">Sankelux On Grid SMA 3Phase</a></div>
 											</div>
 											<div class="col cart-item-price">
-												<div class="cart-product-price"><span>Total Price</span>Rp 86.530.860</div>
+												<div class="unit-price"><span>Total Price</span>Rp 86.530.860</div>
 											</div>
 										</div>
 										<!-- item -->
 										<div class="cart-item row">
 											<div class="col cart-item-info">
-												<div class="cart-product-img">
+												<div class="unit-img">
 													<img src="./asset/images/dummy/MAINPRODIMG_Adyasolar_0.75Kwp_1597229253159.jpg" alt="">
 												</div>
-												<div class="cart-product-name"><a href="solario-detail-single.html">Adyasolar On Grid 750 Wp 1P</a></div>
+												<div class="unit-name"><a href="solario-detail-single.html">Adyasolar On Grid 750 Wp 1P</a></div>
 											</div>
 											<div class="col cart-item-price">
-												<div class="cart-product-price"><span>Total Price</span>Rp 210.000.000</div>
+												<div class="unit-price"><span>Total Price</span>Rp 210.000.000</div>
 											</div>
 										</div>
 									</div>
@@ -350,10 +431,10 @@
 									<!-- cart total -->
 									<div class="cart-bottom row">
 										<div class="col cart-bottom-text">
-											<div class="cart-product-text">Total Price</div>
+											<div class="unit-text">Total Price</div>
 										</div>
 										<div class="col cart-bottom-total">
-											<div class="cart-product-price -total">Rp 298.350.000</div>
+											<div class="unit-price -total">Rp 298.350.000</div>
 										</div>
 									</div>
 
@@ -393,7 +474,7 @@
 											<div class="checkout-payment-text">
 												You must complete your personal data to apply for the installment process
 											</div>
-											<button type="button" name="start-easy-finance-btn" class="button checkout-payment-button" data-toggle="modal" data-target="#modal-finance">Start</button>
+											<button type="button" name="start-easy-finance-btn" class="button checkout-payment-button" data-toggle="modal" data-target="#modal-easyfinance">Start</button>
 										</div>
 									</label>
 								</div>
@@ -403,13 +484,558 @@
 
 					<!-- cart button -->
 					<div class="cart-footer">
-						<a href="solario.html" role="link" class="button -fourth cart-button-action"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Continue Shopping</a>
+						<a href="cart.html" role="link" class="button -fourth cart-button-action"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Shopping Cart</a>
 						<a href="checkout-success.html" role="link" class="button -secondary cart-button-action">Pay Now <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
 					</div>
 
 				</div>
 			</div>
 		</section>
+
+		<!-- modal easyfinance -->
+		<div class="modal fade" id="modal-easyfinance" tabindex="-1" aria-labelledby="easyFinance" aria-hidden="true">
+			<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Easy Finance</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form action="#">
+						<div class="accordion easy" id="accordion-easyfinance">
+							<!-- step 0 -->
+							<div class="easy-card">
+								<div class="easy-row row">
+									<div class="easy-col col-md-6">
+										<div class="form-row">
+											<div class="form-select" data-placeholder="-">
+												<select id="easy-bank" name="easy-bank" class="select ">
+													<option value="0" disabled="disabled">-</option>
+													<option value="Bank Kalimantan">Bank Kalimantan</option>
+													<option value="Bank Sulawesi">Bank Sulawesi</option>
+													<option value="Bank Bali">Bank Bali</option>
+												</select>
+											</div>
+										</div>
+										<div class="easy-invoice">Invoice : SKU 8783/89879/900-890</div>
+									</div>
+									<div class="easy-col col-md-6">
+										<div class="easy-top-row">
+											<div class="easy-label">Total Price:</div>
+											<div class="easy-right">
+												<div class="easy-price">Rp 189.000.000</div>
+											</div>
+										</div>
+										<div class="easy-top-row">
+											<div class="easy-label">Installment:</div>
+											<div class="easy-right">
+												<div class="form-row">
+													<label for=""></label>
+													<div class="form-quantity">
+														<button type="button" class="button -minus -disabled" disabled="disabled">-</button>
+														<input type="number" id="" name="" class="input" placeholder="" value="2">
+														<button type="button" class="button -plus">+</button>
+													</div>
+													<div class="form-hint"></div>
+												</div>
+											</div>
+										</div>
+										<div class="easy-top-row">
+											<div class="easy-label">Total:</div>
+											<div class="easy-right">
+												<div class="easy-price"><span>Rp 189.000.000</span></div>
+											</div>
+										</div>
+									</div>
+									<div class="easy-col col-md-12">
+										<div class="easy-note">To speed up the installment process, please fill out the following form:</div>
+									</div>
+								</div>
+							</div>
+		
+							<!-- step 1 -->
+							<div class="easy-card">
+								<div class="easy-header" id="easy-step1">
+									<button class="button -fifth easy-button-toggle" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+										STEP 1 - Name and Address
+										<i class="fa fa-caret-down" aria-hidden="true"></i>
+									</button>
+								</div>
+								<div id="collapseOne" class="collapse show" aria-labelledby="easy-step1" data-parent="#accordion-easyfinance">
+									<div class="easy-body">
+										<div class="easy-row row">
+											<div class="col-md-4">
+												<div class="form-row">
+													<div class="form-select" data-placeholder="-">
+														<select id="easy-mr" name="easy-mr" class="select ">
+															<option value="0" disabled="disabled">-</option>
+															<option value="Mr">Mr</option>
+															<option value="Ms">Ms</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-8">
+												<div class="form-row">
+													<label for="easy-name"></label>
+													<div class="form-input">
+														<input type="text" id="easy-name" name="easy-name" class="input" placeholder="Nama Lengkap Sesuai KTP">
+													</div>
+													<div class="form-hint"></div>
+												</div>
+											</div>
+										</div>
+										<div class="easy-row row">
+											<div class="col-md-8">
+												<div class="form-row">
+													<label for="easy-street"></label>
+													<div class="form-input">
+														<input type="text" id="easy-street" name="easy-street" class="input" placeholder="Alamat">
+													</div>
+													<div class="form-hint"></div>
+												</div>
+											</div>
+											<div class="col-md-2">
+												<div class="form-row">
+													<label for="easy-rt"></label>
+													<div class="form-input">
+														<input type="text" id="easy-rt" name="easy-rt" class="input" placeholder="RT">
+													</div>
+													<div class="form-hint"></div>
+												</div>
+											</div>
+											<div class="col-md-2">
+												<div class="form-row">
+													<label for="easy-rw"></label>
+													<div class="form-input">
+														<input type="text" id="easy-rw" name="easy-rw" class="input" placeholder="RW">
+													</div>
+													<div class="form-hint"></div>
+												</div>
+											</div>
+										</div>
+										<div class="easy-row row">
+											<div class="col-md-6">
+												<div class="form-row">
+													<label for="easy-kecamatan"></label>
+													<div class="form-input">
+														<input type="text" id="easy-kecamatan" name="easy-kecamatan" class="input" placeholder="Kecamatan">
+													</div>
+													<div class="form-hint"></div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-row">
+													<label for="easy-kelurahan"></label>
+													<div class="form-input">
+														<input type="text" id="easy-kelurahan" name="easy-kelurahan" class="input" placeholder="Kelurahan">
+													</div>
+													<div class="form-hint"></div>
+												</div>
+											</div>
+										</div>
+										<div class="easy-row row">
+											<div class="col-md-4">
+												<div class="form-row">
+													<div class="form-select" data-placeholder="Provinsi">
+														<select id="easy-prov" name="easy-prov" class="select ">
+															<option value="0" selected="selected" disabled="disabled">Provinsi</option>
+															<option value="Aceh">Aceh</option>
+															<option value="Sumatera Utara">Sumatera Utara</option>
+															<option value="DKI Jakarta">DKI Jakarta</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-row">
+													<label for="easy-zipcode"></label>
+													<div class="form-input">
+														<input type="text" id="easy-zipcode" name="easy-zipcode" class="input" placeholder="Kode Pos">
+													</div>
+													<div class="form-hint"></div>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-row">
+													<label for="easy-phone"></label>
+													<div class="form-input">
+														<input type="text" id="easy-phone" name="easy-phone" class="input" placeholder="Telepon">
+													</div>
+													<div class="form-hint"></div>
+												</div>
+											</div>
+										</div>
+										<div class="easy-row row">
+											<div class="col-md-12">
+												<div class="form-row">
+													<div class="form-checkbox">
+														<input type="checkbox" name="easy-sync" id="easy-sync" value="">
+														<label for="easy-sync">Sync data with profile</label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		
+							<!-- step 2 -->
+							<div class="easy-card">
+								<div class="easy-header" id="headingTwo">
+									<button class="button -fifth easy-button-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										STEP 2 - Personal Data
+										<i class="fa fa-caret-down" aria-hidden="true"></i>
+									</button>
+								</div>
+								<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-easyfinance">
+									<div class="easy-body">
+										<div class="easy-row row">
+											<div class="col-md-3">
+												<div class="form-row">
+													<div class="form-select" data-placeholder="Gender">
+														<select id="easy-gender" name="easy-gender" class="select ">
+															<option value="0" selected="selected" disabled="disabled">Gender</option>
+															<option value="Male">Male</option>
+															<option value="Female">Female</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-row">
+													<label for="easy-place"></label>
+													<div class="form-input">
+														<input type="text" id="easy-place" name="easy-place" class="input" placeholder="Tempat Lahir">
+													</div>
+													<div class="form-hint"></div>
+												</div>
+											</div>
+											<div class="col-md-5">
+												<div class="form-row easy-datepicker">
+													<label for="easy-date"></label>
+													<div class="form-input">
+														<input type="text" id="easy-date" name="easy-date" class="input" placeholder="(DD/MM/YYY)">
+													</div>
+													<div class="form-hint"></div>
+												</div>
+											</div>
+										</div>
+										<div class="easy-row row">
+											<div class="col-md-3">
+												<div class="form-row">
+													<div class="form-select" data-placeholder="">
+														<select id="easy-idcard" name="easy-idcard" class="select ">
+															<option value="KTP">KTP</option>
+															<option value="SIM">SIM</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-row">
+													<label for="easy-idno"></label>
+													<div class="form-input">
+														<input type="text" id="easy-idno" name="easy-idno" class="input" placeholder="ID Number">
+													</div>
+													<div class="form-hint"></div>
+												</div>
+											</div>
+											<div class="col-md-5">
+												<div class="form-row">
+													<label for="easy-masa"></label>
+													<div class="form-input">
+														<input type="text" id="easy-masa" name="easy-masa" class="input" placeholder="Masa Berlaku">
+													</div>
+													<div class="form-hint"></div>
+												</div>
+											</div>
+										</div>
+										<div class="easy-row row">
+											<div class="col-md-6">
+												<div class="form-row">
+													<label for="easy-npwp"></label>
+													<div class="form-input">
+														<input type="text" id="easy-npwp" name="easy-npwp" class="input" placeholder="NPWP">
+													</div>
+													<div class="form-hint"></div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-row">
+													<div class="form-select" data-placeholder="Jenis Penduduk">
+														<select id="easy-penduduk" name="easy-penduduk" class="select ">
+															<option value="0" selected="selected" disabled="disabled">Jenis Penduduk</option>
+															<option value="KTP">KTP</option>
+															<option value="SIM">SIM</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="easy-row row">
+											<div class="col-md-3">
+												<div class="form-row">
+													<div class="form-select" data-placeholder="Status">
+														<select id="easy-status" name="easy-status" class="select ">
+															<option value="0" selected="selected" disabled="disabled">Status</option>
+															<option value="Single">Single</option>
+															<option value="Menikah">Menikah</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-row">
+													<label for="easy-agama"></label>
+													<div class="form-input">
+														<input type="text" id="easy-agama" name="easy-agama" class="input" placeholder="Agama">
+													</div>
+													<div class="form-hint"></div>
+												</div>
+											</div>
+											<div class="col-md-5">
+												<div class="form-row">
+													<label for="easy-domisili"></label>
+													<div class="form-input">
+														<input type="text" id="easy-domisili" name="easy-domisili" class="input" placeholder="Status Tempat Tinggal">
+													</div>
+													<div class="form-hint"></div>
+												</div>
+											</div>
+										</div>
+										<div class="easy-row row">
+											<div class="col-md-4">
+												<div class="form-row">
+													<label for="easy-tiperumah"></label>
+													<div class="form-input">
+														<input type="text" id="easy-tiperumah" name="easy-tiperumah" class="input" placeholder="Tipe Rumah">
+													</div>
+													<div class="form-hint"></div>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-row">
+													<label for="easy-edu"></label>
+													<div class="form-input">
+														<input type="text" id="easy-edu" name="easy-edu" class="input" placeholder="Pendidikan Terakhir">
+													</div>
+													<div class="form-hint"></div>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-row">
+													<label for="easy-mother"></label>
+													<div class="form-input">
+														<input type="text" id="easy-mother" name="easy-mother" class="input" placeholder="Nama Ibu Kandung">
+													</div>
+													<div class="form-hint"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		
+							<!-- step 3 -->
+							<div class="easy-card">
+								<div class="easy-header" id="headingThree">
+									<button class="button -fifth easy-button-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										STEP 3 - Work Information
+										<i class="fa fa-caret-down" aria-hidden="true"></i>
+									</button>
+								</div>
+								<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-easyfinance">
+									<div class="easy-body">
+										<div class="easy-row row">
+											<div class="col-md-6">
+												<div class="form-row">
+													<label for="easy-nik"></label>
+													<div class="form-input">
+														<input type="text" id="easy-nik" name="easy-nik" class="input" placeholder="NIK">
+													</div>
+													<div class="form-hint"></div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-row form-error">
+													<label for="easy-salary"></label>
+													<div class="form-input">
+														<input type="text" id="easy-salary" name="easy-salary" class="input -error" placeholder="Salary/month">
+													</div>
+													<div class="form-hint">Wajib diisi</div>
+												</div>
+											</div>
+										</div>
+										<div class="easy-row row">
+											<div class="col-md-6">
+												<div class="form-row">
+													<label for="easy-norek"></label>
+													<div class="form-input">
+														<input type="text" id="easy-norek" name="easy-norek" class="input" placeholder="Nomor Rekening">
+													</div>
+													<div class="form-hint"></div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-row">
+													<div class="form-select" data-placeholder="Cabang Terdekat">
+														<select id="easy-cabang" name="easy-cabang" class="select ">
+															<option value="0" selected="selected" disabled="disabled">Cabang Terdekat</option>
+															<option value="BCA">BCA</option>
+															<option value="BNI">BNI</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="easy-row row">
+											<div class="col-md-6">
+												<div class="form-row">
+													<div class="form-select" data-placeholder="Tipe Nasabah">
+														<select id="easy-nasabah" name="easy-nasabah" class="select ">
+															<option value="0" selected="selected" disabled="disabled">Tipe Nasabah</option>
+															<option value="Korporat">Korporat</option>
+															<option value="Prioritas">Prioritas</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-row">
+													<div class="form-select" data-placeholder="Jenis Pekerjaan">
+														<select id="easy-jenisjob" name="easy-jenisjob" class="select ">
+															<option value="0" selected="selected" disabled="disabled">Jenis Pekerjaan</option>
+															<option value="Wirasasta">Wirasasta</option>
+															<option value="Karyawan">Karyawan</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="easy-row row">
+											<div class="col-md-6">
+												<div class="form-row">
+													<div class="form-select" data-placeholder="Bidang Usaha">
+														<select id="easy-bidang" name="easy-bidang" class="select ">
+															<option value="0" selected="selected" disabled="disabled">Bidang Usaha</option>
+															<option value="Korporat">Korporat</option>
+															<option value="Prioritas">Prioritas</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-row">
+													<label for="easy-badan"></label>
+													<div class="form-input">
+														<input type="text" id="easy-badan" name="easy-badan" class="input" placeholder="Badan Usaha">
+													</div>
+													<div class="form-hint"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		
+							<!-- step 4 -->
+							<div class="easy-card">
+								<div class="easy-header" id="headingFour">
+									<button class="button -fifth easy-button-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+										STEP 4 - Photos Upload
+										<i class="fa fa-caret-down" aria-hidden="true"></i>
+									</button>
+								</div>
+								<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion-easyfinance">
+									<div class="easy-body">
+										<div class="easy-row row">
+											<div class="col-md-4">
+												<div class="form-row">
+													<label for="easy-ktpimg">e-KTP</label>
+													<div class="form-image -active">
+														<input type="file" id="easy-ktpimg" name="easy-ktpimg" class="file" placeholder="" onchange="readURL(this)">
+														<button type="button" class="remove easy-upload-remove"><span aria-hidden="true">&times;</span></button>
+														<span id="easy-ktpimg-img" style="background-image: url('./asset/images/bg-img-preview.png');">
+															<img src="./asset/images/dummy/img_s_idcard.png" alt="">
+														</span>
+													</div>
+													<div class="form-hint"></div>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-row">
+													<label for="easy-npwpimg">NPWP</label>
+													<div class="form-image">
+														<input type="file" id="easy-npwpimg" name="easy-npwpimg" class="file" placeholder="" onchange="readURL(this)">
+														<button type="button" class="remove easy-upload-remove"><span aria-hidden="true">&times;</span></button>
+														<span id="easy-npwpimg-img" style="background-image: url('./asset/images/bg-img-preview.png');">
+															<img src="" alt="">
+														</span>
+													</div>
+													<div class="form-hint"></div>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-row">
+													<label for="easy-idcardimg">ID Card</label>
+													<div class="form-image">
+														<input type="file" id="easy-idcardimg" name="easy-idcardimg" class="file" placeholder="" onchange="readURL(this)">
+														<button type="button" class="remove easy-upload-remove"><span aria-hidden="true">&times;</span></button>
+														<span id="easy-idcardimg-img" style="background-image: url('./asset/images/bg-img-preview.png');">
+															<img src="" alt="">
+														</span>
+													</div>
+													<div class="form-hint"></div>
+												</div>
+											</div>
+										</div>
+										<div class="easy-row row">
+											<div class="col-md-4">
+												<div class="form-row">
+													<label for="easy-slip">Slip Gaji</label>
+													<div class="form-image">
+														<input type="file" id="easy-slip" name="easy-slip" class="file" placeholder="" onchange="readURL(this)">
+														<button type="button" class="remove easy-upload-remove"><span aria-hidden="true">&times;</span></button>
+														<span id="easy-slip-img" style="background-image: url('./asset/images/bg-img-preview.png');">
+															<img src="" alt="">
+														</span>
+													</div>
+													<div class="form-hint"></div>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="form-row form-error">
+													<label for="easy-foto">Foto</label>
+													<div class="form-image">
+														<input type="file" id="easy-foto" name="easy-foto" class="file -error" placeholder="" onchange="readURL(this)">
+														<button type="button" class="remove easy-upload-remove"><span aria-hidden="true">&times;</span></button>
+														<span id="easy-foto-img" style="background-image: url('./asset/images/bg-img-preview.png');">
+															<img src="" alt="">
+														</span>
+													</div>
+													<div class="form-hint">Wajib diisi</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+		
+							<!-- button -->
+							<div class="easy-footer">
+								<div class="form-row">
+									<input type="submit" name="easy-send" id="easy-send" value="Apply" class="button -secondary easy-button-apply" disabled="disabled">
+								</div>
+							</div>
+						</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- modal pick address -->
 		<div class="modal fade" id="modal-address-set" tabindex="-1" aria-labelledby="pickAddress" aria-hidden="true">
@@ -424,7 +1050,7 @@
 					<div class="modal-body">
 						<div class="address-block">
 							<div class="address-top">
-								<button class="button -third address-button" type="button">Add Address</button>
+								<button class="button -third address-button" type="button" data-toggle="modal" data-target="#modal-address-edit">Add Address</button>
 							</div>
 							<div class="address-list">
 								<div class="address-item">
@@ -437,7 +1063,7 @@
 											<span>Aktif</span>
 										</div>
 									</label>
-									<button class="button -third address-button" type="button">Edit</button>
+									<button class="button -third address-button" type="button" data-toggle="modal" data-target="#modal-address-edit">Edit</button>
 								</div>
 								<div class="address-item">
 									<label for="address-2">
@@ -449,9 +1075,76 @@
 											<span>Aktif</span>
 										</div>
 									</label>
-									<button class="button -third address-button" type="button">Edit</button>
+									<button class="button -third address-button" type="button" data-toggle="modal" data-target="#modal-address-edit">Edit</button>
 								</div>
 							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- modal add/edit address -->
+		<div class="modal fade" id="modal-address-edit" tabindex="-1" aria-labelledby="pickAddress" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Edit Address</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="address-block">
+							<form action="checkout.html">
+								<div class="form-row">
+									<label for="addrs-city">Kota</label>
+									<div class="form-select" data-placeholder="-">
+										<select id="addrs-city" name="addrs-city" class="select ">
+											<option value="0" selected="selected" disabled="disabled">-</option>
+											<option value="Jakarta Barat">Jakarta Barat</option>
+											<option value="Jakarta Utara">Jakarta Utara</option>
+											<option value="Jakarta Timur">Jakarta Timur</option>
+											<option value="Jakarta Selatan">Jakarta Selatan</option>
+											<option value="Jakarta Pusat">Jakarta Pusat</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-row">
+									<label for="addrs-distric">Kecamatan</label>
+									<div class="form-select" data-placeholder="-">
+										<select id="addrs-distric" name="addrs-distric" class="select ">
+											<option value="0" selected="selected" disabled="disabled">-</option>
+											<option value="Gambir">Gambir</option>
+											<option value="Tanah Abang">Tanah Abang</option>
+											<option value="Bendungan Hilir">Bendungan Hilir</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-row">
+									<label for="addrs-code">Kode Pos</label>
+									<div class="form-input">
+										<input type="text" id="addrs-code" name="addrs-code" class="input" placeholder="">
+									</div>
+									<div class="form-hint"></div>
+								</div>
+								<div class="form-row">
+									<label for="addrs-street">Alamat Lengkap</label>
+									<div class="form-textarea">
+										<textarea id="addrs-street" name="addrs-street" class="textarea" placeholder="" rows="3"></textarea>
+									</div>
+									<div class="form-hint"></div>
+								</div>
+								<div class="form-row">
+									<div class="form-checkbox">
+										<input type="checkbox" name="addrs-active" id="addrs-active" value="">
+										<label for="addrs-active">Please check if you want this active address</label>
+									</div>
+								</div>
+								<div class="form-row">
+									<input type="submit" name="addrs-btn" id="addrs-btn" value="Save" class="button -primary">
+								</div>
+							</form>
 						</div>
 					</div>
 				</div>
@@ -562,6 +1255,55 @@
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+		
+		<!-- modal dialog box template -->
+		<div class="modal fade" id="modal-dialog" tabindex="-1" aria-labelledby="DialogBox" aria-hidden="true">
+			<div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Delete</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="panel">
+							<div class="panel-body">
+								<div class="form-row">
+									<div class="panel-text text-center">
+										<p>Are yo sure want to delete?</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="button" data-dismiss="modal">Cancel</button>
+						<button type="button" class="button -warning">Delete</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- alert add to wishlist -->
+		<div class="toast toast-wishlist -fixed" role="alert" aria-live="assertive" aria-atomic="true" data-delay="2000">
+		    <button type="button" class="close" data-dismiss="toast" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+		    </button>
+			<div class="toast-body">
+				Added to wishlist.
+			</div>
+		</div>
+		
+		<!-- alert add to cart -->
+		<div class="toast toast-cart -fixed" role="alert" aria-live="assertive" aria-atomic="true" data-delay="6000">
+		    <button type="button" class="close" data-dismiss="toast" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+		    </button>
+			<div class="toast-body">
+				Added to cart. Check your <a href="cart.html">shopping bag</a> now.
 			</div>
 		</div>
 
@@ -679,10 +1421,49 @@
 
 	</main>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
+<script type="text/javascript" src="./asset/js/jquery-3.5.1.slim.min.js"></script>
+<script type="text/javascript" src="./asset/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./asset/js/moment.min.js"></script>
+<script type="text/javascript" src="./asset/js/daterangepicker.min.js"></script>
 <script type="text/javascript" src="./asset/js/slick.min.js"></script>
 <script type="text/javascript" src="./asset/js/main.js"></script>
+<script>
+$(document).ready(function() {
+
+	// click add to wishlist
+	$('.catalog-like-button').on('click', function (e) {
+		$('.toast-wishlist').toast('show');
+	});
+
+	// click add to cart
+	$('.product-button-cart').on('click', function (e) {
+		$('.toast-cart').toast('show');
+	});
+
+	// add field gallery img product
+	$('#unit-add-img').on('click', function(){
+		var cloneImgBox = $('[data-field=unit-box-img]').clone(true)
+		.find(':input').val('')
+		.end()
+		.find('.form-image').removeClass('-active')
+		.end()
+		.find('.form-image img').attr('src', '')
+		.end()
+		.removeAttr('data-field')
+		cloneImgBox.insertBefore($(this).parent());
+	});
+
+	// add field upload documentation product
+	$('#unit-add-docs').on('click', function(){
+		var cloneDocsBox = $('[data-field=unit-box-docs]').clone(true)
+		.find(':input').val('')
+		.end()
+		.removeAttr('data-field')
+		cloneDocsBox.insertBefore($(this).parent());
+	});
+
+});
+</script>
 </body>
 </html>

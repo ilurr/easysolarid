@@ -1,0 +1,66 @@
+<!-- modal add/edit address -->
+<div class="modal fade" id="modal-address-edit" tabindex="-1" aria-labelledby="pickAddress" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Edit Address</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="address-block">
+					<form action="checkout.html">
+						<div class="form-row">
+							<label for="addrs-city">Kota</label>
+							<div class="form-select" data-placeholder="-">
+								<select id="addrs-city" name="addrs-city" class="select ">
+									<option value="0" selected="selected" disabled="disabled">-</option>
+									<option value="Jakarta Barat">Jakarta Barat</option>
+									<option value="Jakarta Utara">Jakarta Utara</option>
+									<option value="Jakarta Timur">Jakarta Timur</option>
+									<option value="Jakarta Selatan">Jakarta Selatan</option>
+									<option value="Jakarta Pusat">Jakarta Pusat</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-row">
+							<label for="addrs-distric">Kecamatan</label>
+							<div class="form-select" data-placeholder="-">
+								<select id="addrs-distric" name="addrs-distric" class="select ">
+									<option value="0" selected="selected" disabled="disabled">-</option>
+									<option value="Gambir">Gambir</option>
+									<option value="Tanah Abang">Tanah Abang</option>
+									<option value="Bendungan Hilir">Bendungan Hilir</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-row">
+							<label for="addrs-code">Kode Pos</label>
+							<div class="form-input">
+								<input type="text" id="addrs-code" name="addrs-code" class="input" placeholder="">
+							</div>
+							<div class="form-hint"></div>
+						</div>
+						<div class="form-row">
+							<label for="addrs-street">Alamat Lengkap</label>
+							<div class="form-textarea">
+								<textarea id="addrs-street" name="addrs-street" class="textarea" placeholder="" rows="3"></textarea>
+							</div>
+							<div class="form-hint"></div>
+						</div>
+						<div class="form-row">
+							<div class="form-checkbox">
+								<input type="checkbox" name="addrs-active" id="addrs-active" value="">
+								<label for="addrs-active">Please check if you want this active address</label>
+							</div>
+						</div>
+						<div class="form-row">
+							<input type="submit" name="addrs-btn" id="addrs-btn" value="Save" class="button -primary">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

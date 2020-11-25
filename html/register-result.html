@@ -9,6 +9,23 @@
 	<meta name="keywords" content="">
 
 	<!-- icon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./asset/images/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./asset/images/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./asset/images/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./asset/images/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./asset/images/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./asset/images/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./asset/images/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./asset/images/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./asset/images/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./asset/images/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./asset/images/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./asset/images/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./asset/images/icon/favicon-16x16.png">
+    <link rel="manifest" href="./asset/images/icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     <title>Easysolar</title>
     
@@ -18,10 +35,11 @@
 	<style>
 	@font-face {
 	  font-family: 'Lato';
-	  font-display: swap;
+	  src: url('./asset/fonts/Lato-Semibold.woff2') format('woff2'),
+	      url('./asset/fonts/Lato-Semibold.woff') format('woff');
+	  font-weight: 600;
 	  font-style: normal;
-	  font-weight: 500;
-	  src: local('Lato'), local('Lato-Semibold'), url('./asset/fonts/Lato-Semibold.woff2') format('woff2');
+	  font-display: swap;
 	}
 	</style>
 	
@@ -67,6 +85,9 @@
 							</li>
 							<li class="nav-item">
 								<a href="solarpedia.html" class="nav-link" role="link" aria-label="Solarpedia">Solarpedia</a>
+							</li>
+							<li class="nav-item">
+								<a href="calculator.html" class="nav-link" role="link" aria-label="Calculator">Calculator</a>
 							</li>
 							<li class="nav-item">
 								<a href="news.html" class="nav-link" role="link" aria-label="News">News</a>
@@ -125,12 +146,69 @@
 						<li class="nav-item">
 							<a href="solario.html" class="nav-link" role="link" aria-label="Solario">Solario</a>
 						</li>
+						<li class="nav-item accordion" id="accordion-category">
+							<button type="button" class="nav-link collapsed" data-toggle="collapse" data-target="#collapseNavOne" aria-expanded="false" aria-controls="collapseNavOne">Category <i class="fa fa-caret-up" aria-hidden="true"></i></button>
+							<ol class="nav-wrap collapse" id="collapseNavOne" aria-labelledby="Category" data-parent="#accordion-category">
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Complete-System"><strong>Complete-System</strong></a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Solar 3KWP">Solar 3KWP</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Solar 4.4KWP">Solar 4.4KWP</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Solar 6KWP">Solar 6KWP</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Solar-Panel"><strong>Solar-Panel</strong></a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Mono-crytaline">Mono-crytaline</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Poly-crystaline">Poly-crystaline</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie"><strong>Grid-Tie</strong></a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 10KWP">Grid-Tie 10KWP</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 1KWP">Grid-Tie 1KWP</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 2KWP">Grid-Tie 2KWP</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 3KWP">Grid-Tie 3KWP</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 4KWP">Grid-Tie 4KWP</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 5KWP">Grid-Tie 5KWP</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 6KWP">Grid-Tie 6KWP</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 7KWP">Grid-Tie 7KWP</a>
+								</li>
+							</ol>
+						</li>
 						<li class="nav-item">
 							<a href="solarpedia.html" class="nav-link" role="link" aria-label="Solarpedia">Solarpedia</a>
 						</li>
 						<li class="nav-item">
+							<a href="calculator.html" class="nav-link" role="link" aria-label="Calculator">Calculator</a>
+						</li>
+						<li class="nav-item">
 							<a href="news.html" class="nav-link" role="link" aria-label="News">News</a>
 						</li>
+						<li class="dropdown-divider"></li>
 						<li class="nav-item">
 							<a href="#" class="nav-link" role="link" aria-label="About">About</a>
 						</li>
@@ -270,6 +348,55 @@
 				</div>
 			</div>
 		</div>
+		
+		<!-- modal dialog box template -->
+		<div class="modal fade" id="modal-dialog" tabindex="-1" aria-labelledby="DialogBox" aria-hidden="true">
+			<div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Delete</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="panel">
+							<div class="panel-body">
+								<div class="form-row">
+									<div class="panel-text text-center">
+										<p>Are yo sure want to delete?</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="button" data-dismiss="modal">Cancel</button>
+						<button type="button" class="button -warning">Delete</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- alert add to wishlist -->
+		<div class="toast toast-wishlist -fixed" role="alert" aria-live="assertive" aria-atomic="true" data-delay="2000">
+		    <button type="button" class="close" data-dismiss="toast" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+		    </button>
+			<div class="toast-body">
+				Added to wishlist.
+			</div>
+		</div>
+		
+		<!-- alert add to cart -->
+		<div class="toast toast-cart -fixed" role="alert" aria-live="assertive" aria-atomic="true" data-delay="6000">
+		    <button type="button" class="close" data-dismiss="toast" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+		    </button>
+			<div class="toast-body">
+				Added to cart. Check your <a href="cart.html">shopping bag</a> now.
+			</div>
+		</div>
 
 		<!-- footer -->
 		<footer class="footer">
@@ -385,10 +512,49 @@
 
 	</main>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
+<script type="text/javascript" src="./asset/js/jquery-3.5.1.slim.min.js"></script>
+<script type="text/javascript" src="./asset/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./asset/js/moment.min.js"></script>
+<script type="text/javascript" src="./asset/js/daterangepicker.min.js"></script>
 <script type="text/javascript" src="./asset/js/slick.min.js"></script>
 <script type="text/javascript" src="./asset/js/main.js"></script>
+<script>
+$(document).ready(function() {
+
+	// click add to wishlist
+	$('.catalog-like-button').on('click', function (e) {
+		$('.toast-wishlist').toast('show');
+	});
+
+	// click add to cart
+	$('.product-button-cart').on('click', function (e) {
+		$('.toast-cart').toast('show');
+	});
+
+	// add field gallery img product
+	$('#unit-add-img').on('click', function(){
+		var cloneImgBox = $('[data-field=unit-box-img]').clone(true)
+		.find(':input').val('')
+		.end()
+		.find('.form-image').removeClass('-active')
+		.end()
+		.find('.form-image img').attr('src', '')
+		.end()
+		.removeAttr('data-field')
+		cloneImgBox.insertBefore($(this).parent());
+	});
+
+	// add field upload documentation product
+	$('#unit-add-docs').on('click', function(){
+		var cloneDocsBox = $('[data-field=unit-box-docs]').clone(true)
+		.find(':input').val('')
+		.end()
+		.removeAttr('data-field')
+		cloneDocsBox.insertBefore($(this).parent());
+	});
+
+});
+</script>
 </body>
 </html>

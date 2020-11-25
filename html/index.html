@@ -9,6 +9,23 @@
 	<meta name="keywords" content="">
 
 	<!-- icon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./asset/images/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./asset/images/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./asset/images/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./asset/images/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./asset/images/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./asset/images/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./asset/images/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./asset/images/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./asset/images/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./asset/images/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./asset/images/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./asset/images/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./asset/images/icon/favicon-16x16.png">
+    <link rel="manifest" href="./asset/images/icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     <title>Easysolar</title>
     
@@ -18,10 +35,11 @@
 	<style>
 	@font-face {
 	  font-family: 'Lato';
-	  font-display: swap;
+	  src: url('./asset/fonts/Lato-Semibold.woff2') format('woff2'),
+	      url('./asset/fonts/Lato-Semibold.woff') format('woff');
+	  font-weight: 600;
 	  font-style: normal;
-	  font-weight: 500;
-	  src: local('Lato'), local('Lato-Semibold'), url('./asset/fonts/Lato-Semibold.woff2') format('woff2');
+	  font-display: swap;
 	}
 	</style>
 	
@@ -67,6 +85,9 @@
 							</li>
 							<li class="nav-item">
 								<a href="solarpedia.html" class="nav-link" role="link" aria-label="Solarpedia">Solarpedia</a>
+							</li>
+							<li class="nav-item">
+								<a href="calculator.html" class="nav-link" role="link" aria-label="Calculator">Calculator</a>
 							</li>
 							<li class="nav-item">
 								<a href="news.html" class="nav-link" role="link" aria-label="News">News</a>
@@ -125,12 +146,69 @@
 						<li class="nav-item">
 							<a href="solario.html" class="nav-link" role="link" aria-label="Solario">Solario</a>
 						</li>
+						<li class="nav-item accordion" id="accordion-category">
+							<button type="button" class="nav-link collapsed" data-toggle="collapse" data-target="#collapseNavOne" aria-expanded="false" aria-controls="collapseNavOne">Category <i class="fa fa-caret-up" aria-hidden="true"></i></button>
+							<ol class="nav-wrap collapse" id="collapseNavOne" aria-labelledby="Category" data-parent="#accordion-category">
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Complete-System"><strong>Complete-System</strong></a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Solar 3KWP">Solar 3KWP</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Solar 4.4KWP">Solar 4.4KWP</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Solar 6KWP">Solar 6KWP</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Solar-Panel"><strong>Solar-Panel</strong></a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Mono-crytaline">Mono-crytaline</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Poly-crystaline">Poly-crystaline</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie"><strong>Grid-Tie</strong></a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 10KWP">Grid-Tie 10KWP</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 1KWP">Grid-Tie 1KWP</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 2KWP">Grid-Tie 2KWP</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 3KWP">Grid-Tie 3KWP</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 4KWP">Grid-Tie 4KWP</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 5KWP">Grid-Tie 5KWP</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 6KWP">Grid-Tie 6KWP</a>
+								</li>
+								<li class="nav-item">
+									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 7KWP">Grid-Tie 7KWP</a>
+								</li>
+							</ol>
+						</li>
 						<li class="nav-item">
 							<a href="solarpedia.html" class="nav-link" role="link" aria-label="Solarpedia">Solarpedia</a>
 						</li>
 						<li class="nav-item">
+							<a href="calculator.html" class="nav-link" role="link" aria-label="Calculator">Calculator</a>
+						</li>
+						<li class="nav-item">
 							<a href="news.html" class="nav-link" role="link" aria-label="News">News</a>
 						</li>
+						<li class="dropdown-divider"></li>
 						<li class="nav-item">
 							<a href="#" class="nav-link" role="link" aria-label="About">About</a>
 						</li>
@@ -168,13 +246,13 @@
 					</div>
 				</div>
 				<div class="showcase-item">
-					<!-- solarpedia -->
+					<!-- calculator -->
 					<div class="showcase-block">
 						<div class="showcase-img" style="background-image: url('./asset/images/bg-solarpedia.jpg');"></div>
 						<div class="showcase-content container-xl">
 							<h2 class="showcase-calc-title">Solar Calculator</h2>
 							<div class="showcase-calc-teaser">Solar Panel adalah komponen utama konversi sinar matahari menjadi listrik. Listrik dikonsumsi langsung, disimpan di batere atau di jual ke PLN. Perhitungan matang untuk menjadikan atap sebagai sumber energi. Beberapa unit di gabung menjadi satu dan dipasang di atap rumah.</div>
-							<form action="solarpedia.html">
+							<form action="calculator.html">
 								<div class="showcase-calc-form">
 									<div class="form-row">
 										<label for="daya-pln"></label>
@@ -243,6 +321,146 @@
 			</div>
 		</section>
 
+		<!-- solario -->
+		<section class="news-grid">
+			<div class="news-wrap container-xl">
+				<h3 class="title-homepage">Solario</h3>
+				<div class="catalog-block row">
+					<div class="catalog-item col-md-3">
+						<div class="catalog-like">
+							<button type="button" class="button -transparent btn catalog-like-button" data-toggle="button" aria-pressed="false">
+								<i class="fa fa-heart-o" aria-hidden="true"></i>
+							</button>
+						</div>
+						<a href="solario-detail-single.html">
+							<div class="catalog-box">
+								<div class="catalog-status">New</div>
+								<div class="catalog-img">
+									<img src="./asset/images/dummy/MAINPRODIMG_sankelux_ONG5KWEXIM-SMA3P_1597594189662.png" alt="">
+								</div>
+								<h2 class="catalog-title">Grid Tie SMA 5 KW</h2>
+								<div class="catalog-price">Rp 86.530.860</div>
+							</div>
+						</a>
+					</div>
+					<div class="catalog-item col-md-3">
+						<div class="catalog-like">
+							<button type="button" class="button -transparent btn catalog-like-button" data-toggle="button" aria-pressed="false">
+								<i class="fa fa-heart-o" aria-hidden="true"></i>
+							</button>
+						</div>
+						<a href="solario-detail-kit.html">
+							<div class="catalog-box">
+								<div class="catalog-status">New</div>
+								<div class="catalog-img">
+									<img src="./asset/images/dummy/MAINPRODIMG_Adyasolar_0.75Kwp_1597229253159.jpg" alt="">
+								</div>
+								<h2 class="catalog-title">On Grid 750 Wp 1P</h2>
+								<div class="catalog-price">Rp 21.000.000</div>
+							</div>
+						</a>
+					</div>
+					<div class="catalog-item col-md-3">
+						<div class="catalog-like">
+							<button type="button" class="button -transparent btn catalog-like-button" data-toggle="button" aria-pressed="false">
+								<i class="fa fa-heart-o" aria-hidden="true"></i>
+							</button>
+						</div>
+						<a href="solario-detail-single.html">
+							<div class="catalog-box">
+								<div class="catalog-status">New</div>
+								<div class="catalog-img">
+									<img src="./asset/images/dummy/MAINPRODIMG_sankelux_ONG3KWEXIM-1_1597594270268.png" alt="">
+								</div>
+								<h2 class="catalog-title">Grid Tie SMA 3 KW</h2>
+								<div class="catalog-price">Rp 57.451.268</div>
+							</div>
+						</a>
+					</div>
+					<div class="catalog-item col-md-3">
+						<div class="catalog-like">
+							<button type="button" class="button -transparent btn catalog-like-button" data-toggle="button" aria-pressed="false">
+								<i class="fa fa-heart-o" aria-hidden="true"></i>
+							</button>
+						</div>
+						<a href="solario-detail-kit.html">
+							<div class="catalog-box">
+								<div class="catalog-status"></div>
+								<div class="catalog-img">
+									<img src="./asset/images/dummy/MAINPRODIMG_ATW-Solar_ATW000133_1603269274408.ac_couple.jpg" alt="">
+								</div>
+								<h2 class="catalog-title">Paket 4500Wp On Grid+7000Wh Battery &#x27;Garansi 10th</h2>
+								<div class="catalog-price">Rp 184.700.000</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- solarpedia -->
+		<section class="news-grid">
+			<div class="news-wrap container-xl">
+				<h3 class="title-homepage">Solarpedia</h3>
+				<div class="news-block row">
+					<div class="news-item col-md-4">
+						<div class="news-thumb">
+							<div class="news-img">
+								<a href="solarpedia-detail.html">
+									<img src="./asset/images/dummy/photo-1474398777522-cabeb42e8132.jpeg" alt="">
+								</a>
+							</div>
+							<div class="news-box">
+								<h4 class="news-title"><a href="solarpedia-detail.html">Solar Panel Monocrystalline dan Polycrystalline di dalam Sistem Sel Surya</a></h4>
+								<div class="news-info">
+									<div class="news-date">25 Jun 2020, 5:35 PM</div>
+									<div class="news-stat">
+										<div class="news-stat-item"><i class="fa fa-eye" aria-hidden="true"></i> 235</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="news-item col-md-4">
+						<div class="news-thumb">
+							<div class="news-img">
+								<a href="solarpedia-detail.html">
+									<img src="./asset/images/dummy/photo-1463173904305-ba479d2123b7.jpeg" alt="">
+								</a>
+							</div>
+							<div class="news-box">
+								<h4 class="news-title"><a href="solarpedia-detail.html">Pasang Panel Surya di Atap Rp 15 Juta, 7 Tahun Bisa Balik Modal</a></h4>
+								<div class="news-info">
+									<div class="news-date">25 Jun 2020, 5:35 PM</div>
+									<div class="news-stat">
+										<div class="news-stat-item"><i class="fa fa-eye" aria-hidden="true"></i> 235</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="news-item col-md-4">
+						<div class="news-thumb">
+							<div class="news-img">
+								<a href="solarpedia-detail.html">
+									<img src="./asset/images/dummy/photo-1558449028-b53a39d100fc.jpeg" alt="">
+								</a>
+							</div>
+							<div class="news-box">
+								<h4 class="news-title"><a href="solarpedia-detail.html">Pasang Panel Surya, Tagihan Listrik Bisa Hemat Rp 1 Juta/Bulan</a></h4>
+								<div class="news-info">
+									<div class="news-date">25 Jun 2020, 5:35 PM</div>
+									<div class="news-stat">
+										<div class="news-stat-item"><i class="fa fa-eye" aria-hidden="true"></i> 235</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<!-- news -->
 		<section class="news-grid">
 			<div class="news-wrap container-xl">
@@ -270,7 +488,7 @@
 						<div class="news-thumb">
 							<div class="news-img">
 								<a href="news-detail.html">
-									<img src="./asset/images/dummy/photo-1474398777522-cabeb42e8132.jpeg" alt="">
+									<img src="./asset/images/dummy/photo-1584276433295-4b49a252e5ee.jpeg" alt="">
 								</a>
 							</div>
 							<div class="news-box">
@@ -499,6 +717,55 @@
 				</div>
 			</div>
 		</div>
+		
+		<!-- modal dialog box template -->
+		<div class="modal fade" id="modal-dialog" tabindex="-1" aria-labelledby="DialogBox" aria-hidden="true">
+			<div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Delete</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="panel">
+							<div class="panel-body">
+								<div class="form-row">
+									<div class="panel-text text-center">
+										<p>Are yo sure want to delete?</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="button" data-dismiss="modal">Cancel</button>
+						<button type="button" class="button -warning">Delete</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- alert add to wishlist -->
+		<div class="toast toast-wishlist -fixed" role="alert" aria-live="assertive" aria-atomic="true" data-delay="2000">
+		    <button type="button" class="close" data-dismiss="toast" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+		    </button>
+			<div class="toast-body">
+				Added to wishlist.
+			</div>
+		</div>
+		
+		<!-- alert add to cart -->
+		<div class="toast toast-cart -fixed" role="alert" aria-live="assertive" aria-atomic="true" data-delay="6000">
+		    <button type="button" class="close" data-dismiss="toast" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+		    </button>
+			<div class="toast-body">
+				Added to cart. Check your <a href="cart.html">shopping bag</a> now.
+			</div>
+		</div>
 
 		<!-- footer -->
 		<footer class="footer">
@@ -614,10 +881,49 @@
 
 	</main>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
+<script type="text/javascript" src="./asset/js/jquery-3.5.1.slim.min.js"></script>
+<script type="text/javascript" src="./asset/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./asset/js/moment.min.js"></script>
+<script type="text/javascript" src="./asset/js/daterangepicker.min.js"></script>
 <script type="text/javascript" src="./asset/js/slick.min.js"></script>
 <script type="text/javascript" src="./asset/js/main.js"></script>
+<script>
+$(document).ready(function() {
+
+	// click add to wishlist
+	$('.catalog-like-button').on('click', function (e) {
+		$('.toast-wishlist').toast('show');
+	});
+
+	// click add to cart
+	$('.product-button-cart').on('click', function (e) {
+		$('.toast-cart').toast('show');
+	});
+
+	// add field gallery img product
+	$('#unit-add-img').on('click', function(){
+		var cloneImgBox = $('[data-field=unit-box-img]').clone(true)
+		.find(':input').val('')
+		.end()
+		.find('.form-image').removeClass('-active')
+		.end()
+		.find('.form-image img').attr('src', '')
+		.end()
+		.removeAttr('data-field')
+		cloneImgBox.insertBefore($(this).parent());
+	});
+
+	// add field upload documentation product
+	$('#unit-add-docs').on('click', function(){
+		var cloneDocsBox = $('[data-field=unit-box-docs]').clone(true)
+		.find(':input').val('')
+		.end()
+		.removeAttr('data-field')
+		cloneDocsBox.insertBefore($(this).parent());
+	});
+
+});
+</script>
 </body>
 </html>

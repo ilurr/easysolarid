@@ -1,0 +1,544 @@
+<!-- modal easyfinance -->
+<div class="modal fade" id="modal-easyfinance" tabindex="-1" aria-labelledby="easyFinance" aria-hidden="true">
+	<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Easy Finance</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<form action="#">
+				<div class="accordion easy" id="accordion-easyfinance">
+					<!-- step 0 -->
+					<div class="easy-card">
+						<div class="easy-row row">
+							<div class="easy-col col-md-6">
+								<div class="form-row">
+									<div class="form-select" data-placeholder="-">
+										<select id="easy-bank" name="easy-bank" class="select ">
+											<option value="0" disabled="disabled">-</option>
+											<option value="Bank Kalimantan">Bank Kalimantan</option>
+											<option value="Bank Sulawesi">Bank Sulawesi</option>
+											<option value="Bank Bali">Bank Bali</option>
+										</select>
+									</div>
+								</div>
+								<div class="easy-invoice">Invoice : SKU 8783/89879/900-890</div>
+							</div>
+							<div class="easy-col col-md-6">
+								<div class="easy-top-row">
+									<div class="easy-label">Total Price:</div>
+									<div class="easy-right">
+										<div class="easy-price">Rp 189.000.000</div>
+									</div>
+								</div>
+								<div class="easy-top-row">
+									<div class="easy-label">Installment:</div>
+									<div class="easy-right">
+										<div class="form-row">
+											<label for=""></label>
+											<div class="form-quantity">
+												<button type="button" class="button -minus -disabled" disabled="disabled">-</button>
+												<input type="number" id="" name="" class="input" placeholder="" value="2">
+												<button type="button" class="button -plus">+</button>
+											</div>
+											<div class="form-hint"></div>
+										</div>
+									</div>
+								</div>
+								<div class="easy-top-row">
+									<div class="easy-label">Total:</div>
+									<div class="easy-right">
+										<div class="easy-price"><span>Rp 189.000.000</span></div>
+									</div>
+								</div>
+							</div>
+							<div class="easy-col col-md-12">
+								<div class="easy-note">To speed up the installment process, please fill out the following form:</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- step 1 -->
+					<div class="easy-card">
+						<div class="easy-header" id="easy-step1">
+							<button class="button -fifth easy-button-toggle" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								STEP 1 - Name and Address
+								<i class="fa fa-caret-down" aria-hidden="true"></i>
+							</button>
+						</div>
+						<div id="collapseOne" class="collapse show" aria-labelledby="easy-step1" data-parent="#accordion-easyfinance">
+							<div class="easy-body">
+								<div class="easy-row row">
+									<div class="col-md-4">
+										<div class="form-row">
+											<div class="form-select" data-placeholder="-">
+												<select id="easy-mr" name="easy-mr" class="select ">
+													<option value="0" disabled="disabled">-</option>
+													<option value="Mr">Mr</option>
+													<option value="Ms">Ms</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-8">
+										<div class="form-row">
+											<label for="easy-name"></label>
+											<div class="form-input">
+												<input type="text" id="easy-name" name="easy-name" class="input" placeholder="Nama Lengkap Sesuai KTP">
+											</div>
+											<div class="form-hint"></div>
+										</div>
+									</div>
+								</div>
+								<div class="easy-row row">
+									<div class="col-md-8">
+										<div class="form-row">
+											<label for="easy-street"></label>
+											<div class="form-input">
+												<input type="text" id="easy-street" name="easy-street" class="input" placeholder="Alamat">
+											</div>
+											<div class="form-hint"></div>
+										</div>
+									</div>
+									<div class="col-md-2">
+										<div class="form-row">
+											<label for="easy-rt"></label>
+											<div class="form-input">
+												<input type="text" id="easy-rt" name="easy-rt" class="input" placeholder="RT">
+											</div>
+											<div class="form-hint"></div>
+										</div>
+									</div>
+									<div class="col-md-2">
+										<div class="form-row">
+											<label for="easy-rw"></label>
+											<div class="form-input">
+												<input type="text" id="easy-rw" name="easy-rw" class="input" placeholder="RW">
+											</div>
+											<div class="form-hint"></div>
+										</div>
+									</div>
+								</div>
+								<div class="easy-row row">
+									<div class="col-md-6">
+										<div class="form-row">
+											<label for="easy-kecamatan"></label>
+											<div class="form-input">
+												<input type="text" id="easy-kecamatan" name="easy-kecamatan" class="input" placeholder="Kecamatan">
+											</div>
+											<div class="form-hint"></div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-row">
+											<label for="easy-kelurahan"></label>
+											<div class="form-input">
+												<input type="text" id="easy-kelurahan" name="easy-kelurahan" class="input" placeholder="Kelurahan">
+											</div>
+											<div class="form-hint"></div>
+										</div>
+									</div>
+								</div>
+								<div class="easy-row row">
+									<div class="col-md-4">
+										<div class="form-row">
+											<div class="form-select" data-placeholder="Provinsi">
+												<select id="easy-prov" name="easy-prov" class="select ">
+													<option value="0" selected="selected" disabled="disabled">Provinsi</option>
+													<option value="Aceh">Aceh</option>
+													<option value="Sumatera Utara">Sumatera Utara</option>
+													<option value="DKI Jakarta">DKI Jakarta</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-row">
+											<label for="easy-zipcode"></label>
+											<div class="form-input">
+												<input type="text" id="easy-zipcode" name="easy-zipcode" class="input" placeholder="Kode Pos">
+											</div>
+											<div class="form-hint"></div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-row">
+											<label for="easy-phone"></label>
+											<div class="form-input">
+												<input type="text" id="easy-phone" name="easy-phone" class="input" placeholder="Telepon">
+											</div>
+											<div class="form-hint"></div>
+										</div>
+									</div>
+								</div>
+								<div class="easy-row row">
+									<div class="col-md-12">
+										<div class="form-row">
+											<div class="form-checkbox">
+												<input type="checkbox" name="easy-sync" id="easy-sync" value="">
+												<label for="easy-sync">Sync data with profile</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- step 2 -->
+					<div class="easy-card">
+						<div class="easy-header" id="headingTwo">
+							<button class="button -fifth easy-button-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								STEP 2 - Personal Data
+								<i class="fa fa-caret-down" aria-hidden="true"></i>
+							</button>
+						</div>
+						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-easyfinance">
+							<div class="easy-body">
+								<div class="easy-row row">
+									<div class="col-md-3">
+										<div class="form-row">
+											<div class="form-select" data-placeholder="Gender">
+												<select id="easy-gender" name="easy-gender" class="select ">
+													<option value="0" selected="selected" disabled="disabled">Gender</option>
+													<option value="Male">Male</option>
+													<option value="Female">Female</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-row">
+											<label for="easy-place"></label>
+											<div class="form-input">
+												<input type="text" id="easy-place" name="easy-place" class="input" placeholder="Tempat Lahir">
+											</div>
+											<div class="form-hint"></div>
+										</div>
+									</div>
+									<div class="col-md-5">
+										<div class="form-row easy-datepicker">
+											<label for="easy-date"></label>
+											<div class="form-input">
+												<input type="text" id="easy-date" name="easy-date" class="input" placeholder="(DD/MM/YYY)">
+											</div>
+											<div class="form-hint"></div>
+										</div>
+									</div>
+								</div>
+								<div class="easy-row row">
+									<div class="col-md-3">
+										<div class="form-row">
+											<div class="form-select" data-placeholder="">
+												<select id="easy-idcard" name="easy-idcard" class="select ">
+													<option value="KTP">KTP</option>
+													<option value="SIM">SIM</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-row">
+											<label for="easy-idno"></label>
+											<div class="form-input">
+												<input type="text" id="easy-idno" name="easy-idno" class="input" placeholder="ID Number">
+											</div>
+											<div class="form-hint"></div>
+										</div>
+									</div>
+									<div class="col-md-5">
+										<div class="form-row">
+											<label for="easy-masa"></label>
+											<div class="form-input">
+												<input type="text" id="easy-masa" name="easy-masa" class="input" placeholder="Masa Berlaku">
+											</div>
+											<div class="form-hint"></div>
+										</div>
+									</div>
+								</div>
+								<div class="easy-row row">
+									<div class="col-md-6">
+										<div class="form-row">
+											<label for="easy-npwp"></label>
+											<div class="form-input">
+												<input type="text" id="easy-npwp" name="easy-npwp" class="input" placeholder="NPWP">
+											</div>
+											<div class="form-hint"></div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-row">
+											<div class="form-select" data-placeholder="Jenis Penduduk">
+												<select id="easy-penduduk" name="easy-penduduk" class="select ">
+													<option value="0" selected="selected" disabled="disabled">Jenis Penduduk</option>
+													<option value="KTP">KTP</option>
+													<option value="SIM">SIM</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="easy-row row">
+									<div class="col-md-3">
+										<div class="form-row">
+											<div class="form-select" data-placeholder="Status">
+												<select id="easy-status" name="easy-status" class="select ">
+													<option value="0" selected="selected" disabled="disabled">Status</option>
+													<option value="Single">Single</option>
+													<option value="Menikah">Menikah</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-row">
+											<label for="easy-agama"></label>
+											<div class="form-input">
+												<input type="text" id="easy-agama" name="easy-agama" class="input" placeholder="Agama">
+											</div>
+											<div class="form-hint"></div>
+										</div>
+									</div>
+									<div class="col-md-5">
+										<div class="form-row">
+											<label for="easy-domisili"></label>
+											<div class="form-input">
+												<input type="text" id="easy-domisili" name="easy-domisili" class="input" placeholder="Status Tempat Tinggal">
+											</div>
+											<div class="form-hint"></div>
+										</div>
+									</div>
+								</div>
+								<div class="easy-row row">
+									<div class="col-md-4">
+										<div class="form-row">
+											<label for="easy-tiperumah"></label>
+											<div class="form-input">
+												<input type="text" id="easy-tiperumah" name="easy-tiperumah" class="input" placeholder="Tipe Rumah">
+											</div>
+											<div class="form-hint"></div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-row">
+											<label for="easy-edu"></label>
+											<div class="form-input">
+												<input type="text" id="easy-edu" name="easy-edu" class="input" placeholder="Pendidikan Terakhir">
+											</div>
+											<div class="form-hint"></div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-row">
+											<label for="easy-mother"></label>
+											<div class="form-input">
+												<input type="text" id="easy-mother" name="easy-mother" class="input" placeholder="Nama Ibu Kandung">
+											</div>
+											<div class="form-hint"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- step 3 -->
+					<div class="easy-card">
+						<div class="easy-header" id="headingThree">
+							<button class="button -fifth easy-button-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								STEP 3 - Work Information
+								<i class="fa fa-caret-down" aria-hidden="true"></i>
+							</button>
+						</div>
+						<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-easyfinance">
+							<div class="easy-body">
+								<div class="easy-row row">
+									<div class="col-md-6">
+										<div class="form-row">
+											<label for="easy-nik"></label>
+											<div class="form-input">
+												<input type="text" id="easy-nik" name="easy-nik" class="input" placeholder="NIK">
+											</div>
+											<div class="form-hint"></div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-row form-error">
+											<label for="easy-salary"></label>
+											<div class="form-input">
+												<input type="text" id="easy-salary" name="easy-salary" class="input -error" placeholder="Salary/month">
+											</div>
+											<div class="form-hint">Wajib diisi</div>
+										</div>
+									</div>
+								</div>
+								<div class="easy-row row">
+									<div class="col-md-6">
+										<div class="form-row">
+											<label for="easy-norek"></label>
+											<div class="form-input">
+												<input type="text" id="easy-norek" name="easy-norek" class="input" placeholder="Nomor Rekening">
+											</div>
+											<div class="form-hint"></div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-row">
+											<div class="form-select" data-placeholder="Cabang Terdekat">
+												<select id="easy-cabang" name="easy-cabang" class="select ">
+													<option value="0" selected="selected" disabled="disabled">Cabang Terdekat</option>
+													<option value="BCA">BCA</option>
+													<option value="BNI">BNI</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="easy-row row">
+									<div class="col-md-6">
+										<div class="form-row">
+											<div class="form-select" data-placeholder="Tipe Nasabah">
+												<select id="easy-nasabah" name="easy-nasabah" class="select ">
+													<option value="0" selected="selected" disabled="disabled">Tipe Nasabah</option>
+													<option value="Korporat">Korporat</option>
+													<option value="Prioritas">Prioritas</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-row">
+											<div class="form-select" data-placeholder="Jenis Pekerjaan">
+												<select id="easy-jenisjob" name="easy-jenisjob" class="select ">
+													<option value="0" selected="selected" disabled="disabled">Jenis Pekerjaan</option>
+													<option value="Wirasasta">Wirasasta</option>
+													<option value="Karyawan">Karyawan</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="easy-row row">
+									<div class="col-md-6">
+										<div class="form-row">
+											<div class="form-select" data-placeholder="Bidang Usaha">
+												<select id="easy-bidang" name="easy-bidang" class="select ">
+													<option value="0" selected="selected" disabled="disabled">Bidang Usaha</option>
+													<option value="Korporat">Korporat</option>
+													<option value="Prioritas">Prioritas</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-row">
+											<label for="easy-badan"></label>
+											<div class="form-input">
+												<input type="text" id="easy-badan" name="easy-badan" class="input" placeholder="Badan Usaha">
+											</div>
+											<div class="form-hint"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- step 4 -->
+					<div class="easy-card">
+						<div class="easy-header" id="headingFour">
+							<button class="button -fifth easy-button-toggle collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+								STEP 4 - Photos Upload
+								<i class="fa fa-caret-down" aria-hidden="true"></i>
+							</button>
+						</div>
+						<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion-easyfinance">
+							<div class="easy-body">
+								<div class="easy-row row">
+									<div class="col-md-4">
+										<div class="form-row">
+											<label for="easy-ktpimg">e-KTP</label>
+											<div class="form-image -active">
+												<input type="file" id="easy-ktpimg" name="easy-ktpimg" class="file" placeholder="" onchange="readURL(this)">
+												<button type="button" class="remove easy-upload-remove"><span aria-hidden="true">&times;</span></button>
+												<span id="easy-ktpimg-img" style="background-image: url('./asset/images/bg-img-preview.png');">
+													<img src="./asset/images/dummy/img_s_idcard.png" alt="">
+												</span>
+											</div>
+											<div class="form-hint"></div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-row">
+											<label for="easy-npwpimg">NPWP</label>
+											<div class="form-image">
+												<input type="file" id="easy-npwpimg" name="easy-npwpimg" class="file" placeholder="" onchange="readURL(this)">
+												<button type="button" class="remove easy-upload-remove"><span aria-hidden="true">&times;</span></button>
+												<span id="easy-npwpimg-img" style="background-image: url('./asset/images/bg-img-preview.png');">
+													<img src="" alt="">
+												</span>
+											</div>
+											<div class="form-hint"></div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-row">
+											<label for="easy-idcardimg">ID Card</label>
+											<div class="form-image">
+												<input type="file" id="easy-idcardimg" name="easy-idcardimg" class="file" placeholder="" onchange="readURL(this)">
+												<button type="button" class="remove easy-upload-remove"><span aria-hidden="true">&times;</span></button>
+												<span id="easy-idcardimg-img" style="background-image: url('./asset/images/bg-img-preview.png');">
+													<img src="" alt="">
+												</span>
+											</div>
+											<div class="form-hint"></div>
+										</div>
+									</div>
+								</div>
+								<div class="easy-row row">
+									<div class="col-md-4">
+										<div class="form-row">
+											<label for="easy-slip">Slip Gaji</label>
+											<div class="form-image">
+												<input type="file" id="easy-slip" name="easy-slip" class="file" placeholder="" onchange="readURL(this)">
+												<button type="button" class="remove easy-upload-remove"><span aria-hidden="true">&times;</span></button>
+												<span id="easy-slip-img" style="background-image: url('./asset/images/bg-img-preview.png');">
+													<img src="" alt="">
+												</span>
+											</div>
+											<div class="form-hint"></div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-row form-error">
+											<label for="easy-foto">Foto</label>
+											<div class="form-image">
+												<input type="file" id="easy-foto" name="easy-foto" class="file -error" placeholder="" onchange="readURL(this)">
+												<button type="button" class="remove easy-upload-remove"><span aria-hidden="true">&times;</span></button>
+												<span id="easy-foto-img" style="background-image: url('./asset/images/bg-img-preview.png');">
+													<img src="" alt="">
+												</span>
+											</div>
+											<div class="form-hint">Wajib diisi</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- button -->
+					<div class="easy-footer">
+						<div class="form-row">
+							<input type="submit" name="easy-send" id="easy-send" value="Apply" class="button -secondary easy-button-apply" disabled="disabled">
+						</div>
+					</div>
+				</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

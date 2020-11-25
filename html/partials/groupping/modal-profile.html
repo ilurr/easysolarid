@@ -1,0 +1,64 @@
+<!-- modal edit profile -->
+<div class="modal fade" id="modal-profile-set" tabindex="-1" aria-labelledby="editProfile" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Edit Profile</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="user-block">
+					<form action="#">
+						<div class="form-row">
+							<label for="user-first">Nama Depan</label>
+							<div class="form-input">
+								<input type="text" id="user-first" name="user-first" class="input" placeholder="" value="Chelsea">
+							</div>
+							<div class="form-hint"></div>
+						</div>
+						<div class="form-row">
+							<label for="user-last">Nama Belakang</label>
+							<div class="form-input">
+								<input type="text" id="user-last" name="user-last" class="input" placeholder="" value="Olivia">
+							</div>
+							<div class="form-hint"></div>
+						</div>
+						<div class="form-row user-datepicker">
+							<label for="user-birth">Tanggal Lahir</label>
+							<div class="form-input">
+								<input type="text" id="user-birth" name="user-birth" class="input" placeholder="" value="12/12/1990">
+							</div>
+							<div class="form-hint"></div>
+						</div>
+						<div class="form-row">
+							<label for="user-gender">Jenis Kelamin</label>
+							<div class="form-select" data-placeholder="-">
+								<select id="user-gender" name="user-gender" class="select ">
+									<option value="0" selected="selected" disabled="disabled">-</option>
+									<option value="Pria">Pria</option>
+									<option value="Wanita">Wanita</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-row">
+							<label for="user-photo">Ganti Foto</label>
+							<div class="form-image -active">
+								<input type="file" id="user-photo" name="user-photo" class="file" placeholder="" onchange="readURL(this)">
+								<button type="button" class="remove easy-upload-remove"><span aria-hidden="true">&times;</span></button>
+								<span id="user-photo-img" style="background-image: url('./asset/images/bg-img-preview.png');">
+									<img src="./asset/images/dummy/avatar.jpg" alt="">
+								</span>
+							</div>
+							<div class="form-hint"></div>
+						</div>
+						<div class="form-row">
+							<input type="submit" name="user-profile-save" id="user-profile-save" value="Save" class="button -primary">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
