@@ -40,5 +40,10 @@ $(document).ready(function() {
 		cloneDocsBox.insertBefore($(this).parent());
 	});
 
+	// remove field
+	$('.unit-button-remove').on('click', function(){
+		$(this).parent().remove();
+	});
+
 });
 </script>

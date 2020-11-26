@@ -250,7 +250,9 @@
 						</button>
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="menu-profile">
 							<a class="dropdown-item" href="profile.html">Edit Profile</a>
-							<a class="dropdown-item" href="order-list.html">List Order</a>
+							<a class="dropdown-item" href="seller-order-list.html">List Order</a>
+							<a class="dropdown-item" href="seller-product-list.html">List Product</a>
+							<a class="dropdown-item" href="seller-product-add.html">Add Product</a>
 							<a class="dropdown-item" href="wishlist.html">Wishlist</a>
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="setting-notification.html">Setting</a>
@@ -283,12 +285,6 @@
 				<!-- nav sidebar -->
 				<nav class="nav -sidebar" aria-label="Sidebar Navigation">
 					<ol class="nav-wrap">
-						<li class="nav-item">
-							<a href="index.html" class="nav-link" role="link" aria-label="Easysolar">Easysolar</a>
-						</li>
-						<li class="nav-item">
-							<a href="solario.html" class="nav-link" role="link" aria-label="Solario">Solario</a>
-						</li>
 						<li class="nav-item accordion" id="accordion-category">
 							<button type="button" class="nav-link collapsed" data-toggle="collapse" data-target="#collapseNavOne" aria-expanded="false" aria-controls="collapseNavOne">Category <i class="fa fa-caret-up" aria-hidden="true"></i></button>
 							<ol class="nav-wrap collapse" id="collapseNavOne" aria-labelledby="Category" data-parent="#accordion-category">
@@ -341,6 +337,9 @@
 									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 7KWP">Grid-Tie 7KWP</a>
 								</li>
 							</ol>
+						</li>
+						<li class="nav-item">
+							<a href="index.html" class="nav-link" role="link" aria-label="Easysolar">Easysolar</a>
 						</li>
 						<li class="nav-item">
 							<a href="solarpedia.html" class="nav-link" role="link" aria-label="Solarpedia">Solarpedia</a>
@@ -942,6 +941,11 @@ $(document).ready(function() {
 		.end()
 		.removeAttr('data-field')
 		cloneDocsBox.insertBefore($(this).parent());
+	});
+
+	// remove field
+	$('.unit-button-remove').on('click', function(){
+		$(this).parent().remove();
 	});
 
 });

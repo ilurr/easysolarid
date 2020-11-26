@@ -146,59 +146,6 @@
 						<li class="nav-item">
 							<a href="solario.html" class="nav-link" role="link" aria-label="Solario">Solario</a>
 						</li>
-						<li class="nav-item accordion" id="accordion-category">
-							<button type="button" class="nav-link collapsed" data-toggle="collapse" data-target="#collapseNavOne" aria-expanded="false" aria-controls="collapseNavOne">Category <i class="fa fa-caret-up" aria-hidden="true"></i></button>
-							<ol class="nav-wrap collapse" id="collapseNavOne" aria-labelledby="Category" data-parent="#accordion-category">
-								<li class="nav-item">
-									<a href="solario-category.html" class="nav-link" role="link" aria-label="Complete-System"><strong>Complete-System</strong></a>
-								</li>
-								<li class="nav-item">
-									<a href="solario-category.html" class="nav-link" role="link" aria-label="Solar 3KWP">Solar 3KWP</a>
-								</li>
-								<li class="nav-item">
-									<a href="solario-category.html" class="nav-link" role="link" aria-label="Solar 4.4KWP">Solar 4.4KWP</a>
-								</li>
-								<li class="nav-item">
-									<a href="solario-category.html" class="nav-link" role="link" aria-label="Solar 6KWP">Solar 6KWP</a>
-								</li>
-								<li class="nav-item">
-									<a href="solario-category.html" class="nav-link" role="link" aria-label="Solar-Panel"><strong>Solar-Panel</strong></a>
-								</li>
-								<li class="nav-item">
-									<a href="solario-category.html" class="nav-link" role="link" aria-label="Mono-crytaline">Mono-crytaline</a>
-								</li>
-								<li class="nav-item">
-									<a href="solario-category.html" class="nav-link" role="link" aria-label="Poly-crystaline">Poly-crystaline</a>
-								</li>
-								<li class="nav-item">
-									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie"><strong>Grid-Tie</strong></a>
-								</li>
-								<li class="nav-item">
-									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 10KWP">Grid-Tie 10KWP</a>
-								</li>
-								<li class="nav-item">
-									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 1KWP">Grid-Tie 1KWP</a>
-								</li>
-								<li class="nav-item">
-									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 2KWP">Grid-Tie 2KWP</a>
-								</li>
-								<li class="nav-item">
-									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 3KWP">Grid-Tie 3KWP</a>
-								</li>
-								<li class="nav-item">
-									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 4KWP">Grid-Tie 4KWP</a>
-								</li>
-								<li class="nav-item">
-									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 5KWP">Grid-Tie 5KWP</a>
-								</li>
-								<li class="nav-item">
-									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 6KWP">Grid-Tie 6KWP</a>
-								</li>
-								<li class="nav-item">
-									<a href="solario-category.html" class="nav-link" role="link" aria-label="Grid-Tie 7KWP">Grid-Tie 7KWP</a>
-								</li>
-							</ol>
-						</li>
 						<li class="nav-item">
 							<a href="solarpedia.html" class="nav-link" role="link" aria-label="Solarpedia">Solarpedia</a>
 						</li>
@@ -631,6 +578,11 @@ $(document).ready(function() {
 		.end()
 		.removeAttr('data-field')
 		cloneDocsBox.insertBefore($(this).parent());
+	});
+
+	// remove field
+	$('.unit-button-remove').on('click', function(){
+		$(this).parent().remove();
 	});
 
 });

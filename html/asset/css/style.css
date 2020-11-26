@@ -2342,27 +2342,31 @@ button,
 
 .nav-item {
   position: relative; }
-  @media (min-width: 768px) {
-    .nav-item.accordion {
-      display: none; } }
-  .nav-item.accordion > button.nav-link {
-    justify-content: space-between;
-    border: transparent;
-    border-radius: 0;
-    background: #f0f0f0; }
-    .nav-item.accordion > button.nav-link:hover {
-      background: #f0f0f0; }
-  .nav-item.accordion ol.nav-wrap {
-    margin: 0;
-    padding-top: .125rem;
-    padding-bottom: .125rem;
-    padding-left: .75rem; }
-    .nav-item.accordion ol.nav-wrap .nav-link {
-      font-size: .875rem;
-      padding: .5rem .5rem; }
-      .nav-item.accordion ol.nav-wrap .nav-link strong {
-        padding: .5rem 0 0;
-        font-weight: 900; }
+  .nav-item.accordion {
+    padding-bottom: .75rem;
+    margin-bottom: .5rem;
+    border-bottom: 1px solid #e9ecef; }
+    @media (min-width: 768px) {
+      .nav-item.accordion {
+        display: none; } }
+    .nav-item.accordion > button.nav-link {
+      justify-content: space-between;
+      border: transparent;
+      border-radius: 0;
+      background: #fff; }
+      .nav-item.accordion > button.nav-link:hover {
+        background: #fff; }
+    .nav-item.accordion ol.nav-wrap {
+      margin: 0;
+      padding-top: .125rem;
+      padding-bottom: .125rem;
+      padding-left: .75rem; }
+      .nav-item.accordion ol.nav-wrap .nav-link {
+        font-size: .875rem;
+        padding: .5rem .5rem; }
+        .nav-item.accordion ol.nav-wrap .nav-link strong {
+          padding: .5rem 0 0;
+          font-weight: 900; }
 
 .nav.-header {
   position: relative;
@@ -2727,8 +2731,10 @@ button,
   /* NEW, Spec - Firefox, Chrome, Opera */
   align-items: center;
   justify-content: center;
-  padding: 1rem 0 1.5rem;
+  padding: 1rem .5rem 1.5rem;
   margin-bottom: 1rem;
+  margin-left: -.5rem;
+  margin-right: -.5rem;
   border-bottom: 1px solid #D4D4D4; }
   .menu-sidebar .menu-avatar {
     flex-grow: 0;
@@ -4878,6 +4884,28 @@ button,
   background: transparent;
   font-weight: 600; }
 
+.unit-button-remove {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+  padding: 0 .75rem;
+  color: #B2B2B2;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  height: auto;
+  border: transparent;
+  background: transparent;
+  font-weight: 400;
+  z-index: 2; }
+  @media (min-width: 768px) {
+    .unit-button-remove {
+      padding: 0 .5rem;
+      font-size: 1.375rem; } }
+  .unit-button-remove:hover {
+    background: transparent; }
+
 .unit-item {
   position: relative;
   display: -webkit-box;
@@ -4948,6 +4976,9 @@ button,
 
 .unit-add-file {
   position: relative; }
+  @media (max-width: 767px) {
+    .unit-add-file {
+      padding-top: 1rem; } }
   .unit-add-file label {
     position: absolute;
     z-index: 2;
@@ -5841,6 +5872,9 @@ button,
     .board-box-right {
       position: relative;
       text-align: right; }
+    .board-box[data-field] .unit-button-remove {
+      opacity: 0;
+      visibility: hidden; }
   @media (min-width: 768px) {
     .board-footer .button {
       width: auto;
