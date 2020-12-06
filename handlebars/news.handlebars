@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>head font="link" title="News Easysolar"}}
+
+<body class="-easysolar">
+	<!-- main -->
+	<main class="main">
+
+		{{>header easysolar=true page="News"}}
+
+		{{>sidebar page=navigation.easysolar}}
+
+		<!-- news big -->
+		<section class="showcase -news">
+			<div class="showcase-slider">
+				<div class="showcase-item">
+					<!-- news -->
+					<div class="showcase-block">
+						<div class="showcase-img" style="background-image: url('./asset/images/dummy/photo-1463173904305-ba479d2123b7.jpeg');"></div>
+						<div class="showcase-content container-xl">
+							<h2 class="showcase-news-title"><a href="news-detail.html">Pasar Energi Terbarukan di Indonesia</a></h2>
+							<div class="showcase-news-teaser">Pasar teknologi sistem sel surya sebagai one stop service dengan mitra-mitra terpercaya yang dapat diandalkan. Pelajari dan ambil buat anda yang terbaik, klik Solario. Pasar teknologi sistem sel surya sebagai one stop service dengan mitra-mitra terpercaya yang dapat diandalkan.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- news list -->
+		<section class="news-list">
+			<div class="news-wrap container-xl">
+				{{>news-list}}
+			</div>
+
+			{{>paging}}
+		</section>
+
+		{{>modal-all}}
+
+		{{>footer}}
+
+	</main>
+
+{{>js}}
+</body>
+</html>

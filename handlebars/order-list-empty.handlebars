@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>head font="link" title="Profile"}}
+
+<body class="-solario">
+	<!-- main -->
+	<main class="main">
+
+		{{>header solario=true page="Profile" login=true profile="Buyer"}}
+
+		{{>sidebar page=navigation.solario}}
+
+		<!-- dashboard -->
+		<section class="board">
+			<div class="board-wrap container-xl">
+				<div class="board-block row">
+					<div class="board-aside col-lg-3">
+						{{>dashboard-sidebar profile=sidebar.buyer page="List Order"}}
+					</div>
+					<div class="board-aside col-lg-9">
+						<!-- order -->
+						<div class="order-block">
+
+							<!-- header -->
+							<div class="board-header">
+
+								<!-- header search -->
+								<form action="#">
+									<div class="board-header-search row">
+										<div class="board-col col-md-6">
+											<div class="board-search-text">
+												<div class="form-row">
+													<div class="form-input">
+														<input type="text" class="input" name="search-board-text" placeholder="Search Order Transacton">
+														<input type="submit" class="button board-search-button" name="search-board-btn" value="Search">
+														<i class="fa fa-search" aria-hidden="true"></i>
+														<div class="form-hint"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="board-col col-md-3">
+											<div class="board-search-date">
+												{{!>input type="text" placeholder="Nomor Rekening" name="search-board-date"}}
+												<div class="form-row">
+													<div class="form-input">
+														<input type="text" class="input" name="search-board-date" placeholder="Order Date">
+														<div class="form-hint"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="board-col col-md-3">
+											<div class="board-search-date">
+												{{>select type="select" name="sort-by" nolabel="true" option="Terbaru,Termurah,Termahal" placeholder="Sort by"}}
+											</div>
+										</div>
+									</div>
+								</form>
+
+								<!-- order filter -->
+								<div class="board-filter row">
+									<div class="board-col col-md-2">
+										<div class="board-filter-label">Filter Status</div>
+									</div>
+									<div class="board-col col-md-10">
+										<div class="board-filter-list">
+											<button type="button" id="filter-button-left" class="button board-filter-arrow -left" role="button"><span class="icon-arrow icon-arrow-left" aria-hidden="true"></span></button>
+											<div class="board-filter-wrap" id="board-filter">
+												<div class="board-filter-item">
+													{{>button type="link" href="order-list.html" label="All" name="filter-all" class="board-filter-button"}}
+												</div>
+												<div class="board-filter-item -active">
+													{{>button type="link" href="order-list-empty.html" label="Waiting Confirmation" name="filter-waiting" class="board-filter-button -active"}}
+												</div>
+												<div class="board-filter-item">
+													{{>button type="link" href="#" label="On Process" name="filter-process" class="board-filter-button"}}
+												</div>
+												<div class="board-filter-item">
+													{{>button type="link" href="#" label="Order Sent" name="filter-sent" class="board-filter-button"}}
+												</div>
+												<div class="board-filter-item">
+													{{>button type="link" href="#" label="Order Arrived" name="filter-arrived" class="board-filter-button"}}
+												</div>
+												<div class="board-filter-item">
+													{{>button type="link" href="#" label="Order Completed" name="filter-completed" class="board-filter-button"}}
+												</div>
+												<div class="board-filter-item">
+													{{>button type="link" href="#" label="Order Canceled" name="filter-canceled" class="board-filter-button"}}
+												</div>
+											</div>
+											<button type="button" id="filter-button-right" class="button board-filter-arrow -right" role="button"><span class="icon-arrow icon-arrow-right" aria-hidden="true"></span></button>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+							<!-- order list -->
+							<div class="board-body">
+								<div class="order-list">
+									{{>order-item empty=true}}
+								</div>
+							</div>
+
+							{{!>paging}}
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		{{>modal-all}}
+
+		{{>footer}}
+
+	</main>
+
+{{>js}}
+</body>
+</html>

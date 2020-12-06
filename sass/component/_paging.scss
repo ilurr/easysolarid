@@ -1,0 +1,32 @@
+.paging {
+	position: relative;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 1rem;
+	padding-bottom: 3rem;
+	&-wrap {
+		position: relative;
+		@include display-flex();
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	&-item {
+		position: relative;
+	}
+	&-link {
+		width: auto;
+		padding: 0 .75rem;
+		height: 34px;
+		margin: .125rem;
+		border-radius: 0;
+		border: 1px solid #D5D5D5;
+		color: #2B2929;
+		font-weight: 600;
+		&.-active {
+			background: $color-theme;
+			color: #fff;
+			border: 1px solid #C55204;
+		}
+	}
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>head font="link" title="Solario"}}
+
+<body class="-solario">
+	<!-- main -->
+	<main class="main">
+
+		{{>header solario=true page="Solario" login=true burger=burger.buyer}}
+
+		{{>sidebar page=navigation.solario}}
+
+		<!-- solario product single -->
+		<section class="product-single">
+			<div class="product-wrapper container-xl">
+				<div class="product-block row">
+					<div class="product-col col-md-6">
+						<div class="product-img">
+							<img src="./asset/images/dummy/{{product-single.img}}" alt="">
+						</div>
+					</div>
+					<div class="product-col col-md-6">
+						<div class="product-detail">
+							<h1 class="product-title">{{product-single.title}}</h1>
+							<div class="product-price">{{product-single.price}}</div>
+							<div class="product-qty">
+								<div class="product-qty-label">QTY</div>
+								<div class="product-qty-input">
+									{{>input type="number" name="product-qty"}}
+								</div>
+							</div>
+							<div class="product-lead">{{product-single.desc}}</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- store name (mobile) -->
+				<div class="product-block -store">
+					<div class="product-store">
+						<div class="store-img">
+							<a href="solario-seller.html">
+								<img src="./asset/images/dummy/logo_LOGO_ATW-Solar_LOGO_1597201251701.jpg" alt="">
+							</a>
+						</div>
+						<div class="store-info">
+							<h1 class="store-name"><a href="solario-seller.html">ATW Solar</a></h1>
+							<div class="store-location"><i class="fa fa-map-marker" aria-hidden="true"></i> Jakarta Pusat</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- description -->
+		{{>product-desc}}
+
+		<!-- sticky bar -->
+		<section class="product-sticky">
+			<div class="product-sticky-wrap container-xl">
+				<div class="product-sticky-block row">
+					<div class="product-sticky-store col-md-4">
+						<div class="product-store">
+							<div class="store-img">
+								<a href="solario-seller.html">
+									<img src="./asset/images/dummy/logo_LOGO_ATW-Solar_LOGO_1597201251701.jpg" alt="">
+								</a>
+							</div>
+							<div class="store-info">
+								<h1 class="store-name"><a href="solario-seller.html">ATW Solar</a></h1>
+								<div class="store-location"><i class="fa fa-map-marker" aria-hidden="true"></i> Jakarta Pusat</div>
+							</div>
+						</div>
+					</div>
+					<div class="product-sticky-action col-md-8">
+						<div class="product-action">
+							<div class="product-price"><span>Total</span>{{product-single.price}}</div>
+							{{>button type="link" href="cart.html" label="Buy Now" id="buy-now" class="-secondary product-button-buy"}}
+							{{>button type="button" label="Add to Cart" name="add-to-cart" class="-third product-button-cart"}}
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		{{>modal-all}}
+
+		{{>footer}}
+
+	</main>
+
+{{>js}}
+</body>
+</html>

@@ -1,0 +1,224 @@
+.board {
+	position: relative;
+	&-wrap {
+		position: relative;
+		padding-top: 5vh;
+		padding-bottom: 5vh;
+		@include min-responsive($screen-desktop) {
+			padding-top: 8vh;
+			padding-bottom: 8vh;
+		}
+	}
+	&-header {
+		position: relative;
+		&-search {
+			.form-row {
+				padding: .25rem 0;
+				@include min-responsive($screen-tablet) {
+					padding: 0;
+				}
+			}
+			.form-input {
+				@include min-responsive($screen-tablet) {
+					height: 34px;
+				}
+			}
+			.form-select {
+				margin: 0;
+				@include min-responsive($screen-tablet) {
+					height: 34px;
+				}
+			}
+			.button {
+				position: absolute;
+				height: 42px;
+				width: 42px;
+				right: 0;
+				top: 0;
+				z-index: 2;
+				opacity: 0;
+				@include min-responsive($screen-tablet) {
+					height: 34px;
+					width: 34px;
+				}
+			}
+			.form-select.init:before {
+				background: #F7F7F7;
+				text-transform: uppercase;
+				font-size: .75rem;
+				color: #C9C8CA;
+			}
+			.select,
+			.input {
+				background: #fff;
+				border: 1px solid #CCCCD0;
+				@include min-responsive($screen-tablet) {
+					background: #F7F7F7;
+					font-size: .75rem;
+				}
+				&::placeholder {
+					text-transform: uppercase;
+					font-size: .75rem;
+					color: #C9C8CA;
+				}
+			}
+			.form-select.init:before {
+				@include max-responsive($screen-mobile-max) {
+					background: #fff;
+				}
+			}
+		}
+	}
+	&-search {
+		&-text {
+			.fa {
+				position: absolute;
+				top: calc(50% - .5rem);
+				right: .75rem;
+				z-index: 1;
+				color: #D0D0D1;
+				pointer-events: none;
+			}
+		}
+	}
+	&-filter {
+		// margin: .5rem 0;
+		align-items: center;
+		// max-height: 40px;
+		// overflow: hidden;
+		// @include min-responsive($screen-tablet) {
+		// 	height: 40px;
+		// }
+		&-label {
+			position: relative;
+			@include font-pack(false, .875rem, 600, false, #8E8E8E);
+			padding-top: 1rem;
+			@include min-responsive($screen-tablet) {
+				padding-top: 0;
+			}
+		}
+		&-list {
+			position: relative;
+		}
+		&-wrap {
+			position: relative;
+			@include display-flex();
+			padding: 1rem 2rem;
+			white-space: nowrap;
+			-webkit-overflow-scrolling: touch;
+			overflow: auto hidden;
+			scrollbar-width: none;
+			-webkit-scrollbar-width: none;
+			&::-webkit-scrollbar {
+				display: none;
+			}
+			// overflow-y: hidden;
+			@include min-responsive($screen-tablet) {
+				margin-left: -15px;
+				padding: 1rem 0;
+			}
+		}
+		&-item {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			&:last-child {
+				padding-right: 1.25rem;
+			}
+			// padding: 0 .25rem;
+		}
+		.form-row {
+			padding: 0;
+		}
+		.button {
+			width: auto;
+			padding: 0 .75rem;
+			margin: 0 .25rem;
+			height: 34px;
+			font-size: .75rem;
+			color: #9B9B9B;
+			text-transform: uppercase;
+			font-weight: 400;
+			border: 1px solid #A3A3A3;
+			background: transparent;
+			@include min-responsive($screen-tablet) {
+				height: 28px;
+			}
+			&.-active {
+				border: 1px solid $color-secondary;
+				color: $color-secondary;
+				background: #fff;
+			}
+			&.board-filter-arrow {
+				border-radius: 34px;
+				width: 34px;
+				height: 34px;
+				border: 1px solid #C7C7CC;
+				position: absolute;
+				top: calc(50% - (34px / 2));
+				z-index: 2;
+				background: #FFFFFF;
+				&.-left {
+					left: -16px;
+					@include min-responsive($screen-tablet) {
+						left: -55px;
+					}
+				}
+				&.-right {
+					right: -16px;
+					@include min-responsive($screen-tablet) {
+						right: -18px;
+					}
+				}
+			}
+		}
+		// .slick-current {
+		// 	.button {
+		// 		border: 1px solid $color-secondary;
+		// 		color: $color-secondary;
+		// 		background: #fff;
+		// 	}
+		// }
+	}
+
+	&-row {
+		position: relative;
+		padding-bottom: 1.5rem;
+		@include min-responsive($screen-tablet) {
+			padding-bottom: .5rem;
+		}
+	}
+	&-box {
+		position: relative;
+		background: #fff;
+		padding: 1rem;
+		margin: .75rem -15px .125rem;
+		box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+		@include min-responsive($screen-tablet) {
+			padding: 1rem 1.875rem;
+			margin: .75rem 0;
+			border-radius: 6px;
+		}
+		&-right {
+			position: relative;
+			text-align: right;
+		}
+		&[data-field] {
+			.unit-button-remove {
+				opacity: 0;
+				visibility: hidden;
+			}
+		}
+	}
+	&-footer {
+		.button {
+			@include min-responsive($screen-tablet) {
+				width: auto;
+				padding: 0 2.5rem;
+			}
+		}
+		.form-row {
+			text-align: center;
+		}
+	}
+}

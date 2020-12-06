@@ -1,0 +1,29 @@
+<!-- sidebar dashboard -->
+<aside class="aside">
+	<div class="aside-box">
+		<nav class="aside-menu">
+			<ul class="aside-wrap">
+				{{#each profile}}
+				{{#if desktop}}
+				<li class="aside-item">
+					{{#if link}}
+					<a href="{{link}}" class="aside-link{{#eq title compare=../page}} -active{{/eq}}">{{title}}</a>
+					{{else}}
+					<span class="aside-link">{{title}}</span>
+					{{/if}}
+					{{#if child}}
+					<ul>
+						{{#each child}}
+						<li class="aside-item -level1">
+							<a href="{{link}}" class="aside-link{{#eq title compare=../../page}} -active{{/eq}}">{{title}}</a>
+						</li>
+						{{/each}}
+					</ul>
+					{{/if}}
+				</li>
+				{{/if}}
+				{{/each}}
+			</ul>
+		</nav>
+	</div>
+</aside>

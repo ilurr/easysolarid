@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>head font="link" title="Profile"}}
+
+<body class="-solario">
+	<!-- main -->
+	<main class="main">
+
+		{{>header solario=true page="Profile" login=true profile="Buyer"}}
+
+		{{>sidebar page=navigation.solario}}
+
+		<!-- dashboard -->
+		<section class="board">
+			<div class="board-wrap container-xl">
+				<div class="board-block row">
+					<div class="board-aside col-lg-3">
+						{{>dashboard-sidebar profile=sidebar.buyer page="Notification"}}
+					</div>
+					<div class="board-aside col-lg-9">
+						<!-- setting list -->
+						<div class="setting">
+							<div class="setting-block">
+								{{#each setting}}
+								<div class="setting-item">
+									{{#if heading}}
+									<div class="setting-heading">
+										{{title}}
+									</div>
+									{{else}}
+									<label for="setting-{{hyphenate (lowercase title)}}">
+										<div class="setting-row">
+											<div class="setting-text">{{title}}</div>
+											{{#if toggle}}
+											<div class="setting-toggle form-toggle">
+												<input name="setting-{{hyphenate (lowercase title)}}" id="setting-{{hyphenate (lowercase title)}}" type="checkbox" autocomplete="off"{{#eq toggle_value compare=true}} checked="checked"{{/eq}}>
+												<span></span>
+											</div>
+											{{/if}}
+										</div>
+									</label>
+									{{/if}}
+								</div>
+								{{/each}}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		{{>modal-all}}
+
+		{{>footer}}
+
+	</main>
+
+{{>js}}
+</body>
+</html>

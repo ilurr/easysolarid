@@ -1,0 +1,156 @@
+.setting {
+	position: relative;
+	&-block {
+		position: relative;
+		padding: 1rem 1rem 2rem;
+		margin: 0 -15px;
+		background: #fff;
+		box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+		@include min-responsive($screen-tablet) {
+			border-radius: 6px;
+			padding: 2rem 2rem 3rem;
+			margin: 0;
+		}
+	}
+	&-item {
+		position: relative;
+		border-bottom: 1px solid #e7e7e7;
+		&:first-child {
+			margin-top: -10px;
+		}
+		&:last-child {
+			border-bottom: transparent;
+		}
+	}
+	&-row {
+		position: relative;
+		@include display-flex();
+		justify-content: space-between;
+		align-items: center;
+		padding: 1rem 0;
+	}
+	&-heading {
+		position: relative;
+		padding: 2rem 0 1rem;
+		@include font-pack(false, 1.125rem, 700, inherit, #909090);
+	}
+	&-subheading {
+		position: relative;
+		padding: 2rem 0 1rem;
+		@include font-pack(false, 1rem, 400, inherit, #898989);
+	}
+	&-text {
+		text-transform: inherit;
+		@include font-pack(inherit, 1rem, 600, inherit, #AFAFAF);
+		@include transition(all .2s ease);
+	}
+	&-link {
+		display: block;
+		&:hover {
+			// background: #dfdfdf;
+			.setting-text {
+				color: $color-theme;
+			}
+		}
+	}
+
+	// activity 
+	&-activity {
+		&-block {
+			position: relative;
+			padding: .75rem;
+			background: #F1F1F1;
+			@include font-pack(false, 1rem, 400, false, #898989);
+			.fa {
+				vertical-align: text-bottom;
+				margin-right: .25rem;
+			}
+		}
+		&-list {
+			position: relative;
+		}
+		&-item {
+			position: relative;
+			padding: 1rem 0;
+			border-bottom: 1px solid #E9E9E9;
+			@include display-flex();
+			justify-content: flex-start;
+			align-items: center;	
+			&:last-child {
+				border-bottom: transparent;
+			}
+		}
+		&-icon {
+			width: 90px;
+			flex-basis: 90px;
+			flex-grow: 0;
+			text-align: center;
+			@include min-responsive($screen-tablet) {
+				width: 110px;
+				flex-basis: 110px;
+			}
+			.fa {
+				font-size: 3rem;
+				color: rgba(0,0,0,.2);
+				@include min-responsive($screen-tablet) {
+					font-size: 3.25rem;
+				}
+			}
+		}
+		&-info {
+			flex-basis: 0;
+			flex-grow: 1;
+		}
+		&-system {
+			position: relative;
+			@include font-pack(false, 1rem, 700, false, #898989);
+		}
+		&-ip {
+			position: relative;
+			@include font-pack(false, 1rem, 400, false, #B9B9B9);
+		}
+		&-status {
+			position: relative;
+			@include font-pack(false, .875rem, 400, false, #BDBDBD);
+			span {
+				color: $color-secondary;
+			}
+		}
+	}
+
+	// trigger
+	&-menu {
+		&-button {
+			width: auto;
+			height: auto;
+			display: inline-block;
+			position: absolute;
+			top: calc(50% - (38px / 2));
+			padding: 0.5rem;
+			right: .5rem;
+			border: transparent;
+			background: transparent;
+			margin-right: .5rem;
+			&:hover {
+				color: #000;
+			}
+			.icon-nav {
+				font-size: 22px;
+				vertical-align: top;
+			}
+		}
+	}
+
+	// override 
+	&-block {
+		label {
+			text-transform: inherit;
+			letter-spacing: inherit;
+			font-size: inherit;
+			line-height: inherit;
+			color: inherit;
+			font-weight: inherit;
+			padding: 0;
+		}
+	}
+}

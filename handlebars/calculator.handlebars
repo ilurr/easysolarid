@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>head font="link" title="Calculator"}}
+
+<body class="-easysolar">
+	<!-- main -->
+	<main class="main">
+
+		{{>header easysolar=true page="Calculator"}}
+
+		{{>sidebar page=navigation.easysolar}}
+
+		<!-- calculator -->
+		<section class="calc">
+			<div class="calc-wrap container-xl">
+				<div class="calc-block row">
+					<div class="calc-col col-md-6">
+						<div class="calc-block-wrapper -left">
+							<div class="calc-title">Calculation Summary</div>
+							<div class="calc-box -form">
+								<form action="#">
+									<div class="calc-item">
+										{{>input type="text" name="daya-pln" txtVal="5500" label="Daya PLN terpasang (watt)"}}
+									</div>
+									<div class="calc-item">
+										{{>input type="text" name="tagihan-pln" txtVal="3000000" label="Tagihan rata-rata (IDR)"}}
+									</div>
+									<div class="calc-item">
+										{{>input type="text" name="luas-atap" txtVal="28" label="Luas Atap Tersedia (m)"}}
+									</div>
+									<div class="calc-item">
+										<div class="calc-action">
+											<button role="link" class="button -cta">Calculate <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="calc-col col-md-6">
+						<div class="calc-block-wrapper -right">
+							<div class="calc-title">Calculation Estimation <span>by AdsSolar</span></div>
+							<div class="calc-box -result">
+								<div class="calc-item">
+									<div class="calc-label">Our recomended system size</div>
+									<div class="calc-number"><span>3600</span> watt peak</div>
+								</div>
+								<div class="calc-item">
+									<div class="calc-label">Approximate daily production</div>
+									<div class="calc-number"><span>14,0</span> KWH</div>
+								</div>
+								<div class="calc-item">
+									<div class="calc-label">Approximate daily saving</div>
+									<div class="calc-number"><span>IDR. 250.000,- </span></div>
+								</div>
+								<div class="calc-item">
+									<div class="calc-label">Approximate monthly production :</div>
+									<div class="calc-number"><span>441</span> KWH</div>
+								</div>
+								<div class="calc-item">
+									<div class="calc-total">
+										<div class="calc-label">Approximate monthly saving</div>
+										<div class="calc-number"><span>IDR. 1.615.600,- </span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- product -->
+		<section class="catalog-list -homepage">
+			<div class="catalog-wrap container-xl">
+				<div class="catalog-block row align-items-center">
+					<div class="col-md-12">
+						<div class="calc-title">Our recomendation product</div>
+					</div>
+				</div>
+
+				<div class="catalog-block row -hot">
+					{{>product-item col=4 data=product index_start=0 index_end=3}}
+				</div>
+				<div class="catalog-block row -hot">
+					{{>product-item col=4 data=product index_start=3 index_end=6}}
+				</div>
+			</div>
+		</section>
+
+		{{>modal-all}}
+
+		{{>footer}}
+
+	</main>
+
+{{>js}}
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>head font="link" title="Edit Profile"}}
+
+<body class="-solario">
+	<!-- main -->
+	<main class="main">
+
+		{{>header solario=true page="Edit" login=true profile="Buyer"}}
+
+		{{>sidebar page=navigation.solario}}
+
+		<!-- dashboard -->
+		<section class="board">
+			<div class="board-wrap container-xl">
+				<div class="board-block row">
+					<div class="board-aside col-lg-3">
+						{{>dashboard-sidebar profile=sidebar.buyer page="Edit"}}
+					</div>
+					<div class="board-aside col-lg-9">
+
+						<!-- edit profile -->
+						<div class="user-box -profile">
+							<div class="user-block row">
+								<div class="user-block-info col-md-8">
+									<div class="user-block-row">
+										<div class="user-text"><span>Nama Depan</span> Chelsea</div>
+										<div class="user-text"><span>Nama Belakang</span> Olivia</div>
+										<div class="user-text"><span>Tanggal Lahir</span> 12-12-1990</div>
+										<div class="user-text"><span>Jenis Kelamin</span> Wanita</div>
+									</div>
+								</div>
+								<div class="user-block-avatar col-md-4">
+									<div class="user-avatar">
+										<span>
+											<img src="./asset/images/dummy/avatar.jpg" alt="">
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="user-box-right">
+								<button type="button" name="user-edit-profile" class="button -third user-trigger" data-toggle="modal" data-target="#modal-profile-set">Edit</button>
+							</div>
+						</div>
+						{{>modal-profile}}
+
+						<!-- edit address -->
+						<div class="user-box">
+							<div class="user-block row">
+								<div class="user-block-col col-md-12">
+									<div class="user-text"><span>Alamat</span></div>
+								</div>
+								<div class="user-block-col col-md-12">
+									<div class="user-block-address">
+										<div class="address-item">
+											<div class="address-row">
+												<div class="address-content">
+													Jl. bunga melati no 18 , RT 005/ RW 002, Kel. Cipete, Kec. Cilandak, Jakarta Selatan 12410
+												</div>
+												<div class="user-badge -active">Aktif</div>
+											</div>
+											<button class="button -third user-trigger" type="button" data-toggle="modal" data-target="#modal-address-edit">Edit</button>
+											<button class="button -third user-trigger" type="button" data-toggle="modal" data-target="#modal-dialog">Hapus</button>
+										</div>
+										<div class="address-item">
+											<div class="address-content">
+												Jl Tanah Abang IV No.49, Rt.8/Rw.4, Petojo Selatan, Gambir, Kecamatan Gambir, Kota Jakarta Pusat 12410
+											</div>
+											<button class="button -third user-trigger" type="button" data-toggle="modal" data-target="#modal-address-edit">Edit</button>
+											<button class="button -third user-trigger" type="button" data-toggle="modal" data-target="#modal-dialog">Hapus</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="user-box-right">
+								<button type="button" name="user-add-address" class="button -third user-trigger" data-toggle="modal" data-target="#modal-address-edit">Add</button>
+							</div>
+						</div>
+						{{>address-edit-modal}}
+
+						<!-- edit password -->
+						<div class="user-box">
+							<div class="user-block row">
+								<div class="user-block-col col-md-12">
+									<div class="user-text"><span>Password</span> **********</div>
+								</div>
+							</div>
+							<div class="user-box-right">
+								<button type="button" name="user-edit-password" class="button -third user-trigger" data-toggle="modal" data-target="#modal-password-set">Edit</button>
+							</div>
+						</div>
+						{{>modal-password}}
+
+						<!-- edit email -->
+						<div class="user-box">
+							<div class="user-block row">
+								<div class="user-block-col col-md-12">
+									<div class="user-text"><span>Email</span> chelseaolivia@gmail.com <div class="user-badge -verified">Verified</div></div>
+								</div>
+							</div>
+							<div class="user-box-right">
+								<button type="button" name="user-edit-email" class="button -third user-trigger" data-toggle="modal" data-target="#modal-email-set">Edit</button>
+							</div>
+						</div>
+						{{>modal-email}}
+
+						<!-- edit phone -->
+						<div class="user-box">
+							<div class="user-block row">
+								<div class="user-block-col col-md-12">
+									<div class="user-text"><span>Phone</span> 08987654321 <div class="user-badge">Not Verified</div></div>
+								</div>
+							</div>
+							<div class="user-box-right">
+								<button type="button" name="user-edit-phone" class="button -third user-trigger" data-toggle="modal" data-target="#modal-phone-set">Edit</button>
+							</div>
+						</div>
+						{{>modal-phone}}
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		{{>modal-all}}
+
+		{{>footer}}
+
+	</main>
+
+{{>js}}
+</body>
+</html>

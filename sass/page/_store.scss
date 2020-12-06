@@ -1,0 +1,162 @@
+.store {
+	&-header {
+		position: relative;
+	}
+	&-bg {
+		position: relative;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 170px;
+	}
+	&-wrap {
+		position: relative;
+	}
+	&-block {
+		position: relative;
+		padding-top: 90px;
+		margin-top: -90px;
+		&-info {
+			position: relative;
+			padding-bottom: 1rem;
+			@include display-flex();
+			@include min-responsive($screen-tablet) {
+				padding-bottom: 0;
+			}
+		}
+		&-stat {
+			position: relative;
+			padding: 1rem 0;
+			@include display-flex();
+			@include min-responsive($screen-desktop) {
+				padding: 1rem;
+			}
+		}
+	}
+	&-img {
+		position: relative;
+		margin-top: calc(-100px / 2);
+		width: 100px;
+		height: 100px;
+		border-radius: 100px;
+		flex-basis: 100px;
+		flex-grow: 0;
+		background: #fafafa;
+		overflow: hidden;
+		border: 5px solid #fff;
+		@include min-responsive($screen-tablet) {
+			margin-top: calc(-125px / 2);
+			width: 125px;
+			height: 125px;
+			border-radius: 125px;
+			flex-basis: 125px;
+		}
+		@include min-responsive($screen-desktop) {
+			margin-top: calc(-175px / 2);
+			width: 175px;
+			height: 175px;
+			border-radius: 175px;
+			flex-basis: 175px;
+		}
+		img {
+			@include ratio-flexible(100%, auto);
+			z-index: 2;
+		}
+	}
+	&-info {
+		flex-grow: 1;
+		flex-basis: 0;
+		padding-left: 1rem;
+		margin-top: -3.25rem;
+		@include min-responsive($screen-tablet) {
+			margin-top: -3.5rem;
+		}
+	}
+	&-name {
+		margin: .25rem 0 .5rem;
+		@include title-overflow(auto, 2.5rem);
+		@include font-pack(false, 1.75rem, 600, false, #fff);
+		text-shadow: 1px 1px 5px rgba(0,0,0,.5);
+		@include min-responsive($screen-tablet) {
+			font-size: 2rem;
+			max-height: 2.75rem;
+		}
+		a {
+			color: inherit;
+			&:hover {
+				color: #000;
+			}
+		}
+	}
+	&-location {
+		@include display-flex();
+		align-items: center;
+		padding: .5rem 0;
+		@include font-pack(false, .938rem, 700, 1, #707070);
+		@include min-responsive($screen-tablet) {
+			padding: 1rem 0 .875rem;
+		}
+		.fa {
+			// font-size: .875rem;
+			min-width: auto;
+			margin-right: .25rem;
+			vertical-align: middle;
+		}
+	}
+	&-join {
+		@include font-pack(false, .938rem, 400, 1, #707070);
+		span {
+			font-weight: 700;
+		}
+	}
+	&-stat {
+		position: relative;
+		@include display-flex();
+		&-item {
+			width: 50%;
+			position: relative;
+			padding: .125rem 1rem;
+			border-left: 1px solid #CFCFCF;
+			@include min-responsive($screen-desktop) {
+				padding: .125rem 2rem;
+			}
+			&:first-child {
+				border-left: 1px solid transparent;
+				@include min-responsive($screen-tablet) {
+					border-left: 1px solid #CFCFCF;
+				}
+			}
+		}
+		&-label {
+			position: relative;
+			@include font-pack(false, .938rem, 400, false, #707070);
+		}
+		&-number {
+			position: relative;
+			@include font-pack(false, 2rem, 600, false, #575757);
+		}
+		&-rating {
+			position: relative;
+			@include display-flex();
+			align-items: center;
+		}
+	}
+	&-rating {
+		&-number {
+			@include font-pack(false, 2rem, 700, false, #575757);
+		}
+		&-star {
+			position: relative;
+			@include display-flex();
+			align-items: center;
+			padding-left: .5rem;
+			.fa {
+				color: #bdbdbd;
+			}
+			.fa.active {
+				color: #FFAB06;
+			}
+		}
+	}
+}

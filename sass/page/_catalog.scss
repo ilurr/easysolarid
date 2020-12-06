@@ -1,0 +1,162 @@
+.catalog {
+	position: relative;
+	&-list {
+		&.-homepage {
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+			@include min-responsive($screen-desktop) {
+				padding-top: 2rem;
+				padding-bottom: 2rem;
+			}
+		}
+	}
+	&-wrap {
+		position: relative;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	&-search {
+		position: relative;
+		@include display-flex();
+		align-items: center;
+	}
+	&-sort {
+		text-align: right;
+		.form-row {
+			padding: 0;
+		}
+		.form-select {
+			background: transparent;
+			@include min-responsive($screen-tablet) {
+				height: 34px;
+			}
+			&:after {
+				background: #CCCCD0;
+			}
+			select {
+				border-radius: 4px;
+				border: 1px solid #CCCCD0;
+				padding: 0 0.750rem;
+				@include font-pack(false, .875rem, 400, 1, #9C9C9C);
+				@include min-responsive($screen-tablet) {
+					background: transparent;
+				}
+			}
+		}
+	}
+	&-item {
+		position: relative;
+		a {
+			color: inherit;
+		}
+	}
+	&-box {
+		position: relative;
+		background: #fff;
+		border-radius: 5px;
+		margin: 1rem 0;	
+		padding: 3rem 1rem 1rem;
+		box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+		@include transition(all .2s ease);
+		&:hover {
+			box-shadow: 0 2px 15px rgba(0,0,0,0.23);
+		}
+	}
+	&-status {
+		top: 1rem;
+		left: 1rem;
+		position: absolute;
+		background: #F9AD3D;
+		padding: .125rem .5rem;
+		display: inline-block;
+		text-transform: uppercase;
+		letter-spacing: .063rem;
+		@include font-pack(false, .625rem, false, false, #fff);
+		border-radius: 4px;
+		&:empty {
+			padding: 0;
+		}
+	} 
+	&-like {
+		position: absolute;
+		top: 1.563rem;
+		right: 2rem;
+		z-index: 3;
+		&-button {
+			width: auto;
+			color: #ccc;
+			width: 2rem;
+			height: 2rem;
+			.fa {
+				font-size: 1.25rem;
+			}
+			&.active {
+				.fa {
+					color: #f00;
+					&:before {
+						content: '\f004'
+					}
+				}
+			}
+		}
+	}
+	&-img {
+		position: relative;
+		overflow: hidden;
+		background: #fff;
+		padding-top: 80%;
+		img {
+			@include ratio-flexible(100%, auto);
+			z-index: 2;
+		}
+	}
+	&-bottom {
+		position: relative;
+		@include display-flex();
+		align-items: center;
+		justify-content: space-between;
+		& > * {
+			width: 50%;
+		}
+	}
+	&-title {
+		text-align: center;
+		margin: .5rem 0;
+		@include font-pack(false, 1rem, 600, false, #3E3E3E);
+		@include min-responsive($screen-tablet) {
+			margin: 1rem 0 .5rem;
+			font-size: .875rem;
+			@include title-overflow(38px, 38px);
+		}
+	}
+	&-brand {
+		text-align: right;
+		@include font-pack(false, .875rem, 600, false, #989898);
+	}
+	&-price {
+		text-align: center;
+		margin: .5rem 0;
+		@include font-pack(false, 1rem, 600, false, $color-theme);
+		@include min-responsive($screen-tablet) {
+			font-size: .875rem;
+		}
+	}
+	&-block {
+		&.-hot {
+			.catalog-title {
+				font-size: 1.125rem;
+				text-align: left;
+				margin: 1rem 0 0;
+				@include min-responsive($screen-tablet) {
+					@include title-overflow(50px, 50px);
+				}
+			}
+			.catalog-price {
+				text-align: left;
+			}
+		}
+		.calc-title {
+			margin-bottom: 0;
+		}
+	}
+}

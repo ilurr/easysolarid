@@ -1,0 +1,714 @@
+{
+	"navigation": {
+	  "easysolar": [
+		{
+		  "title": "Easysolar",
+		  "icon": "",
+		  "link": "index.html",
+		  "notification": "",
+		  "badge": false,
+		  "desktop": 0
+		},
+		{
+		  "title": "Solario",
+		  "icon": "",
+		  "link": "solario.html",
+		  "notification": "",
+		  "badge": false,
+		  "desktop": 1
+		},
+		{
+		  "title": "Solarpedia",
+		  "icon": "",
+		  "link": "solarpedia.html",
+		  "notification": "",
+		  "badge": false,
+		  "desktop": 1
+		},
+		{
+		  "title": "Calculator",
+		  "icon": "",
+		  "link": "calculator.html",
+		  "notification": "",
+		  "badge": false,
+		  "desktop": 1
+		},
+		{
+		  "title": "News",
+		  "icon": "",
+		  "link": "news.html",
+		  "notification": "",
+		  "badge": false,
+		  "desktop": 1
+		}
+	  ],
+	  "solario": [
+		{
+		  "title": "Category",
+		  "icon": "",
+		  "link": "solario.html",
+		  "notification": "",
+		  "badge": false,
+		  "divider": true,
+		  "sub": true,
+		  "desktop": 0,
+		  "submenu": [
+			{
+			  "title": "Complete-System",
+			  "heading": true,
+			  "link": "solario-category.html"
+			},
+			{
+			  "title": "Solar 3KWP",
+			  "heading": false,
+			  "link": "solario-category.html"
+			},
+			{
+			  "title": "Solar 4.4KWP",
+			  "heading": false,
+			  "link": "solario-category.html"
+			},
+			{
+			  "title": "Solar 6KWP",
+			  "heading": false,
+			  "link": "solario-category.html"
+			},
+			{
+			  "title": "Solar-Panel",
+			  "heading": true,
+			  "link": "solario-category.html"
+			},
+			{
+			  "title": "Mono-crytaline",
+			  "heading": false,
+			  "link": "solario-category.html"
+			},
+			{
+			  "title": "Poly-crystaline",
+			  "heading": false,
+			  "link": "solario-category.html"
+			},
+			{
+			  "title": "Grid-Tie",
+			  "heading": true,
+			  "link": "solario-category.html"
+			},
+			{
+			  "title": "Grid-Tie 10KWP",
+			  "heading": false,
+			  "link": "solario-category.html"
+			},
+			{
+			  "title": "Grid-Tie 1KWP",
+			  "heading": false,
+			  "link": "solario-category.html"
+			},
+			{
+			  "title": "Grid-Tie 2KWP",
+			  "heading": false,
+			  "link": "solario-category.html"
+			},
+			{
+			  "title": "Grid-Tie 3KWP",
+			  "heading": false,
+			  "link": "solario-category.html"
+			},
+			{
+			  "title": "Grid-Tie 4KWP",
+			  "heading": false,
+			  "link": "solario-category.html"
+			},
+			{
+			  "title": "Grid-Tie 5KWP",
+			  "heading": false,
+			  "link": "solario-category.html"
+			},
+			{
+			  "title": "Grid-Tie 6KWP",
+			  "heading": false,
+			  "link": "solario-category.html"
+			},
+			{
+			  "title": "Grid-Tie 7KWP",
+			  "heading": false,
+			  "link": "solario-category.html"
+			}
+		  ]
+		},
+		{
+		  "title": "Easysolar",
+		  "icon": "",
+		  "link": "index.html",
+		  "notification": "",
+		  "badge": false,
+		  "desktop": 0
+		},
+		{
+		  "title": "Solarpedia",
+		  "icon": "",
+		  "link": "solarpedia.html",
+		  "notification": "",
+		  "badge": false,
+		  "desktop": 1
+		},
+		{
+		  "title": "Calculator",
+		  "icon": "",
+		  "link": "calculator.html",
+		  "notification": "",
+		  "badge": false,
+		  "desktop": 1
+		},
+		{
+		  "title": "News",
+		  "icon": "",
+		  "link": "news.html",
+		  "notification": "",
+		  "badge": false,
+		  "desktop": 1
+		}
+	  ],
+	  "other": [
+		{
+			"title": "About",
+			"icon": "",
+			"link": "#",
+			"notification": "",
+			"badge": false,
+			"divider": true,
+			"desktop": 0
+		  },
+		  {
+			"title": "FAQ",
+			"icon": "",
+			"link": "#",
+			"notification": "",
+			"badge": false,
+			"desktop": 0
+		  },
+		  {
+			"title": "Terms & Conditions",
+			"icon": "",
+			"link": "#",
+			"notification": "",
+			"badge": false,
+			"desktop": 0
+		  },
+		  {
+			"title": "Privacy Policy",
+			"icon": "",
+			"link": "#",
+			"notification": "",
+			"badge": false,
+			"desktop": 0
+		  },
+		  {
+			"title": "Contact",
+			"icon": "",
+			"link": "#",
+			"notification": "",
+			"badge": false,
+			"desktop": 0
+		  }
+	  ]
+	},
+	"sidebar": {
+	  "seller": [
+		{
+		  "title": "Profile",
+		  "icon": "",
+		  "link": "",
+		  "notification": "",
+		  "badge": false,
+		  "desktop": 1,
+		  "child": [
+			{
+			  "title": "Edit",
+			  "icon": "",
+			  "link": "profile.html",
+			  "notification": "",
+			  "badge": false,
+			  "desktop": 1
+			}
+		  ]
+		},
+		{
+		  "title": "Order",
+		  "icon": "",
+		  "link": "",
+		  "notification": "",
+		  "badge": false,
+		  "desktop": 1,
+		  "child": [
+			{
+			  "title": "List Order",
+			  "icon": "",
+			  "link": "seller-order-list.html",
+			  "notification": "",
+			  "badge": false,
+			  "desktop": 1
+			}
+		  ]
+		},
+		{
+		  "title": "My Store",
+		  "icon": "",
+		  "link": "",
+		  "notification": "",
+		  "badge": false,
+		  "desktop": 1,
+		  "child": [
+			{
+			  "title": "List Product",
+			  "icon": "",
+			  "link": "seller-product-list.html",
+			  "notification": "",
+			  "badge": false,
+			  "desktop": 1
+			},
+			{
+			  "title": "Add Product",
+			  "icon": "",
+			  "link": "seller-product-add.html",
+			  "notification": "",
+			  "badge": false,
+			  "desktop": 1
+			}
+		  ]
+		},
+		{
+		  "title": "Setting",
+		  "icon": "",
+		  "link": "",
+		  "notification": "",
+		  "badge": false,
+		  "desktop": 1,
+		  "child": [
+			{
+			  "title": "Notification",
+			  "icon": "",
+			  "link": "setting-notification.html",
+			  "notification": "",
+			  "badge": false,
+			  "desktop": 1
+			},
+			{
+			  "title": "Activity",
+			  "icon": "",
+			  "link": "setting-activity.html",
+			  "notification": "",
+			  "badge": false,
+			  "desktop": 1
+			}
+		  ]
+		}
+	  ],
+	  "buyer": [
+		{
+		  "title": "Profile",
+		  "icon": "",
+		  "link": "",
+		  "notification": "",
+		  "badge": false,
+		  "desktop": 1,
+		  "child": [
+			{
+			  "title": "Edit",
+			  "icon": "",
+			  "link": "profile.html",
+			  "notification": "",
+			  "badge": false,
+			  "desktop": 1
+			}
+		  ]
+		},
+		{
+		  "title": "Order",
+		  "icon": "",
+		  "link": "",
+		  "notification": "",
+		  "badge": false,
+		  "desktop": 1,
+		  "child": [
+			{
+			  "title": "List Order",
+			  "icon": "",
+			  "link": "order-list.html",
+			  "notification": "",
+			  "badge": false,
+			  "desktop": 1
+			}
+		  ]
+		},
+		{
+		  "title": "Notification",
+		  "icon": "",
+		  "link": "notification.html",
+		  "notification": "",
+		  "badge": false,
+		  "desktop": 0
+		},
+		{
+		  "title": "Wishlist",
+		  "icon": "",
+		  "link": "wishlist.html",
+		  "notification": "",
+		  "badge": false,
+		  "desktop": 1
+		},
+		{
+		  "title": "Setting",
+		  "icon": "",
+		  "link": "",
+		  "notification": "",
+		  "badge": false,
+		  "desktop": 1,
+		  "child": [
+			{
+			  "title": "Notification",
+			  "icon": "",
+			  "link": "setting-notification.html",
+			  "notification": "",
+			  "badge": false,
+			  "desktop": 1
+			},
+			{
+			  "title": "Activity",
+			  "icon": "",
+			  "link": "setting-activity.html",
+			  "notification": "",
+			  "badge": false,
+			  "desktop": 1
+			}
+		  ]
+		}
+	  ]
+	},
+	"burger": {
+		"seller": [
+			{
+				"title": "Edit Profile",
+				"icon": "",
+				"link": "profile.html",
+				"notification": "",
+				"badge": false,
+				"desktop": 1
+			  }
+  ,
+			{
+				"title": "List Order",
+				"icon": "",
+				"link": "seller-order-list.html",
+				"notification": "",
+				"badge": false,
+				"desktop": 1
+			  }
+  ,
+			{
+				"title": "List Product",
+				"icon": "",
+				"link": "seller-product-list.html",
+				"notification": "",
+				"badge": false,
+				"desktop": 1
+			  }
+  ,
+			{
+				"title": "Add Product",
+				"icon": "",
+				"link": "seller-product-add.html",
+				"notification": "",
+				"badge": false,
+				"desktop": 1
+			  }
+  ,
+			{
+				"title": "Wishlist",
+				"icon": "",
+				"link": "wishlist.html",
+				"notification": "",
+				"badge": false,
+				"desktop": 1
+			  }
+  ,
+			{
+				"title": "Notification",
+				"icon": "",
+				"link": "notification.html",
+				"notification": "",
+				"badge": false,
+				"desktop": 0
+			  }
+  ,
+			{
+				"title": "Setting",
+				"icon": "",
+				"link": "setting-notification.html",
+				"notification": "",
+				"divider": true,
+				"badge": false,
+				"desktop": 1
+			  }
+  ,
+			{
+				"title": "Activity",
+				"icon": "",
+				"link": "setting-activity.html",
+				"notification": "",
+				"badge": false,
+				"desktop": 1
+			  }
+  ,
+			{
+				"title": "Logout",
+				"icon": "",
+				"link": "index.html",
+				"notification": "",
+				"divider": true,
+				"badge": false,
+				"desktop": 1
+			  }
+  
+		],
+		"buyer": [
+			{
+				"title": "Edit Profile",
+				"icon": "",
+				"link": "profile.html",
+				"notification": "",
+				"badge": false,
+				"desktop": 1
+			  }
+  ,
+			{
+				"title": "List Order",
+				"icon": "",
+				"link": "order-list.html",
+				"notification": "",
+				"badge": false,
+				"desktop": 1
+			  }
+  ,
+			{
+				"title": "Wishlist",
+				"icon": "",
+				"link": "wishlist.html",
+				"notification": "",
+				"badge": false,
+				"desktop": 1
+			  }
+  ,
+			{
+				"title": "Notification",
+				"icon": "",
+				"link": "notification.html",
+				"notification": "",
+				"badge": false,
+				"desktop": 0
+			  }
+  ,
+			{
+				"title": "Setting",
+				"icon": "",
+				"link": "setting-notification.html",
+				"notification": "",
+				"divider": true,
+				"badge": false,
+				"desktop": 1
+			  }
+  ,
+			{
+				"title": "Activity",
+				"icon": "",
+				"link": "setting-activity.html",
+				"notification": "",
+				"badge": false,
+				"desktop": 1
+			  }
+  ,
+			{
+				"title": "Logout",
+				"icon": "",
+				"link": "index.html",
+				"notification": "",
+				"divider": true,
+				"badge": false,
+				"desktop": 1
+			  }
+  
+		]
+	},
+	"product": [
+	  {
+		"title": "PLTS ON GRID 5 KW 3PHASE",
+		"img": "MAINPRODIMG_sankelux_ONG5KWEXIM-SMA3P_1597594189662.png",
+		"brand": "SANKELUX",
+		"name": "Grid Tie SMA 5 KW",
+		"model": "SANKELUX On Grid SMA 3Phase",
+		"price": "Rp 86.530.860",
+		"cat": "",
+		"link": "solario-detail-single.html",
+		"status": "New",
+		"love": 0
+	  },
+	  {
+		"title": "PLTS On Grid 750 Wp 1P",
+		"img": "MAINPRODIMG_Adyasolar_0.75Kwp_1597229253159.jpg",
+		"brand": "Adyasolar",
+		"name": "On Grid 750 Wp 1P",
+		"model": "Adyasolar On Grid 750 Wp 1P",
+		"price": "Rp 21.000.000",
+		"cat": "",
+		"link": "solario-detail-kit.html",
+		"status": "New",
+		"love": 0
+	  },
+	  {
+		"title": "PLTS ON GRID 3 KWP 1PHASE",
+		"img": "MAINPRODIMG_sankelux_ONG3KWEXIM-1_1597594270268.png",
+		"brand": "Sankelux",
+		"name": "Grid Tie SMA 3 KW",
+		"model": "Sankelux On-grid 1 Phasa",
+		"price": "Rp 57.451.268",
+		"cat": "",
+		"link": "solario-detail-single.html",
+		"status": "New",
+		"love": 0
+	  },
+	  {
+		"title": "COMPLETE-SYSTEM",
+		"img": "MAINPRODIMG_ATW-Solar_ATW000133_1603269274408.ac_couple.jpg",
+		"brand": "REC",
+		"name": "Paket 4500Wp On Grid+7000Wh Battery 'Garansi 10th",
+		"model": "REC Hybrid",
+		"price": "Rp 184.700.000",
+		"cat": "",
+		"link": "solario-detail-kit.html",
+		"status": "",
+		"love": 0
+	  },
+	  {
+		"title": "2250 Wp On-Grid System",
+		"img": "MAINPRODIMG_ATW-Solar_2250WP_16040488669741.jpeg",
+		"brand": "REC",
+		"name": "Solar PV 2250 Wp On-Grid",
+		"model": "REC Monocrystalline",
+		"price": "Rp 42.500.000",
+		"cat": "",
+		"link": "solario-detail-single.html",
+		"status": "",
+		"love": 0
+	  },
+	  {
+		"title": "COMPLETE-SYSTEM",
+		"img": "MAINPRODIMG_ATW-Solar_ATW000137_16040481434672.jpeg",
+		"brand": "REC",
+		"name": "3750Wp On-Grid System 25 Tahun Garansi",
+		"model": "REC On Grid",
+		"price": "Rp 72.500.000",
+		"cat": "",
+		"link": "solario-detail-kit.html",
+		"status": "",
+		"love": 0
+	  },
+	  {
+		"title": "Solar Pump Paket I",
+		"img": "MAINPRODIMG_Adyasolar_WSP-1_1597240140777.jpg",
+		"brand": "Adyasolar",
+		"name": "Solar Pump Paket I",
+		"model": "Adyasolar Water solar pump",
+		"price": "Rp 72.500.000",
+		"cat": "",
+		"link": "solario-detail-kit.html",
+		"status": "",
+		"love": 0
+	  }
+	],
+	"product-single": {
+	  "title": "PLTS On Grid 750 Wp 1P",
+	  "img": "MAINPRODIMG_Adyasolar_0.75Kwp_1597229253159.jpg",
+	  "img2": "MAINPRODIMG_sankelux_ONG5KWEXIM-SMA3P_1597594189662.png",
+	  "img3": "MAINPRODIMG_ATW-Solar_2250WP_16040488669741.jpeg",
+	  "brand": "Adyasolar",
+	  "name": "On Grid 750 Wp 1P",
+	  "model": "Adyasolar On Grid 750 Wp 1P",
+	  "price": "Rp 21.000.000",
+	  "cat": "",
+	  "link": "solario-detail-kit.html",
+	  "status": "New",
+	  "love": 0,
+	  "desc": "Sistem Pembangkit Listrik Tenaga Surya (PLTS) Rooftop Ongrid merupakan suatu sistem pembangkit tenaga listrik yang memanfaatkan teknologi fotovoltaik pada modul surya untuk mengubah energi matahari menjadi energi listrik."
+	},
+	"setting": [
+	  {
+		"title": "Transaksi Pembelian",
+		"link": "",
+		"heading": true,
+		"toggle": false,
+		"toggle_value": false
+	  },
+	  {
+		"title": "Menunggu Konfirmasi",
+		"link": "",
+		"heading": false,
+		"toggle": true,
+		"toggle_value": true
+	  },
+	  {
+		"title": "Pesanan Diproses",
+		"link": "",
+		"heading": false,
+		"toggle": true,
+		"toggle_value": false
+	  },
+	  {
+		"title": "Pesanan Dikirim",
+		"link": "",
+		"heading": false,
+		"toggle": true,
+		"toggle_value": true
+	  },
+	  {
+		"title": "Pesanan Tiba",
+		"link": "",
+		"heading": false,
+		"toggle": true,
+		"toggle_value": true
+	  },
+	  {
+		"title": "Pengingat",
+		"link": "",
+		"heading": false,
+		"toggle": true,
+		"toggle_value": false
+	  },
+	  {
+		"title": "Transaksi Penjualan",
+		"link": "",
+		"heading": true,
+		"toggle": false,
+		"toggle_value": false
+	  },
+	  {
+		"title": "Pesanan Baru",
+		"link": "",
+		"heading": false,
+		"toggle": true,
+		"toggle_value": true
+	  },
+	  {
+		"title": "Pesanan Sudah Tiba",
+		"link": "",
+		"heading": false,
+		"toggle": true,
+		"toggle_value": true
+	  },
+	  {
+		"title": "Transaksi Selesai",
+		"link": "",
+		"heading": false,
+		"toggle": true,
+		"toggle_value": true
+	  }
+	]
+  }

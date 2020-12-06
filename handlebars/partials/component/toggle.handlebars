@@ -1,0 +1,11 @@
+<div class="form-row{{#if txterror}} form-error{{/if}}"{{#if parent}} id="{{parent}}"{{/if}}>
+	{{#eq nolabel compare="true"}}
+	{{else}}
+	<label for="{{name}}">{{label}}</label>
+	{{/eq}}
+	<div class="form-toggle-ios">
+		<input name="{{name}}" id="{{name}}" type="checkbox" autocomplete="off"{{#eq toggle_value compare="true"}} checked="checked"{{/eq}}>
+		<span></span>
+	</div>
+	<div class="form-hint">{{{txthint}}}</div>
+</div>

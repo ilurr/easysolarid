@@ -1,0 +1,316 @@
+.news {
+	position: relative;
+	&-grid {
+		position: relative;
+	}
+	&-list {
+		position: relative;
+		// padding-left: 1rem;
+		// padding-right: 1rem;
+		// @include min-responsive($screen-tablet) {
+		// 	padding-left: 2rem;
+		// 	padding-right: 2rem;
+		// }
+	}
+	&-wrap {
+		position: relative;
+		padding-top: 5vh;
+		padding-bottom: 5vh;
+		@include min-responsive($screen-tablet) {
+			padding-top: 10vh;
+		}
+	}
+	&-block {
+		position: relative;
+		// @include display-flex();
+		align-items: center;
+		justify-content: center;
+	}
+	&-item {
+		position: relative;
+		margin-top: .75rem;
+		margin-bottom: .75rem;
+		padding: 0 1rem;
+		@include min-responsive($screen-tablet) {
+			// margin-top: 0;
+			// margin-bottom: 0;
+			padding: 0 15px;
+		}
+	}
+	&-thumb {
+		position: relative;
+		overflow: hidden;
+		background: #fff;
+		border-radius: 6px;
+		box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+		@include transition(all .2s ease);
+		&:hover {
+			box-shadow: 0 2px 15px rgba(0,0,0,0.23);
+		}
+	}
+	&-img {
+		position: relative;
+		overflow: hidden;
+		background: #fafafa;
+		padding-top: 45%;
+		img {
+			@include ratio-flexible(100%, auto);
+			z-index: 2;
+		}
+	}
+	&-box {
+		position: relative;
+		padding: 1rem 1.25rem;
+	}
+	&-title {
+		margin: 0 0 1rem;
+		@include title-overflow(auto, 2.875rem);
+		@include font-pack(false, 1.063rem, 700, false, #4A4D67);
+		@include min-responsive($screen-tablet) {
+			height: 2.875rem;
+		}
+		a {
+			display: block;
+			color: inherit;
+			&:hover {
+				color: $color-theme;
+			}
+		}
+	}
+	&-teaser {
+		position: relative;
+		@include font-pack(false, 1rem, false, false, #4A4D67);
+		@include title-overflow(auto, 70px);
+		margin-bottom: .875rem;
+	}
+	&-info {
+		position: relative;
+		margin: 0 -1.25rem;
+		border-top: 1px solid #F7F7F7;
+		padding: 1rem 1.25rem 0;
+		@include display-flex();
+		align-items: center;
+		justify-content: space-between;
+	}
+	&-date {
+		position: relative;
+		@include font-pack(false, .75rem, 700, false, #B3B3B3);
+	}
+	&-stat {
+		position: relative;
+		@include display-flex();
+		align-items: center;
+		justify-content: space-between;
+		@include font-pack(false, .75rem, 700, false, #B3B3B3);
+		&-item {
+			padding: 0 .25rem;
+		}
+		.fa {
+			color: #E6E6E6;
+			vertical-align: text-bottom;
+			margin-right: .125rem;
+		}
+	}
+
+	// read 
+	&-read {
+		position: relative;
+		background: #fff;
+		box-shadow: 0 2px 5px rgba(0,0,0,.1);
+		padding: 2rem 1rem;
+		margin: 0 -15px;
+		@include min-responsive($screen-desktop) {
+			border-radius: 6px;
+			padding: 3rem 13rem;
+			margin: 0;
+		}
+	}
+	&-figure {
+		position: relative;
+		margin: 1rem -1rem;
+		@include min-responsive($screen-desktop) {
+			margin: 1rem -13rem;
+		}
+		img {
+			width: 100%;
+		}
+	}
+	&-bigtitle {
+		position: relative;
+		margin: .5rem 0;
+		text-align: center;
+		@include font-pack(false, 1.875rem, 600, false, #575757);
+		@include min-responsive($screen-tablet) {
+			font-size: 2.75rem;
+		}
+	}
+	&-subtitle {
+		position: relative;
+		margin: 0 auto;
+		text-align: center;
+		span {
+			background: $color-theme;
+			padding: .25rem .5rem;
+			display: inline-block;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			@include font-pack(false, .75rem, false, false, #fff);
+			border-radius: 5px;
+		}
+	}
+	&-social {
+		position: relative;
+		@include display-flex();
+		flex-wrap: wrap;
+		align-items: center;
+		padding: 0 1rem;
+		&-text {
+			@include font-pack(false, .875rem, 700, false, #B3B3B3);
+		}
+		&-article {
+			position: relative;
+			padding: 0 .5rem;
+		}
+	}
+	&-detail {
+		.news-wrap {
+			padding-top: 5vh;
+			padding-bottom: 0;
+		}
+		.news-info {
+			justify-content: center;
+			border-top: transparent;
+			padding: .5rem 0;
+			margin: 0;
+			flex-wrap: wrap;
+			// @include max-responsive($screen-mobile-max) {
+			// }
+		}
+		.news-stat {
+			font-size: .875rem;
+		}
+		.news-date {
+			font-size: .875rem;
+			padding: 0 .5rem;
+		}
+	}
+	&-content {
+		position: relative;
+		@include font-pack(false, 1rem, false, 1.5, #2b2b2b);
+		@include min-responsive($screen-large-desktop) {
+			font-size: 1.125rem;
+			line-height: 1.7;
+		}
+		p {
+			@include font-pack(false, 1rem, false, 1.5, #2b2b2b);
+			@include min-responsive($screen-large-desktop) {
+				font-size: 1.125rem;
+				line-height: 1.7;
+			}
+		}
+		img {
+			width: 100%;
+		}
+		ol {
+			counter-reset: section;
+		}
+		ol,
+		ul {
+			color: #2b2b2b;
+			line-height: 1.8;
+			margin: 10px 0 15px;
+			padding: 0;
+		}
+		
+		ol li,
+		ul li {
+			position: relative;
+			display: list-item;
+			padding-left: 25px;
+		}
+		
+		ul li:before {
+			content: "";
+			border-radius: 50%;
+			width: 6px;
+			height: 6px;
+			background: #333333;
+			position: absolute;
+			left: 1px;
+			top: 10px;
+		}
+		ol li:before {
+			position: absolute;
+			left: 0;
+			top: 0;
+			counter-increment: section;
+			content: counters(section, ".") ". ";
+		}		
+	}
+	&-search {
+		position: relative;
+		padding-bottom: 1rem;
+	}
+
+	// list
+	&-list {
+		.news-wrap {
+			padding-top: 2.5rem;
+			// padding-bottom: 2.5rem;
+		}
+		@include min-responsive($screen-tablet) {
+			.news-item {
+				width: 100%;
+				margin: 1rem 0;
+			}
+			.news-thumb {
+				@include display-flex();
+			}
+			.news-img {
+				width: 45%;
+				flex-basis: 45%;
+				flex-grow: 0;
+				padding-top: 200px;
+				@include min-responsive($screen-large-desktop) {
+					width: 40%;
+					flex-basis: 40%;
+					padding-top: 240px;
+				}
+			}
+			.news-box {
+				flex-basis: 0;
+				flex-grow: 1;
+				padding: 1rem 1rem;
+				@include display-flex();
+				flex-wrap: wrap;
+				align-content: space-between;
+				@include min-responsive($screen-large-desktop) {
+					padding: 1.5rem 2rem;
+				}
+			}
+			.news-info {
+				width: 100%;
+				margin: 0;
+				padding: 1rem 0 0;
+			}
+			.news-title {
+				width: 100%;
+				font-size: 1.25rem;
+				margin: 0;
+				font-weight: 400;
+				@include title-overflow(auto, 3.500rem);
+				@include min-responsive($screen-large-desktop) {
+					font-size: 1.5rem;
+					max-height: 4.125rem;
+				}
+			}
+			.news-teaser {
+				margin-bottom: 0;
+				max-height: 45px;
+				@include min-responsive($screen-large-desktop) {
+					max-height: 70px;
+				}
+			}
+		}
+	}
+}

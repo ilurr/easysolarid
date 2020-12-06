@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>head font="link" title="Easysolar"}}
+
+<body class="-easysolar">
+	<!-- main -->
+	<main class="main">
+
+		{{>header easysolar=true burger=burger.buyer}}
+
+		{{>sidebar page=navigation.easysolar}}
+
+		<!-- forgot -->
+		<section class="panel-section">
+			<div class="panel">
+				{{>title title="Register Success"}}
+				<div class="panel-body">
+					<p>Your account has been created, now you can continue login below.</p>
+					{{>button type="modal" label="Login" class="-primary" dataAttrTarget="#modal-login"}}
+				</div>
+			</div>
+		</section>
+
+		{{>modal-all}}
+
+		{{>footer}}
+
+	</main>
+
+{{>js}}
+</body>
+</html>

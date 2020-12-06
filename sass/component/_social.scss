@@ -1,0 +1,84 @@
+.social {
+	position: relative;
+	&-block {
+		display: block;
+	}
+	&-item {
+		display: inline-block;
+		padding: 0;
+	}
+	&-link {
+		@include display-flex();
+		align-items: center;
+		// width: 35px;
+		// height: 35px;
+		border-radius: 100%;
+		padding: 7px;
+		background: transparent;
+		&.-facebook {
+			color: $color-facebook;
+			&:hover {
+				color: #fff;
+				background: $color-facebook;
+			}
+		}
+		&.-twitter {
+			color: $color-twitter;
+			&:hover {
+				color: #fff;
+				background: $color-twitter;
+			}
+		}
+		&.-instagram {
+			color: $color-instagram;
+			&:hover {
+				color: #fff;
+				background: $color-instagram;
+			}
+		}
+		&.-youtube {
+			color: $color-youtube;
+			&:hover {
+				color: #fff;
+				background: $color-youtube;
+			}
+		}
+		&.-pinterest {
+			color: $color-pinterest;
+			&:hover {
+				color: #fff;
+				background: $color-pinterest;
+			}
+		}
+		&.-whatsapp {
+			color: $color-whatsapp;
+			&:hover {
+				color: #fff;
+				background: $color-whatsapp;
+			}
+		}
+		&.-line {
+			color: $color-line;
+			&:hover {
+				color: #fff;
+				background: $color-line;
+			}
+		}
+		&.-linkedin {
+			color: $color-linkedin;
+			&:hover {
+				color: #fff;
+				background: $color-linkedin;
+			}
+		}
+	}
+	&-footer {
+		.social-link {
+			color: #BABABA;
+			&:hover {
+				color: #fff;
+				background: #BABABA;
+			}
+		}
+	}
+}

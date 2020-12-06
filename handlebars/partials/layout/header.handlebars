@@ -1,0 +1,188 @@
+<!-- header -->
+<header class="header -fixed">
+	<div class="header-wrap container-xl">
+		{{#if solario}}
+		<div class="header-col -left">
+			<button type="button" class="button -transparent nav-button nav-button-burger" role="button" id="menu-burger">
+				<span class="icon-bar">
+					<i></i>
+				</span>
+			</button>
+			<div class="logo -solario">
+				<a href="solario.html">
+					<div class="logo-box">
+						<div class="logo-img">
+							<img src="./asset/images/logo-solario.png" alt="Solario">
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="header-col -middle">
+			<!-- category button -->
+			<button type="button" class="button -transparent nav-button nav-button-cat" role="button" id="menu-cat">
+				<span>Category</span>
+				{{>category}}
+			</button>
+			<div id="form-search-solario" class="search-header -solario">
+				<form action="search-solario.html">
+					<input type="text" class="input" name="search-solario" placeholder="Search">
+					<input type="submit" class="button" name="search-solario-btn" value="Search">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</form>
+			</div>
+		</div>
+		{{/if}}
+		{{#if easysolar}}
+		<div class="header-col -left">
+			<button type="button" class="nav-button nav-button-burger" role="button" id="menu-burger">
+				<span class="icon-bar">
+					<i></i>
+				</span>
+			</button>
+			<div class="logo">
+				<a href="index.html">
+					<div class="logo-box">
+						<div class="logo-icon">
+							<img src="./asset/images/logo-easysolar.png" alt="Easysolar">
+						</div>
+						<div class="logo-title">
+							Easy<span>Solar</span>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		{{/if}}
+		<div class="header-col -right">
+			{{#if easysolar}}
+			
+			{{>nav-easysolar-top page=page}}
+
+			<!-- search button (easysolar) -->
+			<div id="form-search-easysolar" class="search-block">
+				<div class="search-bar">
+					<div class="search-header -easysolar">
+						<form action="search-easysolar.html">
+							<input type="text" class="input" name="search-easysolar" placeholder="Search">
+							<input type="submit" class="button" name="search-easysolar-btn" value="Search">
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</form>
+					</div>
+					<button type="button" class="button -transparent nav-button nav-button-search -easysolar" role="button" id="menu-search-easysolar">
+						<i class="fa fa-search" aria-hidden="true"></i>
+					</button>
+				</div>
+			</div>
+			{{/if}}
+			{{#if solario}}
+			
+			<!-- search button (solario) -->
+			<button type="button" class="button -transparent nav-button nav-button-search -solario" role="button" id="menu-search-solario">
+				<i class="fa fa-search" aria-hidden="true"></i>
+			</button>
+
+			<!-- cart button -->
+			<a href="cart-empty.html" class="button -transparent nav-button nav-button-cart" role="button" id="menu-cart">
+				<span class="nav-badge"></span>
+				<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+			</a>
+			
+			<!-- notification button -->
+			<div class="dropdown">
+				<button type="button" class="button -transparent nav-button nav-button-notify dropdown-toggle" role="button" id="menu-notify" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<span class="nav-badge">5</span>
+					<i class="fa fa-bell" aria-hidden="true"></i>
+				</button>
+				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="menu-notify">
+					<div class="notify-bar">
+						<div class="notify-item unread">
+							<a href="notification.html">
+								<div class="notify-row">
+									<div class="notify-col">
+										<div class="notify-content">
+											<span>4500W Off-Grid Solar Kit System</span> Transaksi telah dikonfirmasi pembeli dan menunggu review Solario.
+										</div>
+										<div class="notify-time">20 minutes ago</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="notify-item">
+							<a href="notification.html">
+								<div class="notify-row">
+									<div class="notify-col">
+										<div class="notify-content">
+											<span>Off-Grid 10 KWP</span> Menunggu proses pembayaran dan verifikasi pihak ketiga.
+										</div>
+										<div class="notify-time">12 Mei 2020, 16:00</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- see all -->
+						<div class="notify-item">
+							<a href="notification.html">
+								<div class="notify-row">
+									<div class="notify-col">
+										<div class="notify-content">
+											<span class="text-center">See All</span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<!-- no notification -->
+						<div class="notify-item">
+							<div class="notify-row">
+								<div class="notify-col">
+									<div class="notify-content">
+										<span class="text-center">You have no notification</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{{/if}}
+
+			{{#if login}}
+			<!-- user button (after login) -->
+			<div class="dropdown">
+				<button type="button" class="button -transparent nav-button nav-button-user dropdown-toggle" role="button" id="menu-profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<div class="menu-user">
+						<div class="menu-avatar">
+							<img src="./asset/images/dummy/avatar.jpg" alt="">
+						</div>
+					</div>
+				</button>
+				<div class="dropdown-menu dropdown-menu-right" aria-labelledby="menu-profile">
+					<a class="dropdown-item" href="profile.html">Edit Profile</a>
+					{{#eq profile compare="Buyer"}}
+					<a class="dropdown-item" href="order-list.html">List Order</a>
+					{{/eq}}
+					{{#eq profile compare="Seller"}}
+					<a class="dropdown-item" href="seller-order-list.html">List Order</a>
+					<a class="dropdown-item" href="seller-product-list.html">List Product</a>
+					<a class="dropdown-item" href="seller-product-add.html">Add Product</a>
+					{{/eq}}
+					<a class="dropdown-item" href="wishlist.html">Wishlist</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="setting-notification.html">Setting</a>
+					<a class="dropdown-item" href="setting-activity.html">Activity</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="index.html">Logout</a>
+				</div>
+			</div>
+			{{else}}
+
+			<!-- user button (before login) -->
+			<button type="button" class="button -transparent nav-button nav-button-user" role="button" id="menu-user" data-toggle="modal" data-target="#modal-welcome">
+				<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+			</button>
+			{{/if}}
+
+		</div>
+	</div>
+</header>

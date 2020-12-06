@@ -1,0 +1,51 @@
+.coverage {
+	position: relative;
+	&-wrap {
+		position: relative;
+		padding-top: 5vh;
+		padding-bottom: 15vh;
+		// @include min-responsive($screen-tablet) {
+		// 	padding-top: 12vh;
+		// 	padding-bottom: 12vh;
+		// }
+	}
+	&-block {
+		position: relative;
+		@include display-flex();
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	&-item {
+		position: relative;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		@include min-responsive($screen-tablet) {
+			margin-top: .75rem;
+			margin-bottom: .75rem;
+			padding-left: 2rem;
+			padding-right: 2rem;
+		// 	width: calc(100% / 4);
+		}
+		// @include min-responsive($screen-large-desktop) {
+		// 	width: calc(100% / 6);
+		// }
+	}
+	&-img {
+		position: relative;
+		text-align: center;
+		img {
+			opacity: .7;
+			@include transition(all .2s ease);
+		}
+		a {
+			&:hover {
+				img {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}

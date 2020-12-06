@@ -1,0 +1,189 @@
+input[type=submit],
+button,
+.button {
+	@include reset-appearance();
+	@include transition(all .2s ease);
+	position: relative;
+	// display: inline-block;
+	width: 100%;
+	height: 42px;
+	margin: 0;
+	padding: 0 1.25rem;
+	border-radius: 4px;
+	background: #fff;
+	text-align: center;
+	border: 1px solid #dcdcdc;
+	cursor: pointer;
+	@include font-pack(false, 0.938rem, 900, false, #5e5e5e);
+	&:hover {
+		color: inherit;
+		background: lighten(#dcdcdc, 9%);
+		// border: 1px solid lighten(#dcdcdc, 9%);
+	}
+	@include display-inline-flex();
+	justify-content: center;
+	align-items: center;
+	&.-facebook {
+		border: 1px solid $color-facebook;
+		background: $color-facebook;
+		color: #fff;
+		&:hover {
+			background: darken($color-facebook, 12%);
+		}
+	}
+	// &.-google {
+	// 	border: 1px solid #5e5e5e;
+	// 	background: #fff;
+	// 	color: #5e5e5e;
+	// 	&:hover {
+	// 		background: darken(#fff, 12%);
+	// 	}
+	// }
+	&.-twitter {
+		border: 1px solid $color-twitter;
+		background: $color-twitter;
+		color: #fff;
+		&:hover {
+			background: darken($color-twitter, 12%);
+		}
+	}
+	&.-apple {
+		border: 1px solid $color-apple;
+		background: $color-apple;
+		color: #fff;
+		&:hover {
+			background: lighten($color-apple, 12%);
+		}
+	}
+	&.-transparent {
+		padding: 0;
+		background: transparent;
+		border: transparent;
+		&:hover {
+			background: transparent;
+			border: transparent;
+		}
+	}
+	&.-fifth {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: .75rem;
+		border: 1px solid #dcdcdc;
+		color: #fff;
+		letter-spacing: 0.063rem;
+		justify-content: space-between;
+		height: 35px;
+		background: $color-third;
+		border: 1px solid $color-third;
+	}
+	&.-fourth {
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: .75rem;
+		border: 1px solid #dcdcdc;
+		color: #B3B3B3;
+		letter-spacing: 0.063rem;
+		height: 45px;
+	}
+	&.-third {
+		// border-radius: 1px;
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: .75rem;
+		border: 1px solid #9B9B9B;
+		color: #211F1F;
+		letter-spacing: 0.063rem;
+		height: 45px;
+		// &:hover {
+		// 	color: #fff;
+		// 	border: 1px solid darken(#211F1F, 12%);
+		// 	background: darken(#211F1F, 12%);
+		// }
+	}
+	&.-secondary {
+		background: $color-secondary;
+		border: 1px solid $color-secondary;
+		color: #fff;
+		// border-radius: 1px;
+		font-size: .75rem;
+		text-transform: uppercase;
+		font-weight: 600;
+		letter-spacing: 0.063rem;
+		height: 45px;
+		&:hover {
+			border: 1px solid darken($color-secondary, 12%);
+			background: darken($color-secondary, 12%);
+		}
+	}
+	// &.-tertiary {
+	// 	border-radius: 1px;
+	// 	text-transform: uppercase;
+	// 	font-weight: 600;
+	// 	font-size: .75rem;
+	// 	border: 1px solid #979797;
+	// 	color: #211F1F;
+	// }
+	// &.-secondary {
+	// 	background: $color-secondary;
+	// 	border: 1px solid $color-secondary;
+	// 	color: #fff;
+	// 	border-radius: 1px;
+	// 	font-size: .75rem;
+	// 	text-transform: uppercase;
+	// 	font-weight: 600;
+	// 	&:hover {
+	// 		border: 1px solid darken($color-secondary, 12%);
+	// 		background: darken($color-secondary, 12%);
+	// 	}
+	// }
+	&.-primary {
+		background: $color-theme;
+		border: 1px solid $color-theme;
+		color: $color-button-primary;
+		&:hover {
+			border: 1px solid darken($color-theme, 12%);
+			background: darken($color-theme, 12%);
+		}
+	}
+	&.-warning {
+		background: $color-error;
+		border: 1px solid $color-error;
+		color: $color-button-primary;
+		&:hover {
+			border: 1px solid darken($color-error, 12%);
+			background: darken($color-error, 12%);
+		}
+	}
+	&.-cta {
+		background: $color-theme;
+		border: 1px solid $color-theme;
+		color: $color-button-primary;
+		border-radius: 2px;
+		justify-content: space-between;
+		text-transform: uppercase;
+		padding: 0 1rem;
+		font-size: .75rem;
+		letter-spacing: 2px;
+		&:hover {
+			border: 1px solid darken($color-theme, 8%);
+			background: darken($color-theme, 8%);
+		}
+	}
+	&[disabled="disabled"],
+	&[disabled="true"],
+	&.-disabled {
+		background: $color-disabled;
+		border: 1px solid $color-disabled;
+		color: #ccc;
+		// font-weight: 700;
+		&:hover {
+			border: 1px solid $color-disabled;
+			background: $color-disabled;	
+		}
+	}
+	// & > .fa,
+	// & > .icon {
+	// 	position: absolute;
+	// 	right: 1rem;
+	// }
+}

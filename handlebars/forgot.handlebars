@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>head font="link" title="Easysolar"}}
+
+<body class="-easysolar">
+	<!-- main -->
+	<main class="main">
+
+		{{>header easysolar=true burger=burger.buyer}}
+
+		{{>sidebar page=navigation.easysolar}}
+
+		<!-- forgot -->
+		<section class="panel-section">
+			<div class="panel">
+				{{>title title="Reset Your Password"}}
+				<div class="panel-body">
+					<form action="forgot-result.html">
+						<p>Enter your email address below and we'll send you a link with instructions.</p>
+						{{>input type="text" label="Email Address" name="reset-email"}}
+						{{>button type="submit" label="Send" name="reset-btn" class="-primary"}}
+					</form>
+				</div>
+			</div>
+		</section>
+
+		{{>modal-all}}
+
+		{{>footer}}
+
+	</main>
+
+{{>js}}
+</body>
+</html>

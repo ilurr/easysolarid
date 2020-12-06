@@ -1,0 +1,142 @@
+.footer {
+	position: relative;
+	background: #fff;
+	width: 100%;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	&-middle {
+		padding: 1rem 0;
+		@include min-responsive($screen-desktop) {
+			padding: .5rem 0;
+		}
+	}
+	&-title {
+		padding: .5rem 0;
+		@include font-pack(false, 0.938rem, 700, false, #211F1F);
+	}
+	&-copy {
+		position: relative;
+		border-top: 1px solid #F0F0F0;
+		text-align: center;
+		padding: 1.5rem 1rem;
+		@include font-pack(false, 0.875rem, false, false, #9F9F9F);
+	}
+	&-nav {
+		position: relative;
+		padding: 0;
+		&-wrap {
+			position: relative;
+			@include display-flex();
+		}
+		ul {
+			display: block;
+			@include display-flex();
+			flex-wrap: wrap;
+			justify-content: center;
+			@include min-responsive($screen-desktop) {
+				justify-content: flex-start;
+			}
+		}
+		li {
+			display: block;
+			width: 100%;
+			a {
+				display: inline-block;
+				padding: 0.25rem 0;
+				@include font-pack(false, 0.813rem, 600, false, #979797);
+				&:hover {
+					color: $color-primary;
+				}
+			}
+		}
+	}
+	&-social {
+		position: relative;
+		padding: .5rem;
+		@include display-flex();
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		@include min-responsive($screen-desktop) {
+			flex-wrap: nowrap;
+			justify-content: flex-end;
+		}
+	}
+	&-pay {
+		position: relative;
+		padding: .5rem;
+		&-text {
+			position: relative;
+			padding: 0 .5rem;
+			@include font-pack(false, 0.5rem, 700, 20px, #9F9F9F);
+		}
+		ul {
+			position: relative;
+			@include display-flex();
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+		li {
+			position: relative;
+			overflow: hidden;
+			border-radius: 5px;
+			margin: .125rem;
+			padding: .125rem;
+			background: #fff;
+			border: 1px solid #F0F0F0;
+			@include display-flex();
+			align-items: center;
+			justify-content: center;
+			img {
+				max-height: 20px;
+			}
+		}
+	}
+	&-subscribe {
+		position: relative;
+		text-align: center;
+		padding-top: 2rem;
+		@include min-responsive($screen-tablet) {
+			padding-top: 0;
+		}
+		@include min-responsive($screen-desktop) {
+			text-align: left;
+		}
+		&-text {
+			@include font-pack(false, .875rem, false, false, #9F9F9F);
+			text-align: center;
+			@include min-responsive($screen-desktop) {
+				text-align: left;
+			}
+		}
+		&-form {
+			position: relative;
+			padding: .5rem 0;
+			margin-top: 1.25rem;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.input {
+			height: 42px;
+			border: 1px solid transparent;
+			border-radius: 0;
+			padding: 0.1250rem 0;
+			background: transparent;
+			border-bottom: 2px solid #E9E9E9;
+			&::placeholder {
+				font-size: .875rem;
+			}
+		}
+		.button {
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			top: 13px;
+			right: 5px;
+			z-index: 1;
+			font-size: 1rem;
+			text-transform: uppercase;
+		}
+	}
+}

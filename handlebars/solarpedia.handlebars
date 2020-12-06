@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>head font="link" title="Solarpedia"}}
+
+<body class="-easysolar">
+	<!-- main -->
+	<main class="main">
+
+		{{>header easysolar=true page="Solarpedia"}}
+
+		{{>sidebar page=navigation.easysolar}}
+
+		<!-- news big -->
+		<section class="showcase -news">
+			<div class="showcase-slider">
+				<div class="showcase-item">
+					<!-- news -->
+					<div class="showcase-block">
+						<div class="showcase-img" style="background-image: url('./asset/images/dummy/photo-1497440001374-f26997328c1b.jpeg');"></div>
+						<div class="showcase-content container-xl">
+							<h2 class="showcase-news-title"><a href="solarpedia-detail.html">Solar Panel Monocrystalline dan Polycrystalline di dalam Sistem Sel Surya</a></h2>
+							<div class="showcase-news-teaser">Solar panel merupakan salah satu komponen utama dalam sistem pembangkitan daya tenaga surya. Tedapat dua jenis sel surya yang dipergunakan untuk membuat panel surya. Polycrystalline dan Monocrystalline adalah nama dari dua jenis sel surya tersebut.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- news-grid -->
+		<section class="news-grid">
+			<div class="news-wrap container-xl">
+				{{>solarpedia-grid}}
+				{{>solarpedia-grid}}
+				{{>solarpedia-grid}}
+			</div>
+
+			{{>paging}}
+		</section>
+
+		{{>modal-all}}
+
+		{{>footer}}
+
+	</main>
+
+{{>js}}
+</body>
+</html>

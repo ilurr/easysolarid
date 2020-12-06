@@ -1,0 +1,20 @@
+<div class="form-row{{#if txterror}} form-error{{/if}}"{{#if parent}} id="{{parent}}"{{/if}}>
+	{{#eq nolabel compare="true"}}
+	{{else}}
+	<label for="{{name}}">{{label}}</label>
+	{{/eq}}
+	<div class="form-image{{#if active}} -active{{/if}}">
+		<input type="file" id="{{name}}" name="{{name}}" class="file{{#if txterror}} -error{{/if}}{{#if function}} {{function}}{{/if}}" placeholder="{{placeholder}}"{{#eq required compare="true"}} required="required"{{/eq}}{{#eq disabled compare="true"}} disabled="disabled"{{/eq}}{{#eq readonly compare="true"}} readonly="readonly"{{/eq}}{{#if txtVal}} value="{{txtVal}}"{{/if}} onchange="readURL(this)">
+		<button type="button" class="remove easy-upload-remove"><span aria-hidden="true">&times;</span></button>
+		{{#if img}}
+		<span id="{{name}}-img" style="background-image: url('./asset/images/bg-img-preview.png');">
+			<img src="{{img}}" alt="">
+		</span>
+		{{else}}
+		<span id="{{name}}-img" style="background-image: url('./asset/images/bg-img-preview.png');">
+			<img src="" alt="">
+		</span>
+		{{/if}}
+	</div>
+	<div class="form-hint">{{{txthint}}}</div>
+</div>

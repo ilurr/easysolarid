@@ -1,0 +1,25 @@
+<!-- modal edit profile -->
+<div class="modal fade" id="modal-profile-set" tabindex="-1" aria-labelledby="editProfile" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Edit Profile</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="user-block">
+					<form action="#">
+						{{>input type="text" label="Nama Depan" name="user-first" txtVal="Chelsea"}}
+						{{>input type="text" label="Nama Belakang" name="user-last" txtVal="Olivia"}}
+						{{>input type="text" label="Tanggal Lahir" name="user-birth" override="user-datepicker" txtVal="12/12/1990"}}
+						{{>select type="select" label="Jenis Kelamin" name="user-gender" option="Pria,Wanita" placeholder="-"}}
+						{{>fileupload name="user-photo" label="Ganti Foto" img="./asset/images/dummy/avatar.jpg" active="true"}}
+						{{>button type="submit" label="Save" name="user-profile-save" class="-primary"}}
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

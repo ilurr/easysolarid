@@ -1,0 +1,70 @@
+.root {
+	position: relative;
+	padding-top: 3.438rem;
+	// padding-top: 5rem;
+	min-height: 100vh;
+	@include min-responsive($screen-tablet) {
+		padding-top: 4.375rem;
+	}
+	&-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-size: cover;
+		background-position: center center;
+		width: 100%;
+		// @include min-responsive($screen-desktop) {
+		// 	width: $screen-tablet;
+		// }
+	}
+}
+
+.grid {
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	// width: $screen-tablet;
+	width: 100%;
+	@include min-responsive($screen-tablet) {
+		padding-left: 0.938rem;
+		padding-right: 0.938rem;
+	}
+	@include min-responsive($screen-desktop) {
+		width: $screen-desktop;
+	}
+	@include min-responsive($screen-large-desktop) {
+		width: $screen-large-desktop;
+	}
+	
+	// 
+	&-full {
+		padding-left: 0;
+		padding-right: 0;
+		width: 100%;
+	}
+
+	// flex
+	&-flex {
+		position: relative;
+		@include display-flex();
+		@include max-responsive($screen-mobile-max) {
+			flex-wrap: wrap;
+		}
+	}
+	&-col {
+		position: relative;
+		padding-left: 0.938rem;
+		padding-right: 0.938rem;
+		flex-grow: 0;
+	}
+}
+
+.box {
+	position: relative;
+	border-radius: 6px;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+	background-color: #fff;
+	// overflow: hidden;
+}

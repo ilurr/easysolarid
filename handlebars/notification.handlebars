@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>head font="link" title="Notification"}}
+
+<body class="-solario">
+	<!-- main -->
+	<main class="main">
+
+		{{>header solario=true page="Notification" login=true profile="Buyer"}}
+
+		{{>sidebar page=navigation.solario}}
+
+		<!-- dashboard -->
+		<section class="board">
+			<div class="board-wrap container-xl">
+				<div class="board-block row">
+					<div class="board-aside col-lg-3">
+						{{>dashboard-sidebar profile=sidebar.buyer page=""}}
+					</div>
+					<div class="board-aside col-lg-9">
+
+						<!-- notify -->
+						<div class="board-row">
+							<h2 class="subtitle">Notification</h2>
+							<div class="notify-block">
+								<!-- item -->
+								<div class="notify-item unread">
+									<a href="#">
+										<div class="notify-row">
+											<div class="notify-col">
+												<div class="notify-content">
+													<span>4500W Off-Grid Solar Kit System</span> Transaksi telah dikonfirmasi pembeli dan menunggu review Solario.
+												</div>
+												<div class="notify-time">20 minutes ago</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="notify-item">
+									<a href="#">
+										<div class="notify-row">
+											<div class="notify-col">
+												<div class="notify-content">
+													<span>Off-Grid 10 KWP</span> Menunggu proses pembayaran dan verifikasi pihak ketiga.
+												</div>
+												<div class="notify-time">12 Mei 2020, 16:00</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="notify-item">
+									<a href="#">
+										<div class="notify-row">
+											<div class="notify-col">
+												<div class="notify-content">
+													<span>4500W Off-Grid Solar Kit System</span> Transaksi telah dikonfirmasi pembeli dan menunggu review Solario.
+												</div>
+												<div class="notify-time">20 minutes ago</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="notify-item">
+									<a href="#">
+										<div class="notify-row">
+											<div class="notify-col">
+												<div class="notify-content">
+													<span>Off-Grid 10 KWP</span> Menunggu proses pembayaran dan verifikasi pihak ketiga.
+												</div>
+												<div class="notify-time">12 Mei 2020, 16:00</div>
+											</div>
+										</div>
+									</a>
+								</div>
+
+								<!-- if no notification 
+								<div class="notify-item">
+									<div class="notify-row">
+										<div class="notify-col">
+											<div class="notify-content">
+												<span class="text-center">You have no notification</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								-->
+
+								{{>paging}}
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		{{>modal-all}}
+
+		{{>footer}}
+
+	</main>
+
+{{>js}}
+</body>
+</html>

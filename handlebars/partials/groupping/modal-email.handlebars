@@ -1,0 +1,27 @@
+<!-- modal edit email -->
+<div class="modal fade" id="modal-email-set" tabindex="-1" aria-labelledby="editEmail" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Change Email</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="user-block">
+					<form action="#">
+						{{>input type="text" label="Email" name="user-email" txtVal="chelseaolivia@gmail.com" disabled="true"}}
+						{{>input type="text" label="Confirm Email" name="user-confemail"}}
+						<div class="form-row">
+							<div class="panel-text">
+								<p>You must check your email to verified the cofirmation code.</p>
+							</div>
+						</div>
+						{{>button type="submit" label="Save" name="user-email-save" class="-primary"}}
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

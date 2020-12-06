@@ -1,0 +1,32 @@
+{{#each data}}
+{{#gte @index compare=../index_start}}
+{{#gte @index compare=../index_end}}
+{{else}}
+<div class="catalog-item col-md-{{../col}}">
+	<div class="catalog-like">
+		<button type="button" class="button -transparent btn catalog-like-button{{#if ../like}} active{{/if}}" data-toggle="button" aria-pressed="{{#if ../like}}true{{else}}false{{/if}}">
+			<i class="fa fa-heart-o" aria-hidden="true"></i>
+		</button>
+	</div>
+	<a href="{{link}}">
+		<div class="catalog-box">
+			<div class="catalog-status">{{status}}</div>
+			<div class="catalog-img">
+				<img src="./asset/images/dummy/{{img}}" alt="">
+			</div>
+			<h2 class="catalog-title">{{name}}</h2>
+			{{#eq ../col compare=4}}
+			<div class="catalog-bottom">
+				<div class="catalog-price">{{price}}</div>
+				<div class="catalog-brand">{{brand}}</div>
+			</div>
+			{{else}}
+			<div class="catalog-price">{{price}}</div>
+			{{/eq}}
+		</div>
+	</a>
+</div>
+{{/gte}}
+{{else}}
+{{/gte}}
+{{/each}}

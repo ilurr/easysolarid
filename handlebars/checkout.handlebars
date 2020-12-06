@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>head font="link" title="Solario"}}
+
+<body class="-solario">
+	<!-- main -->
+	<main class="main">
+
+		{{>header solario=true page="Solario" login=true burger=burger.buyer}}
+
+		{{>sidebar page=navigation.solario}}
+
+		<!-- cart/checkout -->
+		<section class="cart">
+			<div class="cart-wrap container-xl">
+				<h2 class="title">Checkout</h2>
+				<div class="cart-box -checkout">
+					
+					<!-- checkout -->
+					<div class="cart-checkout">
+						<div class="checkout-block row">
+							<div class="checkout-shipping col-md-6">
+								<!-- shipping -->
+								<h3 class="subtitle">Shipping Address</h3>
+								<div class="checkout-address">
+									<div class="checkout-recipient">
+										<strong>Chelsea Olivia Zalianty</strong><br>
+										08987654321<br>
+										Jl. bunga melati no 18 , RT 005/ RW 002, Kel. Cipete, Kec. Cilandak, Jakarta Selatan 12410
+									</div>
+									<div class="checkout-address-button">
+										<button type="button" role="button" class="button -third" data-toggle="modal" data-target="#modal-address-set">Shipping to a Different Address</button>
+									</div>
+								</div>
+							</div>
+							<div class="checkout-cart col-md-6">
+								<!-- cart summary -->
+								<h3 class="subtitle">Order Summary</h3>
+								<div class="cart-list -small">
+
+									{{>cart-list}}
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- checkout payment -->
+					<div class="checkout-payment">
+						<h3 class="subtitle">Choose Payment Method</h3>
+						<div class="checkout-payment-block row">
+							<div class="checkout-payment-item col-lg-4 col-md-6">
+								<div class="checkout-payment-box -bank">
+									<label for="payment-bank-transfer">
+										<div class="form-radio">
+											<input name="payment-bank-radio" id="payment-bank-transfer" type="radio" autocomplete="off" checked="checked">
+											<span></span>
+											<div class="checkout-payment-title">Bank Transfer</div>
+											<div class="checkout-payment-text">
+												Please kindly to transfers to <br>
+												PT. PP Energi <br>
+												<strong>129 00 30209007</strong> <br>
+												Bank Mandiri 
+											</div>
+										</div>
+									</label>
+								</div>
+							</div>
+							<div class="checkout-payment-item col-lg-4 col-md-6">
+								<div class="checkout-payment-box -finance">
+									<label for="payment-easy-finance">
+										<div class="form-radio">
+											<input name="payment-bank-radio" id="payment-easy-finance" type="radio" autocomplete="off">
+											<span></span>
+											<div class="checkout-payment-title">Easy Finance</div>
+											<div class="checkout-payment-text">
+												You must complete your personal data to apply for the installment process
+											</div>
+											<button type="button" name="start-easy-finance-btn" class="button checkout-payment-button" data-toggle="modal" data-target="#modal-easyfinance">Start</button>
+										</div>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- cart button -->
+					<div class="cart-footer">
+						<a href="cart.html" role="link" class="button -fourth cart-button-action"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Shopping Cart</a>
+						<a href="checkout-success.html" role="link" class="button -secondary cart-button-action">Pay Now <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		{{>modal-easyfinance}}
+
+		{{>modal-address}}
+
+		{{>modal-all}}
+
+		{{>footer}}
+
+	</main>
+
+{{>js}}
+</body>
+</html>

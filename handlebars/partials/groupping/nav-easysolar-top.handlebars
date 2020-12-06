@@ -1,0 +1,12 @@
+<!-- nav easysolar -->
+<nav class="nav -header" aria-label="Main Navigation">
+	<ol class="nav-wrap">
+		{{#each navigation.easysolar}}
+		{{#eq desktop compare=1}}
+		<li class="nav-item">
+			<a href="{{link}}" class="nav-link{{#eq ../page compare=title}} -active{{/eq}}" role="link" aria-label="{{title}}">{{title}}</a>
+		</li>
+		{{/eq}}
+		{{/each}}
+	</ol>
+</nav>

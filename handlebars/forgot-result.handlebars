@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>head font="link" title="Easysolar"}}
+
+<body class="-easysolar">
+	<!-- main -->
+	<main class="main">
+
+		{{>header easysolar=true burger=burger.buyer}}
+
+		{{>sidebar page=navigation.easysolar}}
+
+		<!-- forgot -->
+		<section class="panel-section">
+			<div class="panel">
+				{{>title title="Reset password"}}
+				<div class="panel-body">
+					<p>We have sent you an email. Check your inbox and follow a link with instructions over there.</p>
+					<p><a href="index.html">Back to home</a></p>
+				</div>
+			</div>
+		</section>
+
+		{{>modal-all}}
+
+		{{>footer}}
+
+	</main>
+
+{{>js}}
+</body>
+</html>

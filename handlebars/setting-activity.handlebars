@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>head font="link" title="Activity"}}
+
+<body class="-solario">
+	<!-- main -->
+	<main class="main">
+
+		{{>header solario=true page="Activity" login=true profile="Buyer"}}
+
+		{{>sidebar page=navigation.solario}}
+
+		<!-- dashboard -->
+		<section class="board">
+			<div class="board-wrap container-xl">
+				<div class="board-block row">
+					<div class="board-aside col-lg-3">
+						{{>dashboard-sidebar profile=sidebar.buyer page="Activity"}}
+					</div>
+					<div class="board-aside col-lg-9">
+						<!-- setting activity -->
+						<div class="setting">
+							<div class="setting-block">
+								<div class="setting-item">
+									<div class="setting-heading">Login Activity</div>
+									<div class="setting-activity-block">
+										<i class="fa fa-exclamation-circle" aria-hidden="true"></i> If there is any unknown activity, immediately click "Logout" and <a href="profile.html">change the password</a>.
+									</div>
+									<div class="setting-subheading">Current Activity</div>
+									<div class="setting-activity-list">
+										<div class="setting-activity-item">
+											<div class="setting-activity-icon">
+												<i class="fa fa-laptop" aria-hidden="true"></i>
+											</div>
+											<div class="setting-activity-info">
+												<div class="setting-activity-system">Safari on Intel Mac OS X 10_14_6</div>
+												<div class="setting-activity-ip">199.47.183.169</div>
+												<div class="setting-activity-status"><span>Active Now</span></div>
+											</div>
+										</div>
+										<div class="setting-activity-item">
+											<div class="setting-activity-icon">
+												<i class="fa fa-mobile" aria-hidden="true"></i>
+											</div>
+											<div class="setting-activity-info">
+												<div class="setting-activity-system">Android</div>
+												<div class="setting-activity-ip">192.168.0.27</div>
+												<div class="setting-activity-status">Last seen 20 Jul 2020, 16.09</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		{{>modal-all}}
+
+		{{>footer}}
+
+	</main>
+
+{{>js}}
+</body>
+</html>

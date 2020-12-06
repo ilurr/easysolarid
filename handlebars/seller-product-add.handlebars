@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>head font="link" title="Add Product"}}
+
+<body class="-solario">
+	<!-- main -->
+	<main class="main">
+
+		{{>header solario=true page="Add Product" login=true profile="Seller"}}
+
+		{{>sidebar page=navigation.solario}}
+
+		<!-- dashboard -->
+		<section class="board">
+			<div class="board-wrap container-xl">
+				<div class="board-block row">
+					<div class="board-aside col-lg-3">
+						{{>dashboard-sidebar profile=sidebar.seller page="Add Product"}}
+					</div>
+					<div class="board-aside col-lg-9">
+						<!-- add product -->
+						<div class="product-add">
+						<form action="seller-product-list.html">
+							<div class="board-row">
+								<h2 class="subtitle">Upload Product</h2>
+								<div class="board-box" data-field="unit-box-img">
+									<button type="button" class="button unit-button-remove"><span aria-hidden="true">&times;</span></button>
+									<div class="unit-box-row row">
+										<div class="col-md-4">
+											<div class="unit-add-file">
+												{{>fileupload name="unit-img" nolabel="true"}}
+											</div>
+										</div>
+										<div class="col-md-8">
+											<div class="unit-add-textarea">
+												{{>textarea nolabel="true" placeholder="Description" name="unit-desc" override="unit-textarea -full"}}
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="board-box-right">
+									<button type="button" name="unit-add-img" id="unit-add-img" class="button unit-button-field">+ Add Field</button>
+								</div>
+							</div>
+
+							<div class="board-row">
+								<h2 class="subtitle">Product Information</h2>
+								<div class="board-box">
+									<div class="unit-box-row">
+										{{>input type="text" label="Product Name" placeholder="i.e  Panasonic Solar System 45 watt" name="unit-product-name" txthint="0/70" override="unit-input" dataAttr="data-max" dataAttrVal="70" callFunc="onkeyup='countChar(this)'"}}	
+									</div>
+									<div class="unit-box-row">
+										{{>select label="Category" type="select" name="unit-category" option="Complete System,Solar Panel,Grid Tie,Battery Electrical,Hybrid System,Hardware Racking,Off-Grid-Solar" placeholder="Select category" override="unit-select"}}
+									</div>
+								</div>
+							</div>
+
+							<div class="board-row">
+								<h2 class="subtitle">Price</h2>
+								<div class="board-box">
+									<div class="unit-box-row">
+										{{>input type="text" label="Price" name="unit-product-price" override="unit-input" txtinfo="IDR"}}	
+									</div>
+									<div class="unit-box-row">
+										<div class="form-row unit-radio">
+											<div class="form-label">Unit</div>
+											<div class="form-block">
+												<div class="form-radio">
+													<input name="unit-product-unit" id="unit-product-unit-unit" type="radio" autocomplete="off" checked="checked" value="2">
+													<span></span>
+													{{>quantity type="number" txtVal="2"}}													
+												</div>
+												<div class="form-radio">
+													<input name="unit-product-unit" id="unit-product-unit-set" type="radio" autocomplete="off" value="Set">
+													<span></span>
+													<label for="unit-product-unit-set">Set</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="board-row">
+								<h2 class="subtitle">Product Detail</h2>
+								<div class="board-box">
+									<div class="unit-box-row">
+										<div class="form-row unit-radio">
+											<div class="form-label">Condition</div>
+											<div class="form-block">
+												<div class="form-radio">
+													<input name="unit-product-condition" id="unit-product-condition-new" type="radio" autocomplete="off" checked="checked" value="New">
+													<span></span>
+													<label for="unit-product-condition-new">New</label>
+												</div>
+												<div class="form-radio">
+													<input name="unit-product-condition" id="unit-product-condition-used" type="radio" autocomplete="off" value="Used">
+													<span></span>
+													<label for="unit-product-condition-used">Used</label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="unit-box-row">
+										{{>textarea label="Description and spesification" placeholder="i.e  Panasonic Solar System 45 watt" name="unit-product-descspec" override="unit-textarea" txthint="0/2000" dataAttr="data-max" dataAttrVal="2000" callFunc="onkeyup='countChar(this)'"}}	
+									</div>
+									<div class="unit-box-row">
+										{{>input type="text" label="Video" placeholder="https://www.youtube.com/watch?v=x142ukYc0BI" name="unit-product-video" override="unit-input"}}	
+									</div>
+								</div>
+							</div>
+
+							<div class="board-row">
+								<h2 class="subtitle">Documentation</h2>
+								<div class="board-box" data-field="unit-box-docs">
+									<button type="button" class="button unit-button-remove"><span aria-hidden="true">&times;</span></button>
+									<div class="unit-box-row">
+										{{>input type="text" label="Documentation Title" placeholder="i.e  Panasonic Solar System 45 watt" name="unit-product-doctitle" override="unit-input"}}	
+									</div>
+									<div class="unit-box-row">
+										{{>file name="unit-product-docfile" label="PDF File" override="unit-file"}}
+									</div>
+								</div>
+								<div class="board-box-right">
+									<button type="button" name="unit-add-docs" id="unit-add-docs" class="button unit-button-field">+ Add Field</button>
+								</div>
+							</div>
+
+							<!-- button -->
+							<div class="board-footer">
+								{{>button type="submit" label="Save" name="unit-save" class="-secondary unit-button-save"}}
+							</div>
+
+						</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		{{>modal-all}}
+
+		{{>footer}}
+
+	</main>
+
+{{>js}}
+</body>
+</html>

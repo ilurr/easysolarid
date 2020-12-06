@@ -1,0 +1,116 @@
+.header {
+	position: relative;
+	height: 60px;
+	background: #fff;
+	box-shadow: none;
+	@include display-flex();
+	align-items: center;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.125);
+	@include min-responsive($screen-tablet) {
+		height: 80px;
+	}
+	&-wrap {
+		position: relative;
+		@include display-flex();
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		padding-left: .125rem;
+		padding-right: .125rem;
+		@include min-responsive($screen-large-desktop) {
+			padding-left: 2rem;
+			padding-right: 2rem;
+		}
+	}
+	&.-fixed {
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 9;
+	}
+	&-col {
+		position: relative;
+		@include display-flex();
+		align-items: center;
+	}
+}
+
+.logo {
+	position: relative;
+	padding: 0;
+	a {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	&.-footer {
+		display: block;
+		width: 215px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0 0 1.5rem;
+		@include min-responsive($screen-desktop) {
+			padding: 0;
+			width: auto;
+			display: inline-block;
+			vertical-align: top;
+		}
+	}
+	&-box {
+		position: relative;
+		@include display-flex();
+		align-items: center;
+	}
+	&-title {
+		position: relative;
+		text-transform: uppercase;
+		padding-left: .25rem;
+		@include font-pack(false, 1.5rem, 900, false, #F18416);
+		@include min-responsive($screen-tablet) {
+			font-size: 1.625rem;
+		}
+		span {
+			color: #5C5C5C;
+		}
+	}
+	&-img {
+		position: relative;
+		@include min-responsive($screen-tablet) {
+			padding-left: .25rem;
+		}
+		img {
+			height: 35px;
+			@include min-responsive($screen-tablet) {
+				height: 45px;
+			}
+		}
+	}
+	&-icon {
+		img {
+			height: 35px;
+			display: block;
+			margin: 0 auto;
+			@include min-responsive($screen-tablet) {
+				height: 42px;
+			}
+		}
+	}
+	&-footer {
+		position: relative;
+		@include display-flex();
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		padding: 0 .125rem;
+		&-img {
+			position: relative;
+			padding: 1rem 0;
+		}
+		&-pp {
+			height: 65px;
+		}
+		&-bumn {
+			height: 22px;
+		}
+	}
+}

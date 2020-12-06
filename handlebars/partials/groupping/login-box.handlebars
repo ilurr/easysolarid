@@ -1,0 +1,13 @@
+<div class="panel">
+	{{>title title="Login"}}
+	<div class="panel-body">
+		<form action="solario.html">
+			{{>input type="text" label="Email Address" name="log-email"}}
+			{{>input type="password" label="Password" name="log-password" txterror="Password salah" txthint="Password salah"}}
+			{{>checkbox type="checkbox" label="Remember Me" name="remember"}}
+			{{>button type="submit" label="Login" name="log-btn" class="-primary"}}
+			{{>button type="link" label="Forgot your password?" class="-transparent" href="forgot.html"}}
+			{{!-- <div class="panel-text text-center"><p><a href="forgot.html">Forgot your password?</a></p></div> --}}
+		</form>
+	</div>
+</div>

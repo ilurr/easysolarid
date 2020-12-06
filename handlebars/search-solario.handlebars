@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>head font="link" title="Solario"}}
+
+<body class="-solario">
+	<!-- main -->
+	<main class="main">
+
+		{{>header solario=true page="Solario" login=true burger=burger.buyer}}
+
+		{{>sidebar page=navigation.solario}}
+
+		<!-- list -->
+		<section class="catalog-list">
+			<div class="catalog-wrap container-xl">
+				<!-- search -->
+				<div class="catalog-block row align-items-center">
+					<div class="catalog-search col-lg-10 col-md-9">
+						<p>Menampilkan 1 - 60 barang dari total 1.5jt+ untuk <strong>“saklar”</strong></p>
+					</div>
+					<div class="catalog-sort col-lg-2 col-md-3">
+						{{>select type="select" name="sort-by" nolabel="true" option="Terbaru,Termurah,Termahal" placeholder="Sort by"}}
+					</div>
+				</div>
+
+				<div class="catalog-block row">
+					{{>product-item col=3 data=product index_start=0 index_end=4}}
+				</div>
+				<div class="catalog-block row">
+					{{>product-item col=3 data=product index_start=3 index_end=7}}
+				</div>
+				<div class="catalog-block row">
+					{{>product-item col=3 data=product index_start=1 index_end=5}}
+				</div>
+				<div class="catalog-block row">
+					{{>product-item col=3 data=product index_start=0 index_end=4}}
+				</div>
+			</div>
+
+			{{>paging}}
+		</section>
+
+		{{>modal-all}}
+
+		{{>footer}}
+
+	</main>
+
+{{>js}}
+</body>
+</html>

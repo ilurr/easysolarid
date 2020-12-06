@@ -1,0 +1,192 @@
+.calc {
+	position: relative;
+	background: #EBEBEB;
+	&-wrap {
+		position: relative;
+		padding-top: 5vh;
+		padding-bottom: 5vh;
+		@include min-responsive($screen-tablet) {
+			padding-top: 6vh;
+			padding-bottom: 10vh;
+		}
+	}
+	&-block {
+		position: relative;
+		// @include display-flex();
+		// align-items: center;
+		// justify-content: center;
+		&-wrapper {
+			position: relative;
+			padding: 2rem 0;
+			@include min-responsive($screen-large-desktop) {
+				padding: 0;
+				&.-left {
+					padding-right: 1.75rem;
+				}
+				&.-right {
+					padding-left: 1.75rem;
+				}
+			}
+		}
+	}
+	&-item {
+		position: relative;
+		padding-top: .5rem;
+		padding-bottom: .5rem;
+		border-top: 1px solid #C0C0C0;
+		&:first-child {
+			border-top: none;
+		}
+		@include min-responsive($screen-tablet) {
+			padding-top: .375rem;
+			padding-bottom: .375rem;
+		}
+	}
+	&-action {
+		width: 100%;
+		position: relative;
+		padding-top: 2rem;
+		text-align: right;
+		.button.-cta {
+			padding: 0 1.75rem;
+			@include min-responsive($screen-tablet) {
+				width: 200px;
+			}
+		}
+	}
+	&-title {
+		position: relative;
+		margin-bottom: 1rem;
+		@include font-pack(false, 1.063rem, 700, false, #3B3B3B);
+		span {
+			float: right;
+			color: #666666;
+			font-size: .75rem;
+			font-weight: 400;
+		}
+	}
+	&-label {
+		position: relative;
+		@include font-pack(false, 1rem, 600, 1, #666666);
+		flex-grow: 0;
+		width: 100%;
+		padding: .5rem 0;
+		@include min-responsive($screen-tablet) {
+			padding: 0;
+			width: 120px;
+			flex-basis: 120px;
+		}
+		@include min-responsive($screen-large-desktop) {
+			width: 50%;
+			flex-basis: 50%;
+		}
+	}
+	&-number {
+		flex-basis: 0;
+		flex-grow: 1;
+		width: auto;
+		position: relative;
+		padding: 0.563rem 0;
+		@include font-pack(false, 1rem, 600, 1, #666666);
+		@include min-responsive($screen-tablet) {
+			padding: 0.563rem;
+			text-align: right;
+		}
+		span {
+			@include font-pack(false, 2.25rem, 300, false, false);
+		}
+	}
+	&-total {
+		width: 100%;
+		position: relative;
+		border: 1px solid #979797;
+		margin-top: 1.25rem;
+		padding: .5rem .875rem;
+		@include display-flex();
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	&-box {
+		&.-form {
+			.form-row {
+				@include display-flex();
+				flex-wrap: wrap;
+				padding: 0;
+				label {
+					padding: .5rem 0;
+					@include display-flex();
+					align-items: center;
+					text-transform: inherit;
+					letter-spacing: inherit;
+					width: 100%;
+					@include font-pack(false, 1rem, 600, 1, #666666);
+					@include min-responsive($screen-tablet) {
+						padding: 0;
+						width: 50%;
+					}
+				}
+				.form-input {
+					width: 100%;
+					padding: 0;
+					height: auto;
+					@include min-responsive($screen-tablet) {
+						width: 50%;
+					}
+					input {
+						border: 1px solid transparent;
+						background: transparent;
+						height: auto;
+						padding: 0.250rem 0;
+						@include font-pack(false, 2.25rem, 300, 1, #666666);
+						@include min-responsive($screen-tablet) {
+							padding: 0.250rem 0.750rem;
+							text-align: right;
+						}
+					}
+				}
+				.form-hint {
+					width: 100%;
+				}
+			}
+		}
+		&.-result {
+			// @include min-responsive($screen-tablet) {
+			// 	.calc-label {
+			// 		// width: 50%;
+			// 		// width: 120px;
+			// 		// flex-basis: 120px;
+			// 	}
+			// 	.calc-number {
+			// 		width: auto;
+			// 	}
+			// }
+			.calc-item {
+				@include display-flex();
+				align-items: center;
+				flex-wrap: wrap;
+				&:last-child {
+					border-top: none;
+				}
+			}
+			.calc-total {
+				.calc-label {
+					width: 100%;
+					@include min-responsive($screen-tablet) {
+						width: 120px;
+						flex-basis: 120px;
+					}
+				}
+				.calc-number {
+					// width: auto;
+					span {
+						font-weight: 700;
+						@include min-responsive($screen-large-desktop) {
+							font-size: 2.5rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}

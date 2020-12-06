@@ -1,0 +1,25 @@
+<!-- modal add/edit address -->
+<div class="modal fade" id="modal-address-edit" tabindex="-1" aria-labelledby="pickAddress" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Edit Address</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="address-block">
+					<form action="checkout.html">
+						{{>select type="select" label="Kota" name="addrs-city" option="Jakarta Barat,Jakarta Utara,Jakarta Timur,Jakarta Selatan,Jakarta Pusat" placeholder="-"}}
+						{{>select type="select" label="Kecamatan" name="addrs-distric" option="Gambir,Tanah Abang,Bendungan Hilir" placeholder="-"}}
+						{{>input type="text" label="Kode Pos" name="addrs-code"}}
+						{{>textarea label="Alamat Lengkap" name="addrs-street"}}
+						{{>checkbox type="checkbox" label="Please check if you want this active address" name="addrs-active"}}
+						{{>button type="submit" label="Save" name="addrs-btn" class="-primary"}}
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

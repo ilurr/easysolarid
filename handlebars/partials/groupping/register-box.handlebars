@@ -1,0 +1,16 @@
+<div class="panel">
+	{{>title title="Sign up"}}
+	<div class="panel-body">
+		<form action="register-result.html">
+			{{>input type="text" label="Email Address" name="reg-name"}}
+			{{>input type="password" label="Password" name="reg-password" txthint="Password must content at least 8 characters."}}
+			<div class="form-row">
+				<div class="panel-text text-center">
+					<p>By signing up you are agreeing to our <a href="static-page.html">Terms of Services</a>.</p>
+					<p>View our <a href="static-page.html">Privacy Policy</a>.</p>
+				</div>
+			</div>
+			{{>button type="submit" label="Agree and Sign up" name="signup" class="-primary"}}
+		</form>
+	</div>
+</div>

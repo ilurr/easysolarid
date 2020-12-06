@@ -1,0 +1,81 @@
+.sidebar {
+	position: relative;
+	opacity: 0;
+	visibility: hidden;
+	@include transition(all .2s ease);
+	@include max-responsive($screen-mobile-max) {
+		@include transform(translate(-100%, 0%));
+	}
+	&.-fixed {
+		width: 100%;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 8;
+		background: rgba(0,0,0,.5);
+		padding-top: 60px;
+		@include min-responsive($screen-tablet) {
+			padding-top: 80px;
+		}
+		// @include min-responsive($screen-large-desktop) {
+		// 	padding-left: calc((100% - 1140px) / 2);
+		// }
+		@include min-responsive($screen-super-desktop) {
+			padding-left: calc((100% - 1890px) / 2);
+		}
+	}
+	&-block {
+		position: relative;
+		margin: 0;
+		padding: 1rem 1.5rem ;
+		background: #fff;
+		box-shadow: 4px 8px 12px rgba(0,0,0,.2);
+		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
+		height: calc(100vh - 60px);
+		@include min-responsive($screen-tablet) {
+			width: 260px;
+			height: auto;
+			max-height: calc(100vh - 80px);
+		}
+	}
+}
+
+.-sidebar {
+	&-active {
+		.sidebar {
+			opacity: 1;
+			visibility: visible;
+			@include max-responsive($screen-mobile-max) {
+				@include transform(translate(0%, 0%));
+			}
+		}
+		.icon-bar {
+			i {
+				background: transparent;
+			}
+			i::before {
+				width: 100%;
+				top: 0;
+				background: #000;
+				-webkit-transform: rotateZ(-45deg);
+				-moz-transform: rotateZ(-45deg);
+				-ms-transform: rotateZ(-45deg);
+				-o-transform: rotateZ(-45deg);
+				transform: rotateZ(-45deg);
+			}
+			i::after {
+				width: 100%;
+				bottom: 0;
+				background: #000;
+				-webkit-transform: rotateZ(45deg);
+				-moz-transform: rotateZ(45deg);
+				-ms-transform: rotateZ(45deg);
+				-o-transform: rotateZ(45deg);
+				transform: rotateZ(45deg);
+			}
+		}
+	}
+}
+

@@ -1,0 +1,174 @@
+.order {
+	position: relative;
+
+	&-list {
+		position: relative;
+		padding: 0 1rem 2rem;
+	}
+	&-item {
+		position: relative;
+		background: #fff;
+		@include display-flex();
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		padding: 1rem;
+		border-radius: 6px;
+		box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+		flex-wrap: wrap;
+		@include transition(all .2s ease);
+		&:hover {
+			box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+		}
+		@include min-responsive($screen-tablet) {
+			padding: 1.5rem .5rem;
+			// text-align: center;
+			// align-items: center;
+			flex-wrap: nowrap;
+		}
+		// @include min-responsive($screen-large-desktop) {
+		// 	padding: 1.25rem 3rem 1.25rem 0;
+		// }
+		&-info {
+			position: relative;
+			@include display-flex();
+			// align-items: center;
+			width: 100%;
+			@include max-responsive($screen-mobile-max) {
+				flex-basis: auto;
+				padding-left: 110px;
+			}
+			@include min-responsive($screen-tablet) {
+				flex: 0 0 50%;
+				max-width: 50%;
+			}
+		}
+		&-status {
+			position: relative;
+			border-top: 1px solid #E8E8E8;
+			border-left: 1px solid transparent;
+			@include min-responsive($screen-tablet) {
+				border-left: 1px solid #E8E8E8;
+				border-top: 1px solid transparent;
+			}
+			@include max-responsive($screen-mobile-max) {
+				width: 100%;
+				flex-basis: auto;
+				padding: 1rem 0;
+			}
+		}
+		&-price {
+			position: relative;
+			border-top: 1px solid #E8E8E8;
+			border-left: 1px solid transparent;
+			@include min-responsive($screen-tablet) {
+				border-left: 1px solid #E8E8E8;
+				border-top: 1px solid transparent;
+			}
+			@include max-responsive($screen-mobile-max) {
+				width: 100%;
+				flex-basis: auto;
+				padding: 1rem 0 .5rem;
+			}
+		}
+		&-empty {
+			padding: 1rem 0;
+			text-align: center;
+			color: #727272;
+			.button {
+				margin-top: 1rem;
+				width: auto;
+				height: 34px;
+			}
+		}
+	}
+	&-product {
+		&-info {
+			position: relative;
+			padding-bottom: 1rem;
+			@include min-responsive($screen-tablet) {
+				padding-left: 1rem;
+				padding-bottom: 0;
+			}
+		}
+		&-img {
+			position: relative;
+			width: 95px;
+			height: 95px;
+			flex-basis: 95px;
+			flex-grow: 0;
+			overflow: hidden;
+			border: 1px solid #DEDCDC;
+			padding: .125rem;
+			background: #fff;
+			img {
+				@include ratio-flexible(100%, auto);
+			}
+			@include min-responsive($screen-desktop) {
+				width: 110px;
+				height: 110px;
+				flex-basis: 110px;
+			}
+			@include max-responsive($screen-mobile-max) {
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+		}
+		&-name {
+			flex-basis: 0;
+			flex-grow: 1;
+			@include font-pack(false, 1.063rem, 600, false, $color-secondary);
+			// @include title-overflow(auto, 23px);
+			margin: 0 0 .25rem;
+			a {
+				color: $color-secondary;
+				&:hover {
+					color: initial;
+				}
+			}
+		}
+		&-qty {
+			flex-basis: 0;
+			flex-grow: 1;
+			margin: .25rem 0;
+			@include font-pack(false, .813rem, 400, false, #8E8E8E);
+			span {
+				font-weight: 600;
+			}
+			// @include title-overflow(auto, 23px);
+		}
+		&-date {
+			flex-basis: 0;
+			flex-grow: 1;
+			margin: .25rem 0;
+			@include font-pack(false, .813rem, 600, false, #000);
+			span {
+				font-weight: 400;
+				color: #8E8E8E;
+			}
+			// @include title-overflow(auto, 20px);
+		}
+		&-seller {
+			flex-basis: 0;
+			flex-grow: 1;
+			margin: 0 0 .25rem;
+			@include font-pack(false, 1rem, 700, false, #727272);
+			// @include title-overflow(auto, 22px);
+		}
+		&-status {
+			flex-basis: 0;
+			flex-grow: 1;
+			margin: .25rem 0;
+			@include font-pack(false, .813rem, 700, false, #727272);
+			span {
+				font-weight: 400;
+				color: #8E8E8E;
+				padding-right: .25rem;
+			}
+			// @include title-overflow(auto, 20px);
+		}
+		&-price {
+			@include font-pack(false, 1.25rem, 400, false, #868686);
+		}
+	}
+}

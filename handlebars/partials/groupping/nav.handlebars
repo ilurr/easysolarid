@@ -1,0 +1,38 @@
+<!-- nav sidebar -->
+<nav class="nav -sidebar" aria-label="Sidebar Navigation">
+	<ol class="nav-wrap">
+		{{#each page}}
+		{{#if sub compare=true}}
+		<li class="nav-item accordion" id="accordion-{{hyphenate (lowercase title)}}">
+			<button type="button" class="nav-link collapsed" data-toggle="collapse" data-target="#collapseNavOne" aria-expanded="false" aria-controls="collapseNavOne">{{title}} <i class="fa fa-caret-up" aria-hidden="true"></i></button>
+			<ol class="nav-wrap collapse" id="collapseNavOne" aria-labelledby="Category" data-parent="#accordion-{{hyphenate (lowercase title)}}">
+				{{#each submenu}}
+				<li class="nav-item">
+					{{#if heading}}
+					<a href="{{link}}" class="nav-link" role="link" aria-label="{{title}}"><strong>{{title}}</strong></a>
+					{{else}}
+					<a href="{{link}}" class="nav-link" role="link" aria-label="{{title}}">{{title}}</a>
+					{{/if}}
+				</li>
+				{{/each}}
+			</ol>
+		</li>
+		{{else}}
+		{{#if divider}}
+		<li class="dropdown-divider"></li>
+		{{/if}}
+		<li class="nav-item">
+			<a href="{{link}}" class="nav-link{{#eq ../page compare=title}} -active{{/eq}}" role="link" aria-label="{{title}}">{{title}}</a>
+		</li>
+		{{/if}}
+		{{/each}}
+		{{#each navigation.other}}
+		{{#if divider}}
+		<li class="dropdown-divider"></li>
+		{{/if}}
+		<li class="nav-item">
+			<a href="{{link}}" class="nav-link{{#eq ../page compare=title}} -active{{/eq}}" role="link" aria-label="{{title}}">{{title}}</a>
+		</li>
+		{{/each}}
+	</ol>
+</nav>

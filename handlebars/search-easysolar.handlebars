@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>head font="link" title="News Easysolar"}}
+
+<body class="-easysolar">
+	<!-- main -->
+	<main class="main">
+
+		{{>header easysolar=true page="News"}}
+
+		{{>sidebar page=navigation.easysolar}}
+
+		<!-- news list -->
+		<section class="news-list">
+			<div class="news-wrap container-xl">
+				<!-- search news -->
+				<div class="news-search">
+					Hasil pencarian untuk <strong>“saklar”</strong>
+				</div>
+				{{>news-list}}
+			</div>
+
+			{{>paging}}
+		</section>
+
+		{{>modal-all}}
+
+		{{>footer}}
+
+	</main>
+
+{{>js}}
+</body>
+</html>

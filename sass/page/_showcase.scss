@@ -1,0 +1,224 @@
+.showcase {
+	&-slider {
+		position: relative;
+	}
+	&-block {
+		position: relative;
+		@include display-flex();
+		align-items: flex-end;
+		justify-content: flex-end;
+		height: calc(100vh - 60px);
+		background-color: #000;
+		@include min-responsive($screen-tablet) {
+			height: calc(100vh - 80px);
+		}
+		@include min-responsive($screen-desktop) {
+			align-items: center;
+		}
+	}
+	&-img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-position: center center;
+		background-size: cover;
+		overflow: hidden;
+		z-index: 1;
+		opacity: .65;
+		img {
+			@include ratio-flexible(100%, auto);
+			z-index: 2;
+			opacity: .6;
+		}
+	}
+	&-content {
+		position: relative;
+		z-index: 2;
+		padding: 2rem 1rem 15vh;
+		@include min-responsive($screen-tablet) {
+			padding: 6rem;
+		}
+		@include min-responsive($screen-desktop) {
+			// padding: 1rem;
+			padding: 1rem 5rem 1rem calc(50% - 10rem);
+			// width: 60%;
+			// margin-right: 5rem;
+		}
+		@include min-responsive($screen-large-desktop) {
+			padding: 1rem 1rem 1rem calc(1140px / 2 - 2rem);
+			// width: calc(600px - 2rem);
+			// margin-right: 8rem;
+		}
+		.button.-cta {
+			margin-top: 1rem;
+			padding: 0 1.5rem;
+			// max-width: 275px;
+			@include min-responsive($screen-tablet) {
+				height: 50px;
+				max-width: 375px;
+			}
+		}
+	}
+	&-arrow {
+		opacity: 0;
+		width: 42px;
+		position: absolute;
+		top: calc(50% - (42px / 2));
+		z-index: 1;
+		color: #fff;
+		border-radius: 42px;
+		background: rgba(0,0,0,.6);
+		border: transparent;
+		&.-left {
+			left: .25rem;
+			@include min-responsive($screen-tablet) {
+				left: 2rem;
+			}
+		}
+		&.-right {
+			right: .25rem;
+			@include min-responsive($screen-tablet) {
+				right: 2rem;
+			}
+		}
+	}
+	&:hover {
+		.showcase-arrow {
+			opacity: 1;
+		}
+	}
+	// content
+	&-product {
+		&-badge {
+			position: absolute;
+			padding: 0;
+			@include display-flex();
+			align-items: center;
+			justify-content: center;
+			background: $color-theme;
+			top: -3rem;
+			right: 1rem;
+			border-radius: 3rem;
+			width: 80px;
+			height: 80px;
+			@include font-pack(inherit, 1.875rem, 400, 1, #fff);
+			z-index: 1;
+			@include min-responsive($screen-tablet) {
+				width: 100px;
+				height: 100px;
+				letter-spacing: -2px;
+				font-size: 2.5rem;
+				top: -1rem;
+				right: 7rem;
+			}
+			@include min-responsive($screen-desktop) {
+				top: -4rem;
+				right: 1rem;
+			}
+			&:empty {
+				padding: 6px;
+				min-width: inherit;
+			}	
+		}
+		&-subtitle {
+			position: relative;
+			margin: .125rem 0;
+			@include font-pack(false, 1.125rem, false, 1.1, $color-theme);
+		}
+		&-title {
+			position: relative;
+			margin: .5rem 0;
+			@include font-pack(false, 2.25rem, 700, 1.1, #fff);
+			@include title-overflow(auto, 80px);
+			@include min-responsive($screen-tablet) {
+				font-size: 3.75rem;
+				max-height: 128px;
+			}
+		}
+		&-teaser {
+			position: relative;
+			@include font-pack(false, 1rem, false, false, #EFEFEF);
+			@include title-overflow(auto, 88px);
+			@include min-responsive($screen-desktop) {
+				max-height: 134px;
+			}
+		}
+	}
+	&-news {
+		&-title {
+			position: relative;
+			margin: .5rem 0;
+			@include font-pack(false, 2.25rem, 700, 1.1, #fff);
+			@include title-overflow(auto, 117px);
+			@include min-responsive($screen-tablet) {
+				font-size: 3rem;
+				max-height: 160px;
+			}
+			a {
+				color: #fff;
+				&:hover {
+					color: #fff;
+				}
+			}
+		}
+		&-teaser {
+			position: relative;
+			@include font-pack(false, 1rem, false, false, #EFEFEF);
+			@include title-overflow(auto, 88px);
+			@include min-responsive($screen-desktop) {
+				max-height: 134px;
+			}
+		}
+	}
+	&-calc {
+		&-title {
+			position: relative;
+			margin: .25rem 0;
+			@include font-pack(false, 2.25rem, 700, 1.1, $color-theme);
+		}
+		&-teaser {
+			margin: .5rem 0;
+			position: relative;
+			@include font-pack(false, 1rem, false, false, #EFEFEF);
+			@include title-overflow(auto, 88px);
+			@include min-responsive($screen-desktop) {
+				max-height: 134px;
+			}
+		}
+		&-form {
+			position: relative;
+			.form-row {
+				padding: .375rem 0;
+				@include min-responsive($screen-tablet) {
+					padding: 0.688rem 0;
+				}
+			}
+			.form-input {
+				@include min-responsive($screen-tablet) {
+					height: 50px;
+				}
+			}
+			input {
+				border-radius: 1px;
+				border: 1px solid #c5c5c5;
+				background: rgba(#9D9D9D, .7);
+				color: #fff;
+				letter-spacing: 2px;
+				font-weight: 700;
+				// max-width: 275px;
+				padding: 0 1.5rem;
+				@include min-responsive($screen-tablet) {
+					height: 50px;
+					max-width: 375px;
+					font-size: .75rem;
+				}
+				&::placeholder {
+					color: #EFEFEF;
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,63 @@
+.address {
+	&-top {
+		position: relative;
+		text-align: right;
+		padding-bottom: 1rem;
+	}
+	&-list {
+		border-top: 1px solid #dcdcdc;
+		position: relative;
+	}
+	&-row {
+		position: relative;
+	}
+	&-item {
+		padding: 1rem 0;
+		position: relative;
+		border-bottom: 1px solid #dcdcdc;
+		&:last-child {
+			border-bottom: transparent;
+		}
+		label {
+			position: relative;
+			display: block;
+			text-transform: inherit;
+			letter-spacing: inherit;
+			@include display-flex();
+			justify-content: space-between;
+			align-items: center;
+			padding-bottom: 1rem;
+			// padding: 1rem 0;
+			cursor: pointer;
+		}
+		.form-radio > span {
+			width: auto;
+			height: auto;
+			margin: .5rem 0;
+			padding: .5rem 1rem;
+			opacity: 0;
+			background: transparent;
+			text-transform: uppercase;
+			@include font-pack(false, .75rem, 900, false, $color-secondary);
+		}
+		.form-radio > input[type=radio]:checked + span {
+			background: transparent;
+			opacity: 1;
+		}
+		.form-radio > input[type=radio]:checked + span:after {
+			opacity: 0;
+		}
+	}
+	&-button {
+		width: auto;
+		&.button {
+			height: 28px;
+			letter-spacing: 0;
+		}
+	}
+	&-content {
+		position: relative;
+		padding-right: 1rem;
+		@include font-pack(false, 1rem, 400, 1.7, #707070);
+	}
+}

@@ -1,0 +1,81 @@
+.about {
+	position: relative;
+	background: #fff;
+	&-block {
+		position: relative;
+		// @include display-flex();
+		align-items: center;
+		justify-content: center;
+		padding-top: 5vh;
+		padding-bottom: 5vh;
+		@include min-responsive($screen-tablet) {
+			padding-top: 12vh;
+			padding-bottom: 12vh;
+		}
+	}
+	&-info {
+		position: relative;
+		order: 2;
+		@include min-responsive($screen-tablet) {
+			order: 0;
+		}
+		@include min-responsive($screen-desktop) {
+			padding-right: 5rem;
+		}
+	}
+	&-img{
+		text-align: center;
+		order: 1;
+		@include min-responsive($screen-tablet) {
+			order: 0;
+		}
+		img {
+			height: 275px;
+			@include min-responsive($screen-tablet) {
+				height: 375px;
+			}
+			@include min-responsive($screen-desktop) {
+				height: auto;
+			}
+		}
+	}
+	&-title {
+		margin: 1.25rem 0;
+		text-align: center;
+		@include font-pack(false, 2rem, 400, 1.2, #757575);
+		@include min-responsive($screen-tablet) {
+			margin: .5rem 0 1.25rem;
+			text-align: left;
+			font-size: 2.5rem;
+		}
+		@include min-responsive($screen-desktop) {
+			padding-right: 2rem;
+		}
+	}
+	&-teaser {
+		margin: .5rem 0 1.25rem;
+		@include font-pack(false, 1rem, 400, false, #7C7C7C);
+		text-align: center;
+		@include min-responsive($screen-tablet) {
+			text-align: left;
+		}
+	}
+	&-app {
+		@include display-flex();
+		justify-content: center;
+		margin: 0 -.5rem 1.25rem;
+		@include min-responsive($screen-tablet) {
+			justify-content: flex-start;
+		}
+		&-img {
+			position: relative;
+			margin: 0 .5rem;
+			img {
+				height: 35px;
+				@include min-responsive($screen-tablet) {
+					height: 40px;
+				}
+			}
+		}
+	}
+}

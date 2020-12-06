@@ -1,0 +1,85 @@
+{{#if cartHeader}}
+<!-- cart header -->
+<div class="cart-list-header row">
+	<div class="cart-list-col col-md-5 col-lg-6">
+		<h4>Items</h4>
+	</div>
+	<div class="cart-list-col col-md-2 col-lg-2">
+		<h4>Price</h4>
+	</div>
+	<div class="cart-list-col col-md-3 col-lg-2">
+		<h4>Quantity</h4>
+	</div>
+	<div class="cart-list-col col-md-2 col-lg-2">
+		<h4>Total Price</h4>
+	</div>
+</div>
+
+{{/if}}
+<!-- cart body -->
+<div class="cart-body">
+	<!-- item -->
+	<div class="cart-item row">
+		<div class="col cart-item-info">
+			<div class="unit-img">
+				<img src="./asset/images/dummy/MAINPRODIMG_sankelux_ONG5KWEXIM-SMA3P_1597594189662.png" alt="">
+			</div>
+			<div class="unit-name"><a href="solario-detail-single.html">Sankelux On Grid SMA 3Phase</a></div>
+		</div>
+		{{#if list}}
+		<div class="col cart-item-price">
+			<div class="unit-price"><span>Price</span>Rp 86.530.860</div>
+		</div>
+		<div class="col cart-item-qty">
+			<div class="unit-qty">
+				{{>quantity type="number" txtVal="1" label="Quantity"}}
+			</div>
+		</div>
+		{{/if}}
+		<div class="col cart-item-price">
+			<div class="unit-price"><span>Total Price</span>Rp 86.530.860</div>
+		</div>
+		{{#if list}}
+		<button type="button" class="button -transparent cart-button-close">
+			<span class="icon-close"></span>
+		</button>
+		{{/if}}
+	</div>
+	<!-- item -->
+	<div class="cart-item row">
+		<div class="col cart-item-info">
+			<div class="unit-img">
+				<img src="./asset/images/dummy/MAINPRODIMG_Adyasolar_0.75Kwp_1597229253159.jpg" alt="">
+			</div>
+			<div class="unit-name"><a href="solario-detail-single.html">Adyasolar On Grid 750 Wp 1P</a></div>
+		</div>
+		{{#if list}}
+		<div class="col cart-item-price">
+			<div class="unit-price"><span>Price</span>Rp 21.000.000</div>
+		</div>
+		<div class="col cart-item-qty">
+			<div class="unit-qty">
+				{{>quantity type="number" txtVal="10" label="Quantity"}}
+			</div>
+		</div>
+		{{/if}}
+		<div class="col cart-item-price">
+			<div class="unit-price"><span>Total Price</span>Rp 210.000.000</div>
+		</div>
+		{{#if list}}
+		<button type="button" class="button -transparent cart-button-close">
+			<span class="icon-close"></span>
+		</button>
+		{{/if}}
+	</div>
+</div>
+
+<!-- cart total -->
+<div class="cart-bottom row">
+	<div class="col cart-bottom-text">
+		<div class="unit-text">Total Price</div>
+	</div>
+	<div class="col cart-bottom-total">
+		<div class="unit-price -total">Rp 298.350.000</div>
+	</div>
+</div>

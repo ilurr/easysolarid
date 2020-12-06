@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>head font="link" title="Wishlist"}}
+
+<body class="-solario">
+	<!-- main -->
+	<main class="main">
+
+		{{>header solario=true page="Wishlist" login=true profile="Buyer"}}
+
+		{{>sidebar page=navigation.solario}}
+
+		<!-- dashboard -->
+		<section class="board">
+			<div class="board-wrap container-xl">
+				<div class="board-block row">
+					<div class="board-aside col-lg-3">
+						{{>dashboard-sidebar profile=sidebar.buyer page="Wishlist"}}
+					</div>
+					<div class="board-aside col-lg-9">
+						<!-- wishlist -->
+						<div class="board-row">
+							<h2 class="subtitle">Wishlist</h2>
+							<div class="catalog-block row -hot">
+								{{>product-item col=4 data=product index_start=0 index_end=3 like=true}}
+							</div>
+							<div class="catalog-block row -hot">
+								{{>product-item col=4 data=product index_start=3 index_end=6 like=true}}
+							</div>
+							<div class="catalog-block row -hot">
+								{{>product-item col=4 data=product index_start=0 index_end=3 like=true}}
+							</div>
+							<div class="catalog-block row -hot">
+								{{>product-item col=4 data=product index_start=3 index_end=6 like=true}}
+							</div>
+							{{>paging}}
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		{{>modal-all}}
+
+		{{>footer}}
+
+	</main>
+
+{{>js}}
+</body>
+</html>

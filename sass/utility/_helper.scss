@@ -1,0 +1,31 @@
+.small {
+	font-size: 0.625rem;
+}
+
+.text {
+	&-center {
+		text-align: center;
+	}
+}
+
+.clearfix {
+
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+.more {
+	&-block {
+		position: relative;
+		padding-top: 1rem;
+		text-align: center;
+	}
+}
+

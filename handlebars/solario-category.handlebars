@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>head font="link" title="Solario"}}
+
+<body class="-solario">
+	<!-- main -->
+	<main class="main">
+
+		{{>header solario=true page="Solario" login=true burger=burger.buyer}}
+
+		{{>sidebar page=navigation.solario}}
+
+		<!-- slider solaria -->
+		<section class="showcase">
+			<div class="showcase-slider">
+				<div class="showcase-item">
+					<!-- product -->
+					<div class="showcase-block">
+						<div class="showcase-img" style="background-image: url('./asset/images/dummy/photo-1584276433295-4b49a252e5ee.jpeg');"></div>
+						<div class="showcase-content container-xl">
+							<div class="showcase-product-badge">-35%</div>
+							<div class="showcase-product-subtitle">New Item</div>
+							<h1 class="showcase-product-title">Grid Tie SMA 5 KW</h1>
+							<div class="showcase-product-teaser">Sistem Pembangkit Listrik Tenaga Surya (PLTS) Rooftop Ongrid merupakan suatu sistem pembangkit tenaga listrik yang memanfaatkan teknologi fotovoltaik pada modul surya untuk mengubah energi matahari menjadi energi listrik.</div>
+							<a href="solario-detail-single.html" role="link" class="button -cta">Shop Now <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="showcase-item">
+					<!-- product -->
+					<div class="showcase-block">
+						<div class="showcase-img" style="background-image: url('./asset/images/dummy/photo-1474398777522-cabeb42e8132.jpeg');"></div>
+						<div class="showcase-content container-xl">
+							<div class="showcase-product-badge">-5%</div>
+							<div class="showcase-product-subtitle">Green Energy</div>
+							<h1 class="showcase-product-title">Paket 9000Wp On Grid+14000Wh Battery Garansi 10th</h1>
+							<div class="showcase-product-teaser">Sistem Pembangkit Listrik Tenaga Surya (PLTS) Rooftop Ongrid merupakan suatu sistem pembangkit tenaga listrik yang memanfaatkan teknologi fotovoltaik pada modul surya untuk mengubah energi matahari menjadi energi listrik.</div>
+							<a href="solario-detail-kit.html" role="link" class="button -cta">Shop Now <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="showcase-item">
+					<!-- product -->
+					<div class="showcase-block">
+						<div class="showcase-img" style="background-image: url('./asset/images/dummy/photo-1497440001374-f26997328c1b.jpeg');"></div>
+						<div class="showcase-content container-xl">
+							<div class="showcase-product-badge">New!</div>
+							<div class="showcase-product-subtitle">ATW Solar</div>
+							<h1 class="showcase-product-title">Solar PV 2250 Wp On-Grid</h1>
+							<div class="showcase-product-teaser">2250 Wp On-Grid System, 25 Tahun, Termasuk Pemasangan.</div>
+							<a href="solario-detail-single.html" role="link" class="button -cta">Shop Now <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- list -->
+		<section class="catalog-list -homepage">
+			<div class="catalog-wrap container-xl">
+				<h2 class="title -left">Complete System</h2>
+				<div class="catalog-block row -hot">
+					{{>product-item col=4 data=product index_start=0 index_end=3}}
+				</div>
+				<div class="catalog-block row">
+					{{>product-item col=3 data=product index_start=3 index_end=7}}
+				</div>
+				<div class="catalog-block row">
+					{{>product-item col=3 data=product index_start=1 index_end=5}}
+				</div>
+				<div class="catalog-block row">
+					{{>product-item col=3 data=product index_start=0 index_end=4}}
+				</div>
+			</div>
+		</section>
+
+		{{>modal-all}}
+
+		{{>footer}}
+
+	</main>
+
+{{>js}}
+</body>
+</html>

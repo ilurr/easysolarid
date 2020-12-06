@@ -1,0 +1,126 @@
+.panel {
+	position: relative;
+	background: #fff;
+	// padding: 1rem 0.938rem;
+	@include min-responsive($screen-tablet) {
+		padding: .5rem;
+	}
+	&-section {
+		position: relative;
+		padding: 5vh 1rem;
+		background: #fff;
+		border-radius: 2px;
+		@include min-responsive($screen-tablet) {
+			margin: 10vh auto;
+			box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+			padding: 2rem;
+			width: 450px;
+		}
+	}
+	&-welcome {
+		text-align: center;
+		padding: 1rem 0;
+		@include font-pack(false, 1.875rem, false, 1.2, #9D9D9D);
+	}
+	&-body {
+		@include font-pack(false, .875rem, false, false, false);
+	}
+	&-text {
+		p {
+			margin: .25rem 0;
+			font-size: .875rem;
+		}
+	}
+	&-line {
+		position: relative;
+		padding: 0;
+		margin: .5rem 0;
+		text-align: center;
+		@include min-responsive($screen-tablet) {
+			margin: 1rem 0;
+		}
+		span {
+			letter-spacing: 1.4px;
+			text-transform: uppercase;
+			@include font-pack(false, .75rem, 400, false, rgba(#17264f, .5));	
+		}
+	}
+	&-alert {
+		padding: .75rem .5rem;
+		margin-bottom: 1rem;
+		text-align: center;
+		border-radius: 4px;
+		@include font-pack(false, .75rem, 600, false, #fff);
+		p {
+			margin: .25rem 0;
+			font-size: inherit;
+			font-weight: 600;
+			color: #fff;
+		}
+		&.-success {
+			background: $color-success;
+		}
+		&.-error {
+			background: $color-error;
+		}
+		&.-fixed {
+			position: fixed;
+			z-index: 9;
+			margin-left: 1rem;
+			margin-right: 1rem;
+			margin-bottom: 0;
+			padding: .5rem .75rem;
+			bottom: 2rem;
+			width: calc(100% - 2rem);
+			display: none;
+			@include min-responsive($screen-tablet) {
+				// max-width: 300px;
+				width: auto;
+				left: 1rem;
+			}
+		}
+	}
+
+	&-group {
+		position: relative;
+		.panel {
+			padding: 0;
+			box-shadow: none;
+		}
+		.panel-title {
+			margin: 0;
+		}
+		.panel-body {
+			font-size: inherit;
+			padding: 1rem;
+			//background: #f9f9f9;
+			margin: 0 0 1.25rem;
+		}
+	}
+	&-heading {
+		position: relative;
+		padding: 0;
+		a {
+			display: block;
+			padding: 1rem;
+			margin: 0 0 .5rem;
+			background: #dfdfdf;
+			color: #000;
+			border-radius: 6px;
+			border-bottom: 1px solid #dfdfdf;
+			&.collapsed {
+				background: #f7f7f7;
+				color: $color-theme;
+			}
+		}
+	}
+	&-collapse {
+		overflow: hidden;
+		&.collapse {
+			display: none;
+		}
+		&.collapse.in {
+			display: block;
+		}
+	}
+}

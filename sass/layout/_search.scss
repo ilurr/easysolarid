@@ -1,0 +1,116 @@
+.search {
+	&-bar {
+		position: relative;
+		@include display-flex();
+		justify-content: flex-end;
+		width: calc(42px + .25rem);
+		will-change: width;
+		@include transition(width .2s ease);
+	}
+	&-header {
+		position: relative;
+		.input {
+			height: 42px;
+			border-radius: 6px;
+			border: solid 1px #DEDEDE;
+			background-color: #fff;	
+			font-size: 1rem;
+			&::placeholder {
+				color: #B1B1B1;
+			}
+			@include min-responsive($screen-desktop) {
+				font-size: 0.813rem;	  
+			}
+		}
+		.fa {
+			position: absolute;
+			top: calc(50% - .5rem);
+			right: 1rem;
+			z-index: 1;
+			color: #808080;
+		}
+		.button {
+			position: absolute;
+			width: 42px;
+			height: 42px;
+			top: 0;
+			right: 0;
+			z-index: 2;
+			opacity: 0;
+		}
+		&.-easysolar {
+			width: 300px;
+			position: absolute;
+			right: 0;
+			top: 0;
+			z-index: 1;
+			opacity: 0;
+			visibility: hidden;
+			// display: none;
+		}
+		&.-solario {
+			padding-left: 2rem;
+			@include min-responsive($screen-tablet) {
+				width: 220px;
+				display: block;
+			}
+			@include min-responsive($screen-desktop) {
+				width: 425px;
+			}
+			@include min-responsive($screen-large-desktop) {
+				width: 600px;
+			}
+			@include max-responsive($screen-mobile-max) {
+				opacity: 0;
+				visibility: hidden;
+				position: fixed;
+				top: 60px;
+				right: 0;
+				width: 100%;
+				z-index: 9;
+				padding: .25rem;
+				background: #fff;
+				@include transition(opacity.2s ease);
+			}
+			&.-active {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+	&-block {
+		position: relative;
+		&.-active {
+			#menu-search-easysolar {
+				@include min-responsive($screen-tablet) {
+					pointer-events: none;
+				}
+			}
+			.search-bar {
+				@include min-responsive($screen-tablet) {
+					width: 200px;
+				}
+				@include min-responsive($screen-desktop) {
+					width: 300px;
+				}
+			}
+			.search-header.-easysolar {
+				width: 100%;
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+		.search-header.-easysolar {
+			@include max-responsive($screen-mobile-max) {
+				position: fixed;
+				top: 60px;
+				right: 0;
+				width: 100%;
+				z-index: 9;
+				padding: .25rem;
+				background: #fff;
+				// box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.125);
+			}
+		}
+	}
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>head font="link" title="Solario"}}
+
+<body class="-solario">
+	<!-- main -->
+	<main class="main">
+
+		{{>header solario=true page="Solario" login=true burger=burger.buyer}}
+
+		{{>sidebar page=navigation.solario}}
+
+		<!-- header solario -->
+		<section class="store-header">
+			<div class="store-bg" style="background-image: url('./asset/images/dummy/photo-1584276433295-4b49a252e5ee.jpeg');"></div>
+			<div class="store-wrap container-xl">
+				<div class="store-block row">
+					<div class="store-block-info col-md-6">
+						<div class="store-img">
+							<img src="./asset/images/dummy/logo_LOGO_ATW-Solar_LOGO_1597201251701.jpg" alt="">
+						</div>
+						<div class="store-info">
+							<h1 class="store-name">ATW Solar</h1>
+							<div class="store-location"><i class="fa fa-map-marker" aria-hidden="true"></i> Jakarta Pusat</div>
+							<div class="store-join">Joined since <span>Juni 2018</span></div>
+						</div>
+					</div>
+					<div class="store-block-stat col-md-6">
+						<div class="store-stat-item">
+							<div class="store-stat-label">Produk Terjual</div>
+							<div class="store-stat-number">1143</div>
+						</div>
+						<div class="store-stat-item">
+							<div class="store-stat-label">Nilai Kualitas Layanan</div>
+							<div class="store-stat-rating">
+								<div class="store-rating-number">4/5</div>
+								<div class="store-rating-star">
+									<i class="fa fa-star active" aria-hidden="true"></i>
+									<i class="fa fa-star active" aria-hidden="true"></i>
+									<i class="fa fa-star active" aria-hidden="true"></i>
+									<i class="fa fa-star active" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- list -->
+		<section class="catalog-list">
+			<div class="catalog-wrap container-xl">
+				<div class="catalog-block row -hot">
+					{{>product-item col=4 data=product index_start=0 index_end=3}}
+				</div>
+				<div class="catalog-block row">
+					{{>product-item col=3 data=product index_start=3 index_end=7}}
+				</div>
+				<div class="catalog-block row">
+					{{>product-item col=3 data=product index_start=1 index_end=5}}
+				</div>
+				<div class="catalog-block row">
+					{{>product-item col=3 data=product index_start=0 index_end=4}}
+				</div>
+			</div>
+
+			{{>paging}}
+		</section>
+
+		{{>modal-all}}
+
+		{{>footer}}
+
+	</main>
+
+{{>js}}
+</body>
+</html>

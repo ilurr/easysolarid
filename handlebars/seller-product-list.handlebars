@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>head font="link" title="List Product"}}
+
+<body class="-solario">
+	<!-- main -->
+	<main class="main">
+
+		{{>header solario=true page="List Product" login=true profile="Seller"}}
+
+		{{>sidebar page=navigation.solario}}
+
+		<!-- dashboard -->
+		<section class="board">
+			<div class="board-wrap container-xl">
+				<div class="board-block row">
+					<div class="board-aside col-lg-3">
+						{{>dashboard-sidebar profile=sidebar.seller page="List Product"}}
+					</div>
+					<div class="board-aside col-lg-9">
+						<!-- product -->
+						<div class="board-block">
+
+							<!-- header -->
+							<div class="board-header">
+
+								<!-- header search -->
+								<form action="#">
+									<div class="board-header-search row">
+										<div class="board-col col-md-9">
+											<div class="board-search-text">
+												<div class="form-row">
+													<div class="form-input">
+														<input type="text" class="input" name="search-board-text" placeholder="Search Product">
+														<input type="submit" class="button board-search-button" name="search-board-btn" value="Search">
+														<i class="fa fa-search" aria-hidden="true"></i>
+														<div class="form-hint"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="board-col col-md-3">
+											<div class="board-search-date">
+												{{>select type="select" name="sort-by" nolabel="true" option="Terbaru,Termurah,Termahal" placeholder="Sort by"}}
+											</div>
+										</div>
+									</div>
+								</form>
+
+							</div>
+
+							<!-- list -->
+							<div class="board-body">
+								<div class="product-seller">
+									<div class="unit-list">
+
+										<!-- product list header -->
+										<div class="unit-list-header row">
+											<div class="unit-list-col col">
+												<h4>Items</h4>
+											</div>
+											<div class="unit-list-col col">
+												<h4>Price</h4>
+											</div>
+											<div class="unit-list-col col">
+												<h4>Stocks</h4>
+											</div>
+											<div class="unit-list-col col">
+												<h4>Active</h4>
+											</div>
+										</div>
+
+										<!-- product list body -->
+										<div class="unit-body">
+											<!-- item -->
+											<div class="unit-item row">
+												<div class="col unit-item-info">
+													<div class="unit-img">
+														<img src="./asset/images/dummy/MAINPRODIMG_sankelux_ONG5KWEXIM-SMA3P_1597594189662.png" alt="">
+													</div>
+													<div class="unit-name"><a href="solario-detail-single.html">Sankelux On Grid SMA 3Phase</a></div>
+												</div>
+												<div class="col unit-item-price">
+													<div class="unit-price"><span>Price</span>Rp 86.530.860</div>
+												</div>
+												<div class="col unit-item-qty">
+													<div class="unit-qty">
+														{{>quantity type="number" txtVal="1" label="Stock"}}
+													</div>
+												</div>
+												<div class="col unit-item-setting">
+													<div class="unit-setting">
+														{{>toggle label="Active" nolabel="true" name="unit-active" toggle_value="true"}}
+														{{>button-setting}}
+													</div>
+												</div>
+											</div>
+											<!-- item -->
+											<div class="unit-item row">
+												<div class="col unit-item-info">
+													<div class="unit-img">
+														<img src="./asset/images/dummy/MAINPRODIMG_Adyasolar_0.75Kwp_1597229253159.jpg" alt="">
+													</div>
+													<div class="unit-name"><a href="solario-detail-single.html">Adyasolar On Grid 750 Wp 1P</a></div>
+												</div>
+												<div class="col unit-item-price">
+													<div class="unit-price"><span>Price</span>Rp 21.000.000</div>
+												</div>
+												<div class="col unit-item-qty">
+													<div class="unit-qty">
+														{{>quantity type="number" txtVal="10" label="Stock"}}
+													</div>
+												</div>
+												<div class="col unit-item-setting">
+													<div class="unit-setting">
+														{{>toggle label="Active" nolabel="true" name="unit-active" toggle_value="false"}}
+														{{>button-setting}}
+													</div>
+												</div>
+											</div>
+											<!-- item -->
+											<div class="unit-item row">
+												<div class="col unit-item-info">
+													<div class="unit-img">
+														<img src="./asset/images/dummy/MAINPRODIMG_sankelux_ONG5KWEXIM-SMA3P_1597594189662.png" alt="">
+													</div>
+													<div class="unit-name"><a href="solario-detail-single.html">Sankelux On Grid SMA 3Phase</a></div>
+												</div>
+												<div class="col unit-item-price">
+													<div class="unit-price"><span>Price</span>Rp 86.530.860</div>
+												</div>
+												<div class="col unit-item-qty">
+													<div class="unit-qty">
+														{{>quantity type="number" txtVal="1" label="Stock"}}
+													</div>
+												</div>
+												<div class="col unit-item-setting">
+													<div class="unit-setting">
+														{{>toggle label="Active" nolabel="true" name="unit-active" toggle_value="true"}}
+														{{>button-setting}}
+													</div>
+												</div>
+											</div>
+											<!-- item -->
+											<div class="unit-item row">
+												<div class="col unit-item-info">
+													<div class="unit-img">
+														<img src="./asset/images/dummy/MAINPRODIMG_Adyasolar_0.75Kwp_1597229253159.jpg" alt="">
+													</div>
+													<div class="unit-name"><a href="solario-detail-single.html">Adyasolar On Grid 750 Wp 1P</a></div>
+												</div>
+												<div class="col unit-item-price">
+													<div class="unit-price"><span>Price</span>Rp 21.000.000</div>
+												</div>
+												<div class="col unit-item-qty">
+													<div class="unit-qty">
+														{{>quantity type="number" txtVal="10" label="Stock"}}
+													</div>
+												</div>
+												<div class="col unit-item-setting">
+													<div class="unit-setting">
+														{{>toggle label="Active" nolabel="true" name="unit-active" toggle_value="false"}}
+														{{>button-setting}}
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							{{>paging}}
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		{{>modal-all}}
+
+		{{>footer}}
+
+	</main>
+
+{{>js}}
+</body>
+</html>

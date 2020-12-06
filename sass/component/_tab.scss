@@ -1,0 +1,64 @@
+.tab {
+	position: relative;
+	&-menu {
+		position: relative;
+		@include display-flex();
+		align-items: center;
+		z-index: 2;
+		margin-left: 1px;
+		@include min-responsive($screen-tablet) {
+			margin-left: 0;
+			padding: 0 1rem;
+		}
+	}
+	&-item {
+		position: relative;
+		margin-left: -1px;
+		&:first-child {
+			margin-left: -2px;
+		}
+	}
+	&-link {
+		position: relative;
+		@include font-pack(false, .875rem, 600, false, #3B3939);
+		display: block;
+		background: #F8F7F7;
+		padding: .75rem .688rem;
+		text-align: center;
+		border-top: 1px solid #D5D5D5;
+		border-left: 1px solid #D5D5D5;
+		border-right: 1px solid #D5D5D5;
+		border-bottom: 1px solid #D5D5D5;
+		@include min-responsive($screen-tablet) {
+			padding: 1rem;
+			min-width: 135px;
+		}
+		&.active {
+			border-bottom: 1px solid #fff;
+			font-weight: 700;
+			background: #fff;
+		}
+	}
+	&-pane {
+		min-height: 220px;
+	}
+	&-content {
+		position: relative;
+		background: #fff;
+		padding: 1rem;
+		border-top: 1px solid #D5D5D5;
+		border-bottom: 1px solid #D5D5D5;
+		z-index: 1;
+		margin-top: -1px;
+		@include min-responsive($screen-tablet) {
+			border: 1px solid #D5D5D5;
+			padding: 2rem 2.5rem;
+		}
+		& > .tab-pane {
+			display: none;
+		}
+		& > .active {
+			display: block;
+		}
+	}
+}

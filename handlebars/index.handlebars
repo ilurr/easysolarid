@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{>head font="link" title="Easysolar"}}
+
+<body class="-easysolar">
+	<!-- main -->
+	<main class="main">
+
+		{{>header easysolar=true burger=burger.buyer}}
+
+		{{>sidebar page=navigation.easysolar}}
+
+		<!-- slider -->
+		<section class="showcase">
+			<div class="showcase-slider">
+				<div class="showcase-item">
+					<!-- product -->
+					<div class="showcase-block">
+						<div class="showcase-img" style="background-image: url('./asset/images/dummy/photo-1584276433295-4b49a252e5ee.jpeg');"></div>
+						<div class="showcase-content container-xl">
+							<div class="showcase-product-badge">-35%</div>
+							<div class="showcase-product-subtitle">New Item</div>
+							<h1 class="showcase-product-title">Grid Tie SMA 5 KW</h1>
+							<div class="showcase-product-teaser">Sistem Pembangkit Listrik Tenaga Surya (PLTS) Rooftop Ongrid merupakan suatu sistem pembangkit tenaga listrik yang memanfaatkan teknologi fotovoltaik pada modul surya untuk mengubah energi matahari menjadi energi listrik.</div>
+							<a href="solario-detail-single.html" role="link" class="button -cta">Shop Now <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="showcase-item">
+					<!-- calculator -->
+					<div class="showcase-block">
+						<div class="showcase-img" style="background-image: url('./asset/images/bg-solarpedia.jpg');"></div>
+						<div class="showcase-content container-xl">
+							<h2 class="showcase-calc-title">Solar Calculator</h2>
+							<div class="showcase-calc-teaser">Solar Panel adalah komponen utama konversi sinar matahari menjadi listrik. Listrik dikonsumsi langsung, disimpan di batere atau di jual ke PLN. Perhitungan matang untuk menjadikan atap sebagai sumber energi. Beberapa unit di gabung menjadi satu dan dipasang di atap rumah.</div>
+							<form action="calculator.html">
+								<div class="showcase-calc-form">
+									{{>input type="text" name="daya-pln" placeholder="Daya PLN"}}
+									{{>input type="text" name="tagihan-pln" placeholder="Tagihan PLN"}}
+									{{>input type="text" name="luas-atap" placeholder="Luas Atap Tersedia"}}
+									<button role="link" class="button -cta">Calculate <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="showcase-item">
+					<!-- news -->
+					<div class="showcase-block">
+						<div class="showcase-img" style="background-image: url('./asset/images/dummy/photo-1463173904305-ba479d2123b7.jpeg');"></div>
+						<div class="showcase-content container-xl">
+							<h2 class="showcase-news-title"><a href="news-detail.html">Pasar Energi Terbarukan di Indonesia</a></h2>
+							<div class="showcase-news-teaser">Pasar teknologi sistem sel surya sebagai one stop service dengan mitra-mitra terpercaya yang dapat diandalkan. Pelajari dan ambil buat anda yang terbaik, klik Solario. Pasar teknologi sistem sel surya sebagai one stop service dengan mitra-mitra terpercaya yang dapat diandalkan.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- apps -->
+		<section class="about">
+			<div class="about-wrap container-xl">
+				<div class="about-block row">
+					<div class="about-info col-md-6">
+						<h2 class="about-title">Get to know our new Easy Solar app</h2>
+						<div class="about-teaser">Managing your account has never been easier. Check your usage, see your bills or make a payment with just one tap. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.</div>
+						<div class="about-app">
+							<div class="about-app-img">
+								<a href="#" class="about-app-link">
+									<img src="./asset/images/google-play-badge.png" alt="Google Play">
+								</a>
+							</div>
+							<div class="about-app-img">
+								<a href="#" class="about-app-link">
+									<img src="./asset/images/app-store-badge.png" alt="Apple App Store">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="about-img col-md-6">
+						<img src="./asset/images/apps-graphic.png" alt="Easy Solar app">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- solario -->
+		<section class="news-grid">
+			<div class="news-wrap container-xl">
+				<h3 class="title-homepage">Solario</h3>
+				<div class="catalog-block row">
+					{{>product-item col=3 data=product index_start=0 index_end=4}}
+				</div>
+			</div>
+		</section>
+
+		<!-- solarpedia -->
+		<section class="news-grid">
+			<div class="news-wrap container-xl">
+				<h3 class="title-homepage">Solarpedia</h3>
+				{{>solarpedia-grid}}
+			</div>
+		</section>
+
+		<!-- news -->
+		<section class="news-grid">
+			<div class="news-wrap container-xl">
+				<h3 class="title-homepage">News</h3>
+				{{>news-grid}}
+			</div>
+		</section>
+
+		<!-- service -->
+		<section class="service">
+			<div class="service-wrap container-xl">
+				<h3 class="title-homepage">Our Service</h3>
+				<div class="service-block row">
+					<div class="service-item col-md-4">
+						<div class="service-img">
+							<img src="./asset/images/service-graphic-1.png" alt="">
+						</div>
+						<div class="service-box">
+							<div class="service-title">Market Place</div>
+							<div class="service-teaser">Our fully integrated digital team of more than 200 dedicated digital strategists, technologists</div>
+						</div>
+					</div>
+					<div class="service-item col-md-4">
+						<div class="service-img">
+							<img src="./asset/images/service-graphic-2.png" alt="">
+						</div>
+						<div class="service-box">
+							<div class="service-title">Video Conference</div>
+							<div class="service-teaser">Our fully integrated digital team of more than 200 dedicated digital strategists, technologists</div>
+						</div>
+					</div>
+					<div class="service-item col-md-4">
+						<div class="service-img">
+							<img src="./asset/images/service-graphic-3.png" alt="">
+						</div>
+						<div class="service-box">
+							<div class="service-title">Power Monitoring</div>
+							<div class="service-teaser">Our fully integrated digital team of more than 200 dedicated digital strategists, technologists</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- coverage -->
+		<section class="coverage">
+			<div class="coverage-wrap container-xl">
+				<h3 class="title-homepage -small">Covered by:</h3>
+				<div class="coverage-block">
+					<div class="coverage-item">
+						<div class="coverage-img">
+							<a href="#">
+								<img src="./asset/images/logo-media-1.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="coverage-item">
+						<div class="coverage-img">
+							<a href="#">
+								<img src="./asset/images/logo-media-2.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="coverage-item">
+						<div class="coverage-img">
+							<a href="#">
+								<img src="./asset/images/logo-media-3.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="coverage-item">
+						<div class="coverage-img">
+							<a href="#">
+								<img src="./asset/images/logo-media-4.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="coverage-item">
+						<div class="coverage-img">
+							<a href="#">
+								<img src="./asset/images/logo-media-5.png" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="coverage-item">
+						<div class="coverage-img">
+							<a href="#">
+								<img src="./asset/images/logo-media-6.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		{{>modal-all}}
+
+		{{>footer}}
+
+	</main>
+
+{{>js}}
+</body>
+</html>

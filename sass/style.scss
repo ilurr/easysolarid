@@ -1,0 +1,111 @@
+// default
+@import 'default/vars';
+@import 'mixin/grid';
+@import 'mixin/grid-framework';
+@import 'mixin/mixin';
+
+// global
+@import 'layout/global';
+@import 'layout/grid';
+@import 'layout/grid';
+@import 'default/form';
+
+// bootstrap grid
+@import "plugin/bootstrap/functions";
+@import "plugin/bootstrap/variables";
+
+@import "plugin/bootstrap/mixins";
+@import "plugin/bootstrap/mixins/breakpoints";
+@import "plugin/bootstrap/mixins/grid-framework";
+@import "plugin/bootstrap/mixins/grid";
+
+@import "plugin/bootstrap/grid";
+@import "plugin/bootstrap/utilities/flex";
+
+// icon management
+@import 'icon/menu';
+// @import 'icon/general';
+// @import 'icon/nav';
+@import 'icon/arrow';
+@import 'icon/close';
+// @import 'icon/rating';
+// @import 'icon/post';
+// @import 'icon/option';
+// @import 'icon/share';
+
+// // component
+@import 'component/form';
+@import 'component/button';
+@import 'component/title';
+@import 'component/panel';
+@import 'component/nav';
+@import 'component/category';
+@import 'component/social';
+@import 'component/paging';
+@import 'component/easy';
+// @import 'component/content';
+@import 'component/tab';
+// @import 'component/feed';
+// @import 'component/option';
+@import 'component/menu';
+@import 'component/address';
+
+// // layout
+@import 'layout/header';
+// @import 'layout/menu';
+@import 'layout/search';
+@import 'layout/sidebar';
+@import 'layout/aside';
+@import 'layout/footer';
+
+// // page
+@import 'page/showcase';
+@import 'page/about';
+@import 'page/news';
+@import 'page/service';
+@import 'page/coverage';
+@import 'page/calculator';
+@import 'page/store';
+@import 'page/catalog';
+@import 'page/unit';
+@import 'page/product';
+@import 'page/notify';
+@import 'page/board';
+@import 'page/cart';
+@import 'page/checkout';
+@import 'page/order';
+@import 'page/setting';
+@import 'page/user';
+// // static
+// @import 'page/static';
+
+// // utility
+@import 'utility/helper';
+// @import 'utility/skeleton';
+// @import 'utility/animate';
+
+// // plugin
+// @import 'plugin/tiny_slider';
+// @import 'plugin/tab';
+@import 'plugin/daterangepicker';
+// @import 'plugin/datepicker_config';
+// @import 'plugin/dropdown';
+// @import 'plugin/modal';
+// @import 'plugin/modal_override';
+@import 'plugin/slick';
+
+// plugin from bootstrap
+@import "plugin/bootstrap/alert";
+@import "plugin/bootstrap/dropdown";
+@import "plugin/bootstrap/toasts";
+@import "plugin/bootstrap/modal";
+@import "plugin/bootstrap/pagination";
+@import "plugin/bootstrap/transitions";
+@import "plugin/bootstrap/card";
+
+@import 'layout/main';
+@import 'utility/override';
+
+body.-solario {
+	@import 'utility/theme';
+}

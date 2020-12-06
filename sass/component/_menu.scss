@@ -1,0 +1,54 @@
+// user
+.menu {
+	&-sidebar {
+		position: relative;
+		@include display-flex();
+		align-items: center;
+		justify-content: center;
+		padding: 1rem .5rem 1.5rem;
+		margin-bottom: 1rem;
+		margin-left: -.5rem;
+		margin-right: -.5rem;
+		border-bottom: 1px solid #D4D4D4;
+		.menu-avatar {
+			flex-grow: 0;
+			flex-basis: 55px;
+		}
+	}
+	&-link {
+		display: block;
+		color: inherit;
+	}
+	&-avatar {
+		position: relative;
+		width: 55px;
+		height: 55px;
+		border-radius: 55px;
+		overflow: hidden;
+		background: #f0f0f0;
+		img {
+			@include ratio-flexible(auto, 100%);
+			z-index: 2;
+		}
+	}
+	&-info {
+		position: relative;
+		flex-grow: 1;
+		flex-basis: 0;
+		padding-left: 1rem;
+	}
+	&-username {
+		@include font-pack(false, .875rem, 700, false, #5F667F);
+	}
+	&-text {
+		padding-top: .25rem;
+		@include font-pack(false, .75rem, false, false, #AFB1B8);
+	}
+	&-user {
+		.menu-avatar {
+			width: 24px;
+			height: 24px;
+			border-radius: 24px;
+		}
+	}
+}

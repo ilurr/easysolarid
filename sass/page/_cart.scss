@@ -1,0 +1,308 @@
+.cart {
+	position: relative;
+	padding-top: 5vh;
+	padding-bottom: 10vh;
+	&-box {
+		position: relative;
+		background: #fff;
+		margin: 0 -15px;
+		box-shadow: 0 2px 5px rgba(0,0,0,.1);
+		@include min-responsive($screen-tablet) {
+			border-radius: 6px;
+			margin: 0;
+		}
+	}
+	&-checkout {
+		padding: 0 15px;
+		@include min-responsive($screen-desktop) {
+			padding: 3rem 4rem;
+		}
+	}
+	&-body {
+		position: relative;
+	}
+	&-title {
+		position: relative;
+		margin: 1.25rem 0;
+		text-align: center;
+		@include font-pack(false, 1.5rem, 600, false, #211F1F);
+		@include min-responsive($screen-tablet) {
+			font-size: 2rem;
+		}
+	}
+	&-notes {
+		position: relative;
+		padding: 10vh 0;
+		text-align: center;
+		@include font-pack(false, 1rem, 400, false, #606060);
+		p {
+			@include font-pack(false, 1rem, 400, false, #606060);
+		}
+		.fa {
+			vertical-align: baseline;
+		}
+	}
+	&-item {
+		position: relative;
+		@include display-flex();
+		padding: 2rem 1rem 2rem 105px;
+		border-bottom: 1px solid #f1f1f1;
+		@include min-responsive($screen-tablet) {
+			padding: 1.25rem 2.5rem 1.25rem 0;
+			text-align: center;
+			align-items: center;
+			flex-wrap: nowrap;
+		}
+		@include min-responsive($screen-large-desktop) {
+			padding: 1.25rem 3rem 1.25rem 0;
+		}
+		&-info {
+			position: relative;
+			@include display-flex();
+			align-items: center;
+			width: 100%;
+			@include max-responsive($screen-mobile-max) {
+				flex-basis: auto;
+			}
+			@include min-responsive($screen-tablet) {
+				flex: 0 0 41.66667%;
+				max-width: 41.66667%;
+			}
+			@include min-responsive($screen-desktop) {
+				flex: 0 0 50%;
+				max-width: 50%;
+			}
+		}
+		&-qty {
+			position: relative;
+			width: 100%;
+			@include max-responsive($screen-mobile-max) {
+				flex-basis: auto;
+			}
+			@include min-responsive($screen-tablet) {
+				flex: 0 0 25%;
+				max-width: 25%;
+			}
+			@include min-responsive($screen-desktop) {
+				flex: 0 0 16.66667%;
+				max-width: 16.66667%;
+			}
+		}
+		&-price {
+			position: relative;
+			width: 100%;
+			@include max-responsive($screen-mobile-max) {
+				flex-basis: auto;
+			}
+			@include min-responsive($screen-tablet) {
+				flex: 0 0 16.66667%;
+				max-width: 16.66667%;
+			}
+		}
+	}
+	&-bottom {
+		position: relative;
+		padding: 2rem 0;
+		// border-bottom: 1px solid #DEDCDC;
+		align-items: center;
+		@include min-responsive($screen-tablet) {
+			padding: 2rem 2.5rem 2rem 0;
+		}
+		@include min-responsive($screen-large-desktop) {
+			padding: 2rem 3rem 2rem 0;
+		}
+		&-total {
+			flex-basis: auto;
+			@include min-responsive($screen-tablet) {
+				flex-basis: 0;
+				flex: 0 0 16.66667%;
+				max-width: 16.66667%;
+			}
+		}
+	}
+	&-footer {
+		border-top: 1px solid #DEDCDC;
+		position: relative;
+		padding: 2rem .5rem;
+		@include display-flex();
+		align-items: center;
+		justify-content: center;
+	}
+
+	// button
+	&-button {
+		&-action {
+			margin: 0 .5rem;
+			// font-size: .75rem;
+			// text-transform: uppercase;
+			// font-weight: 600;
+			// padding: 0 1.25rem;
+			// min-width: 170px;
+			// letter-spacing: 1px;
+			justify-content: space-between;
+			// height: 50px;
+			width: 50%;
+			@include min-responsive($screen-tablet) {
+				width: auto;
+			}
+			&.-fourth {
+				// color: #B3B3B3;
+				.icon,
+				.fa {
+					margin-right: .75rem;
+				}
+				// &:hover {
+				// 	background: #f0f0f0;
+				// }
+			}
+			&.-secondary {
+				.icon,
+				.fa {
+					margin-left: .75rem;
+				}
+			}
+			// &.-address {
+			// 	width: auto;
+			// 	margin: 0;
+			// }
+		}
+		&-close {
+			position: absolute;
+			top: 1.375rem;
+			right: 0;
+			width: 42px;
+			@include min-responsive($screen-tablet) {
+				top: unset;
+				right: .5rem;
+			}
+			@include min-responsive($screen-large-desktop) {
+				right: 1.125rem;
+			}
+		}
+	}
+
+	// list 
+	&-list {
+		position: relative;
+		padding: 0 15px;
+		&-header {
+			position: relative;
+			border-bottom: 1px solid #f1f1f1;
+			@include min-responsive($screen-tablet) {
+				padding-right: 2.5rem;
+				// padding-left: 105px;
+			}
+			@include min-responsive($screen-large-desktop) {
+				padding-right: 3rem;
+			}
+			@include max-responsive($screen-mobile-max) {
+				display: none;
+			}
+			h4 {
+				margin: 0;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				text-align: center;
+				padding: 1rem;
+				@include font-pack(false, .75rem, 900, false, #B3B3B3);
+				@include min-responsive($screen-tablet) {
+					padding: 2rem 0;
+				}
+				@include min-responsive($screen-desktop) {
+					padding: 2rem 1rem;
+				}
+			}
+		}
+		&-col {
+			&:first-child {
+				h4 {
+					text-align: left;
+				}
+			}
+		}
+	}
+
+	// small
+	&-list {
+		&.-small {
+			position: relative;
+			.cart-item {
+				padding: 1rem 0;
+				align-items: center;
+				// @include min-responsive($screen-tablet) {
+				// 	padding: 1rem 0;
+				// }
+			}
+			.cart-item-info {
+				flex: 0 0 66.66667%;
+				max-width: 66.66667%;
+				padding: 0;
+			}
+			.cart-item-price {
+				flex: 0 0 33.33333%;
+				max-width: 33.33333%;
+				padding: 0;
+				text-align: right;
+			}
+			.unit-img {
+				width: 45px;
+				height: 45px;
+				flex-basis: 45px;
+				position: relative;
+				top: unset;
+				left: unset;
+			}
+			.unit-name {
+				padding-left: .5rem;
+				font-size: .875rem;
+				padding-bottom: 0;
+			}
+			.unit-price {
+				font-size: .875rem;
+			}
+			.unit-price span {
+				@include max-responsive($screen-mobile-max) {
+					display: none;
+				}
+			}
+			.unit-price.-total {
+				font-size: 1.5rem;
+				@include min-responsive($screen-tablet) {
+					font-weight: 700;
+					font-size: 1.125rem;
+					text-align: right;	
+				}
+			}
+			.cart-bottom {
+				padding: 1.5rem 0;
+			}
+			.cart-bottom-total {
+				padding: 0;
+				flex-basis: auto;
+				@include min-responsive($screen-tablet) {
+					flex: 0 0 33.33333%;
+					max-width: 33.33333%;
+				}
+			}
+		}
+	}
+
+	// 
+	&-box {
+		&.-result {
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+			@include min-responsive($screen-tablet) {
+				padding-top: 4rem;
+				padding-bottom: 4rem;
+			}
+			.cart-footer {
+				padding: 1rem 0;
+				border-top: 1px solid transparent;
+			}
+			.button {
+				width: auto;
+			}
+		}
+	}
+}

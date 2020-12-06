@@ -1,0 +1,53 @@
+// background 
+$bg-base: #F7F7F7;
+
+// font
+$font-primary: 'Lato', sans-serif;
+$font-icon: 'icomoon';
+
+// size 
+$font-size-base: 1rem;
+
+// color 
+$color-base: #2a2a2a;
+$color-theme: #F07003;
+$color-theme2: #F07003;
+$color-primary: #F07003;
+// $color-secondary: #ff5902;
+$color-secondary: #0A94D0;
+$color-third: #6EC3E5;
+$color-error: #E82828;
+$color-success: #43b300;
+$color-disabled: #F0EFEF;
+$color-notification: #E71561;
+
+// color text
+$color-text-theme: #F07003;
+$color-text-primary: #000;
+$color-text-secondary: #BFBFBF;
+$color-text-error: #E82828;
+$color-button-primary: #fff;
+
+// color sosmed
+$color-facebook: #3b5998;
+$color-twitter: #1da1f2;
+$color-google: #F14336;
+$color-whatsapp: #25d366;
+$color-line: #00c300;
+$color-path: #ee3423;
+$color-linkedin: #0077b5;
+$color-pinterest: #bd081c;
+$color-youtube: #cd201f;
+$color-instagram: #c13584;
+$color-apple: #1C1C1C;
+$color-comment: #71C8F0;
+
+// screen
+$screen-small-mobile: 320px !default;
+$screen-small-mobile-max: 359px !default;
+$screen-mobile: 360px !default;
+$screen-mobile-max: 767px !default;
+$screen-tablet: 768px !default;
+$screen-desktop: 990px !default;
+$screen-large-desktop: 1200px !default;
+$screen-super-desktop: 1600px !default;
